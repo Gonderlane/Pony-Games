@@ -257,18 +257,17 @@
   <div class="wrap">
     <h1>🎪 Jam History Editor</h1>
     <p class="intro">
-      Fill in each past jam below — no code, no JSON syntax. When you're
-      done, click <strong>Download jams.json</strong> and send that file to
-      whoever uploads it to the site. That's it.
+      Add, edit, and reorder past jams here, then download the file and
+      send it to whoever uploads site files.
     </p>
 
     <div class="steps">
-      <strong>How this works:</strong>
+      <strong>Steps:</strong>
       <ol>
-        <li>If you already have the current <code>jams.json</code> file, click <strong>Load existing file</strong> to bring in what's already there.</li>
+        <li>Click <strong>Load existing file</strong> and pick the current <code>jams.json</code> if you have it, so you're editing what's already there instead of starting over.</li>
         <li>Click <strong>+ Add a jam</strong> for each past jam. Fill in the name, an image URL, and a link to the jam page.</li>
-        <li>Use the ↑ / ↓ arrows to put them in the order you want them to appear on the site.</li>
-        <li>Click <strong>Download jams.json</strong> — this saves a ready-to-use file. Send that file to whoever uploads site files.</li>
+        <li>Use the ↑ / ↓ arrows to set the order they'll appear on the site.</li>
+        <li>Click <strong>Download jams.json</strong>, then send that file to whoever uploads site files.</li>
       </ol>
     </div>
 
@@ -415,7 +414,7 @@
       a.click();
       a.remove();
       URL.revokeObjectURL(url);
-      setStatus(missing ? "Downloaded — but some jams are missing a name, image, or link!" : "Downloaded jams.json ✓");
+      setStatus(missing ? "Downloaded, but some jams are missing a name, image, or link." : "Downloaded jams.json ✓");
     });
 
     document.getElementById("copy-btn").addEventListener("click", async () => {
@@ -425,7 +424,7 @@
         await navigator.clipboard.writeText(json);
         setStatus("Copied to clipboard ✓");
       } catch (err) {
-        setStatus("Couldn't copy — try the Download button instead.");
+        setStatus("Couldn't copy. Try the Download button instead.");
       }
     });
 
@@ -440,14 +439,14 @@
         render();
         setStatus(`Loaded ${jams.length} jam${jams.length === 1 ? "" : "s"} ✓`);
       } catch (err) {
-        setStatus("That file didn't look like a valid jams.json — nothing was loaded.");
+        setStatus("That file didn't look like a valid jams.json. Nothing was loaded.");
       }
       fileInput.value = "";
     });
 
     // Best-effort auto-load of the live data file when this tool is served
-    // over http(s) alongside the site (fails silently over file:// — use
-    // the "Load existing file" button in that case instead).
+    // over http(s) alongside the site. Fails silently over file:// -
+    // use the "Load existing file" button in that case instead.
     fetch("../data/jams.json")
       .then((r) => (r.ok ? r.json() : Promise.reject()))
       .then((data) => {
