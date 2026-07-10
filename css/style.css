@@ -146,6 +146,12 @@ body {
   transition: transform var(--transition-spring);
 }
 
+.site-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .site-logo:hover {
   transform: scale(1.03);
 }
