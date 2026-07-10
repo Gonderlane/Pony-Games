@@ -747,7 +747,7 @@ function gameMatchesFilters(game, filters) {
     // only happen to match one of the words.
     if (!terms.every(matchesTerm)) return false;
   }
-  if (genres.size && !game.tags.some((t) => t.type === "genre" && genres.has(t.label))) return false;
+  if (genres.size && !game.tags.some((t) => t.type && t.type.toLowerCase() === "genre" && genres.has(t.label))) return false;
   if (tags.size && !game.tags.some((t) => tags.has(t.label))) return false;
   if (playtimes.size && !playtimes.has(game.playtime)) return false;
   if (statuses.size && !statuses.has(game.status)) return false;
@@ -791,7 +791,7 @@ async function initGamesPage() {
   allGames.forEach((game) => {
     (game.tags || []).forEach((t) => {
       tagSet.add(t.label);
-      if (t.type === "genre") genreSet.add(t.label);
+      if (t.type && t.type.toLowerCase() === "genre") genreSet.add(t.label);
     });
     if (game.playtime) playtimeSet.add(game.playtime);
     if (game.status) statusSet.add(game.status);
