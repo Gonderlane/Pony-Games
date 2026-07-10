@@ -1,27 +1,42 @@
 [
   {
-    "name": "Winter Pony Jam 2025",
-    "image": "https://placehold.co/200x120/16213e/eaeaea?text=Winter+2025",
-    "url": "https://example.com/jams/winter-2025"
+    "name": "/mlp/con Game Jam: No movment",
+    "image": "https://img.itch.zone/aW1nLzI3ODAxNjA5LnBuZw==/200x158%23/6%2Bw6JJ.png",
+    "url": "https://itch.io/jam/mlpcon-game-jam-no-movment"
   },
   {
-    "name": "Spring Pony Jam 2025",
-    "image": "https://placehold.co/200x120/533483/eaeaea?text=Spring+2025",
-    "url": "https://example.com/jams/spring-2025"
+    "name": "/mlp/ marecon Game Jam: Horror and Edge",
+    "image": "https://img.itch.zone/aW1nLzI1MjkxNjAyLnBuZw==/200x158%23/94Gfm%2F.png",
+    "url": "https://itch.io/jam/mlp-marecon-game-jam-horror-and-edge"
   },
   {
-    "name": "Summer Pony Jam 2025",
-    "image": "https://placehold.co/200x120/e94560/ffffff?text=Summer+2025",
-    "url": "https://example.com/jams/summer-2025"
+    "name": "/mlp/ off-con Game Jam: One button",
+    "image": "https://img.itch.zone/aW1nLzIzMjg0MzU3LnBuZw==/200x158%23/VAfTMq.png",
+    "url": "https://itch.io/jam/mlp-off-con-game-jam-one-button"
   },
   {
-    "name": "Autumn Pony Jam 2025",
-    "image": "https://placehold.co/200x120/0f3460/eaeaea?text=Autumn+2025",
-    "url": "https://example.com/jams/autumn-2025"
+    "name": "/mlp/con Game Jam: Anon's choice - Pony Hobbies",
+    "image": "https://img.itch.zone/aW1nLzIxNzA0NjY0LnBuZw==/200x158%23/mWtpZ2.png",
+    "url": "https://itch.io/jam/mlpcon-game-jam-anons-choice"
   },
   {
-    "name": "Holiday Pony Jam 2024",
-    "image": "https://placehold.co/200x120/2a2a4a/eaeaea?text=Holiday+2024",
-    "url": "https://example.com/jams/holiday-2024"
+    "name": "Marecon /mlp/ Game Jam: ASSet edition",
+    "image": "https://img.itch.zone/aW1nLzE5MzQyMTUxLnBuZw==/200x158%23/WI6B98.png",
+    "url": "https://itch.io/jam/marecon-mlp-game-jam-asset-edition"
+  },
+  {
+    "name": "June /mlp/ Game Jam",
+    "image": "https://img.itch.zone/aW1nLzE2NzQzNzY0LnBuZw==/200x158%23/4ffcWr.png",
+    "url": "https://itch.io/jam/june-mlp-game-jam"
+  },
+  {
+    "name": "Halloween /mlp/ Game Jam",
+    "image": "https://img.itch.zone/aW1nLzEzNzQ0MjEwLnBuZw==/200x158%23/op0MpQ.png",
+    "url": "https://itch.io/jam/halloween-mlp-game-jam"
+  },
+  {
+    "name": "Pony Arcade",
+    "image": "https://desu-usergeneratedcontent.xyz/mlp/image/1675/05/1675056864559.jpg",
+    "url": "https://docs.google.com/document/d/1sw4CZZqXDFXXGPNK_qBs6QmfTLN6f6R5nbGp1awjviM/edit?tab=t.0"
   }
 ]
