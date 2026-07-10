@@ -1,0 +1,138 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Crystal Caverns",
+      "author": "GemSpark Studios",
+      "thumbnail": "https://placehold.co/400x225/533483/eaeaea?text=Crystal+Caverns",
+      "shortDescription": "Explore glittering underground caves as a curious unicorn.",
+      "fullDescription": "Crystal Caverns is a short exploration adventure where you guide a unicorn through procedurally lit caverns, solving light-based puzzles and collecting gems. Perfect for a cozy evening play session.",
+      "tags": [
+        { "label": "Adventure", "type": "genre" },
+        { "label": "Puzzle", "type": "genre" },
+        { "label": "2D", "type": "other" },
+        { "label": "Singleplayer", "type": "other" }
+      ],
+      "characters": ["M6"],
+      "playtime": "30m–2h",
+      "status": "released",
+      "engine": "godot",
+      "platforms": ["Windows", "Linux", "Web"],
+      "url": "https://example.com/crystal-caverns",
+      "dateAdded": "2026-05-20",
+      "downloads": [
+        { "label": "Windows", "version": "v1.2", "url": "https://example.com/crystal-caverns/win" },
+        { "label": "Web (browser)", "url": "https://example.com/crystal-caverns" },
+        { "label": "Linux", "version": "v1.1", "url": "https://example.com/crystal-caverns/linux" }
+      ],
+      "screenshots": [
+        "https://placehold.co/800x450/533483/eaeaea?text=Screenshot+1",
+        "https://placehold.co/800x450/3d2060/eaeaea?text=Screenshot+2",
+        "https://placehold.co/800x450/6a4aa0/eaeaea?text=Screenshot+3"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Sky Race Derby",
+      "author": "CloudChaser Dev",
+      "thumbnail": "https://placehold.co/400x225/0f3460/eaeaea?text=Sky+Race+Derby",
+      "shortDescription": "High-speed pegasus racing through cloud-filled courses.",
+      "fullDescription": "Take to the skies in this fast-paced pegasus racing game. Drift around cloud rings, boost through rainbows, and compete for the fastest lap times across five unique tracks.",
+      "tags": [
+        { "label": "Racing", "type": "genre" },
+        { "label": "Arcade", "type": "genre" },
+        { "label": "Anthro", "type": "other" },
+        { "label": "Online", "type": "other" }
+      ],
+      "characters": ["Secondary cast"],
+      "playtime": "5m–30m",
+      "status": "released",
+      "engine": "unity",
+      "platforms": ["Windows", "Web"],
+      "url": "https://example.com/sky-race-derby",
+      "dateAdded": "2026-05-28"
+    },
+    {
+      "id": 3,
+      "title": "Friendship Garden",
+      "author": "CozyHoof Games",
+      "thumbnail": "https://placehold.co/400x225/e94560/ffffff?text=Friendship+Garden",
+      "shortDescription": "A relaxing farming sim about growing bonds and flowers.",
+      "fullDescription": "Plant seeds, tend to your garden, and invite pony friends over for tea parties. Friendship Garden focuses on cozy gameplay with no timers or pressure, just peaceful pony life.",
+      "tags": [
+        { "label": "Simulation", "type": "genre" },
+        { "label": "Casual", "type": "other" },
+        { "label": "Singleplayer", "type": "other" }
+      ],
+      "characters": ["M6"],
+      "playtime": "2h–4h",
+      "status": "released",
+      "engine": "gamemaker",
+      "platforms": ["Windows", "Web"],
+      "url": "https://example.com/friendship-garden",
+      "dateAdded": "2026-04-10"
+    },
+    {
+      "id": 4,
+      "title": "Night Guard Duty",
+      "author": "ShadowMane Interactive",
+      "thumbnail": "https://placehold.co/400x225/16213e/eaeaea?text=Night+Guard+Duty",
+      "shortDescription": "A spooky tower-defense game set on the castle walls.",
+      "fullDescription": "The castle is under siege by shadow creatures! As a royal guard, place defenses along the ramparts and protect the kingdom through the night. Features multiple difficulty modes and unlockable guard ponies.",
+      "tags": [
+        { "label": "NSFW", "type": "warning" },
+        { "label": "Tower Defense", "type": "genre" },
+        { "label": "Strategy", "type": "genre" },
+        { "label": "Singleplayer", "type": "other" }
+      ],
+      "characters": ["Secondary cast"],
+      "playtime": "30m–2h",
+      "status": "released",
+      "engine": "unity",
+      "platforms": ["Windows"],
+      "url": "https://example.com/night-guard-duty",
+      "dateAdded": "2026-03-15"
+    },
+    {
+      "id": 5,
+      "title": "Mane Style Studio",
+      "author": "GlamourWorks",
+      "thumbnail": "https://placehold.co/400x225/2a2a4a/eaeaea?text=Mane+Style+Studio",
+      "shortDescription": "Design and share custom mane styles for your favorite ponies.",
+      "fullDescription": "Unleash your inner stylist in Mane Style Studio. Mix colors, add accessories, and export your creations to share with the community. Includes a library of canon and OC pony bases.",
+      "tags": [
+        { "label": "Dress Up", "type": "genre" },
+        { "label": "Casual", "type": "other" },
+        { "label": "Anthro", "type": "other" }
+      ],
+      "characters": ["M6", "OC"],
+      "playtime": "5m–30m",
+      "status": "released",
+      "engine": "html5",
+      "platforms": ["Web"],
+      "url": "https://example.com/mane-style-studio",
+      "dateAdded": "2026-02-05"
+    },
+    {
+      "id": 6,
+      "title": "Everfree Quest",
+      "author": "ForestPath RPG",
+      "thumbnail": "https://placehold.co/400x225/1a4a7a/eaeaea?text=Everfree+Quest",
+      "shortDescription": "A turn-based RPG deep in the mysterious Everfree Forest.",
+      "fullDescription": "Venture into the Everfree Forest with a party of four ponies. Battle wild creatures, discover ancient ruins, and uncover the secrets of the forest in this classic turn-based RPG with a pony twist.",
+      "tags": [
+        { "label": "RPG", "type": "genre" },
+        { "label": "Turn-Based", "type": "genre" },
+        { "label": "NSFW", "type": "warning" },
+        { "label": "Singleplayer", "type": "other" }
+      ],
+      "characters": ["M6", "Background"],
+      "playtime": "4h–10h",
+      "status": "in_development",
+      "engine": "rpgmaker",
+      "platforms": ["Windows"],
+      "url": "https://example.com/everfree-quest",
+      "dateAdded": "2026-01-22"
+    }
+  ]
+}

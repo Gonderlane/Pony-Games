@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free assets and resources for pony game developers: sprites, tilesets, music, and more." />
+  <title>Resources | Pony Game Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-resources">
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Pony Game Hub</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="page-title">Resources</h1>
+    <p style="color: var(--color-text-muted); margin-bottom: 1.25rem;">
+      Free assets for game developers. Click a card for full details and download links.
+    </p>
+
+    <div class="resources-layout">
+      <div>
+        <!-- ===================== CARD GRID (data/resources.json via main.js) ===================== -->
+        <div id="card-grid" class="card-grid" data-type="resources"></div>
+      </div>
+
+      <aside class="games-filter" aria-label="Filter resources">
+        <h2 class="games-filter__title">Search & Filters</h2>
+
+        <div class="games-filter__group">
+          <label for="resource-sort">Sort by</label>
+          <select id="resource-sort">
+            <option value="az">A → Z</option>
+            <option value="za">Z → A</option>
+          </select>
+        </div>
+
+        <div class="games-filter__group">
+          <label for="resources-search">Search</label>
+          <input id="resources-search" type="search" placeholder="Title, tag, or type..." autocomplete="off" />
+        </div>
+
+        <div class="games-filter__group">
+          <label>Type</label>
+          <div id="filter-resource-type-chips" class="tag-filter-chips"></div>
+        </div>
+
+        <div class="games-filter__group">
+          <label>Tags</label>
+          <div id="filter-resource-tag-chips" class="tag-filter-chips"></div>
+        </div>
+
+        <div class="games-filter__group">
+          <label>License</label>
+          <div id="filter-resource-license-chips" class="tag-filter-chips"></div>
+        </div>
+
+        <button type="button" id="resource-filter-clear" class="filter-clear" hidden>Clear all</button>
+        <p id="resource-filter-results" class="games-filter__results">0 resources</p>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- ===================== DETAIL PANEL (main.js populates on card click) ===================== -->
+  <div id="detail-panel" class="detail-panel" role="dialog" aria-modal="true" aria-label="Resource details">
+    <div class="detail-panel__content">
+      <button class="detail-panel__close" type="button" aria-label="Close details">&times;</button>
+      <img class="detail-panel__thumb" src="" alt="" />
+      <h2 class="detail-panel__title"></h2>
+      <div class="detail-panel__playtime-wrap" hidden>
+        <div class="detail-panel__playtime-header">
+          <span class="detail-panel__playtime-label">Playtime</span>
+          <span class="detail-panel__playtime"></span>
+        </div>
+        <div class="detail-panel__playtime-bar" role="presentation">
+          <div class="detail-panel__playtime-fill"></div>
+        </div>
+      </div>
+      <div class="detail-panel__meta">
+        <div class="detail-panel__tags"></div>
+      </div>
+      <p class="detail-panel__description"></p>
+      <a class="detail-panel__link" href="#" target="_blank" rel="noopener noreferrer">View Resource →</a>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Pony Game Hub. A community directory for pony games.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

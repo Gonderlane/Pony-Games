@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse pony games: fan games, jam entries, and community projects." />
+  <title>Games | Pony Game Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Pony Game Hub</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="page-title">Pony Games</h1>
+    <p style="color: var(--color-text-muted); margin-bottom: 2rem;">
+      A curated collection of pony fan games. Click a card for full details.
+    </p>
+
+    <div class="games-layout">
+      <!-- ===================== CARD GRID (data/games.json via main.js) ===================== -->
+      <!-- Cards expand on hover; click opens detail panel below -->
+      <div id="card-grid" class="card-grid" data-type="games"></div>
+
+      <!-- ===================== SEARCH & FILTER PANEL (main.js) ===================== -->
+      <aside class="games-filter" aria-label="Search and filter games">
+        <form id="games-filter" class="games-filter__form">
+          <h2 class="games-filter__title">Search & Filters</h2>
+
+          <div class="games-filter__group">
+            <label for="filter-sort">Sort by</label>
+            <select id="filter-sort">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="az">A → Z</option>
+              <option value="za">Z → A</option>
+              <option value="playtime-asc">Playtime (short → long)</option>
+              <option value="playtime-desc">Playtime (long → short)</option>
+            </select>
+          </div>
+
+          <div class="games-filter__group">
+            <label for="filter-search">Search</label>
+            <input id="filter-search" type="search" placeholder="Title or author..." autocomplete="off" />
+          </div>
+
+          <div class="games-filter__group">
+            <label class="nsfw-toggle">
+              <input type="checkbox" id="filter-nsfw" />
+              <span class="nsfw-toggle__label">Show NSFW</span>
+              <span class="nsfw-toggle__track"></span>
+            </label>
+          </div>
+
+          <div class="games-filter__group">
+            <label>Genre</label>
+            <div id="filter-genre-chips" class="tag-filter-chips"></div>
+          </div>
+
+          <div class="games-filter__group">
+            <label>Tags</label>
+            <div id="filter-tag-chips" class="tag-filter-chips"></div>
+          </div>
+
+
+          <div class="games-filter__group">
+            <label>Playtime</label>
+            <div id="filter-playtime-chips" class="tag-filter-chips"></div>
+          </div>
+
+          <div class="games-filter__group">
+            <label>Status</label>
+            <div id="filter-status-chips" class="tag-filter-chips"></div>
+          </div>
+
+          <div class="games-filter__group">
+            <label>Engine</label>
+            <div id="filter-engine-chips" class="tag-filter-chips"></div>
+          </div>
+
+          <div class="games-filter__group">
+            <label>Platform</label>
+            <div id="filter-platform-chips" class="tag-filter-chips"></div>
+          </div>
+
+          <div id="filter-chips" class="filter-chips"></div>
+          <button type="button" id="filter-clear" class="filter-clear" hidden>Clear all</button>
+
+          <p id="filter-results" class="games-filter__results">0 games</p>
+        </form>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- ===================== DETAIL PANEL (main.js populates on card click) ===================== -->
+  <div id="detail-panel" class="detail-panel" role="dialog" aria-modal="true" aria-label="Game details">
+    <div class="detail-panel__content">
+      <button class="detail-panel__close" type="button" aria-label="Close details">&times;</button>
+      <div class="detail-panel__carousel" hidden>
+        <div class="carousel__track"></div>
+        <button class="carousel__btn carousel__btn--prev" type="button" aria-label="Previous screenshot">‹</button>
+        <button class="carousel__btn carousel__btn--next" type="button" aria-label="Next screenshot">›</button>
+        <div class="carousel__dots"></div>
+      </div>
+      <img class="detail-panel__thumb" src="" alt="" />
+      <h2 class="detail-panel__title"></h2>
+      <p class="detail-panel__author" hidden></p>
+      <div class="detail-panel__playtime-wrap" hidden>
+        <div class="detail-panel__playtime-header">
+          <span class="detail-panel__playtime-label">Playtime</span>
+          <span class="detail-panel__playtime"></span>
+        </div>
+        <div class="detail-panel__playtime-bar" role="presentation">
+          <div class="detail-panel__playtime-fill"></div>
+        </div>
+      </div>
+      <div class="detail-panel__meta">
+        <div class="detail-panel__tags"></div>
+      </div>
+      <p class="detail-panel__description"></p>
+      <div class="detail-panel__downloads"></div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Pony Game Hub. A community directory for pony games.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Winter Pony Jam 2025",
+    "image": "https://placehold.co/200x120/16213e/eaeaea?text=Winter+2025",
+    "url": "https://example.com/jams/winter-2025"
+  },
+  {
+    "name": "Spring Pony Jam 2025",
+    "image": "https://placehold.co/200x120/533483/eaeaea?text=Spring+2025",
+    "url": "https://example.com/jams/spring-2025"
+  },
+  {
+    "name": "Summer Pony Jam 2025",
+    "image": "https://placehold.co/200x120/e94560/ffffff?text=Summer+2025",
+    "url": "https://example.com/jams/summer-2025"
+  },
+  {
+    "name": "Autumn Pony Jam 2025",
+    "image": "https://placehold.co/200x120/0f3460/eaeaea?text=Autumn+2025",
+    "url": "https://example.com/jams/autumn-2025"
+  },
+  {
+    "name": "Holiday Pony Jam 2024",
+    "image": "https://placehold.co/200x120/2a2a4a/eaeaea?text=Holiday+2024",
+    "url": "https://example.com/jams/holiday-2024"
+  }
+]

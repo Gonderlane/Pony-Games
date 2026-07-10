@@ -1,0 +1,149 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+site_url: "/"
+display_url: "/"
+
+collections:
+  - name: "content_files"
+    label: "Content Files"
+    files:
+      - name: "posts"
+        label: "Blog Posts"
+        file: "data/posts.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            summary: "{{fields.date}} - {{fields.title}}"
+            fields:
+              - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Excerpt", name: "excerpt", widget: "text" }
+
+      - name: "games"
+        label: "Games"
+        file: "data/games.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Games"
+            name: "games"
+            widget: "list"
+            summary: "{{fields.id}} - {{fields.title}}"
+            fields:
+              - { label: "ID", name: "id", widget: "number", value_type: "int", min: 1 }
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Author(s)"
+                name: "author"
+                widget: "list"
+                field: { label: "Author", name: "author", widget: "string" }
+              - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Full Description", name: "fullDescription", widget: "text" }
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                summary: "{{fields.label}} ({{fields.type}})"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    options: ["warning", "black", "genre", "other"]
+              - label: "Characters"
+                name: "characters"
+                widget: "list"
+                field: { label: "Character", name: "character", widget: "string" }
+              - { label: "Playtime", name: "playtime", widget: "string" }
+              - { label: "Game URL (source / author site)", name: "url", widget: "string", required: false }
+              - label: "Downloads"
+                name: "downloads"
+                widget: "list"
+                required: false
+                summary: "{{fields.label}} {{fields.version}}"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Version", name: "version", widget: "string", required: false }
+                  - { label: "URL", name: "url", widget: "string" }
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    required: false
+                    hint: "Leave blank to auto-detect from the label/URL"
+                    options: ["source", "web", "download"]
+                  - label: "Button Text"
+                    name: "buttonText"
+                    widget: "string"
+                    required: false
+                    hint: "Overrides the default text (Author Site / Play / Download) with custom wording, e.g. \"Get on Steam\""
+                  - label: "Mirrors"
+                    name: "mirrors"
+                    widget: "list"
+                    required: false
+                    hint: "Extra buttons for the same build hosted elsewhere (Telegram, backup server, etc.) — stopgap for high-traffic events"
+                    summary: "{{fields.label}}"
+                    fields:
+                      - { label: "Label", name: "label", widget: "string" }
+                      - { label: "URL", name: "url", widget: "string" }
+              - { label: "Date Added", name: "dateAdded", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+
+      - name: "resources"
+        label: "Resources"
+        file: "data/resources.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Resources"
+            name: "resources"
+            widget: "list"
+            summary: "{{fields.id}} - {{fields.title}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+              - { label: "Short Description", name: "shortDescription", widget: "text" }
+              - { label: "Full Description", name: "fullDescription", widget: "text" }
+              - label: "Tags"
+                name: "tags"
+                widget: "list"
+                field: { label: "Tag", name: "tag", widget: "string" }
+              - { label: "Playtime", name: "playtime", widget: "string" }
+              - { label: "Resource URL", name: "url", widget: "string" }
+
+      - name: "jam_config"
+        label: "Jam Timer Config"
+        file: "data/jam-config.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "State"
+            name: "state"
+            widget: "select"
+            options: ["none", "upcoming", "active"]
+          - { label: "Last Jam URL", name: "lastJamUrl", widget: "string", required: false }
+          - { label: "Last Jam Label", name: "lastJamLabel", widget: "string", required: false }
+          - { label: "Start Date", name: "startDate", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss", required: false }
+          - { label: "End Date", name: "endDate", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ss", required: false }
+          - { label: "Current Jam URL", name: "currentJamUrl", widget: "string", required: false }
+          - { label: "Current Jam Label", name: "currentJamLabel", widget: "string", required: false }
+          - label: "Messages"
+            name: "messages"
+            widget: "object"
+            fields:
+              - { label: "No Jam Message", name: "none", widget: "string" }
+              - { label: "Upcoming Message", name: "upcoming", widget: "string" }
+              - { label: "Active Message", name: "active", widget: "string" }
+              - { label: "Complete Message", name: "complete", widget: "string" }
+              - { label: "Ended Message", name: "ended", widget: "string" }

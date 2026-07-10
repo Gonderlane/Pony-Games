@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About Pony Game Hub: contacts, credits, and community info." />
+  <title>About | Pony Game Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">Pony Game Hub</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1 class="page-title">About</h1>
+
+    <div class="about-content">
+
+      <!-- ===================== MASCOT IMAGE (click to enlarge, js/main.js) ===================== -->
+      <img class="about-mascot" src="assets/mascot.png" alt="Pony Game Hub mascot" tabindex="0" role="button" aria-label="Enlarge mascot image" />
+
+      <!-- ===================== ABOUT TEXT ===================== -->
+      <section class="about-section">
+        <h2>What Is This?</h2>
+        <p>
+          Pony Game Hub is a community-run directory for pony fan games,
+          game jam events, and free development resources. We aim to be the
+          central place where players discover games and developers find tools.
+        </p>
+      </section>
+
+      <!-- ===================== CONTACTS ===================== -->
+      <section class="about-section">
+        <h2>Contact</h2>
+        <ul>
+          <li>Email: <a href="mailto:hello@ponygamehub.example">hello@ponygamehub.example</a></li>
+        </ul>
+      </section>
+
+      <!-- ===================== CREDITS ===================== -->
+      <section class="about-section">
+        <h2>Credits</h2>
+        <ul>
+          <li>Original idea: Zaifer</li>
+          <li>Site design: Sea Swirl, Gonderlane, Zaifer</li>
+          <li>Webdev: Gonderlane</li>
+          <li>Hosting: Arkain123, Marius, pone.rs admin</li>
+          <li>Art: Cyor, Maddragon</li>
+          <li>Game directory upkeep and management: MLP Game Preservation Project group, Sea Swirl, Cyor, GuessWho</li>
+          <li>Game listings: submitted by community developers</li>
+          <li>Resource assets: respective creators (see individual listings)</li>
+          <li>
+            My Little Pony is a trademark of Hasbro.
+            This is an unofficial fan project and is not affiliated with or endorsed by Hasbro.
+          </li>
+        </ul>
+      </section>
+
+      <!-- ===================== JAM HISTORY (data/jams.json via main.js) ===================== -->
+      <section class="about-section jam-history-section">
+        <h2>Jam History</h2>
+        <p>
+          Browse past jams and their entries. (Site owner: edit <code>data/jams.json</code>.)
+        </p>
+        <div id="jam-history" class="jam-history" aria-label="Past jams"></div>
+      </section>
+
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Pony Game Hub. A community directory for pony games.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== MASCOT LIGHTBOX (js/main.js) ===================== -->
+  <div id="mascot-lightbox" class="mascot-lightbox" hidden>
+    <button class="mascot-lightbox__close" type="button" aria-label="Close">&times;</button>
+    <img class="mascot-lightbox__img" src="assets/mascot.png" alt="Pony Game Hub mascot, enlarged" />
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

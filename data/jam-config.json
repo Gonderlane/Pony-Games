@@ -1,0 +1,16 @@
+{
+  "state": "upcoming",
+  "lastJamUrl": "https://example.com/last-jam",
+  "lastJamLabel": "Spring Pony Jam 2025",
+  "startDate": "2026-06-09T20:30:00",
+  "endDate": "2026-06-22T23:59:59",
+  "currentJamUrl": "https://example.com/current-jam",
+  "currentJamLabel": "Summer Pony Jam 2026",
+  "messages": {
+    "none": "No jam running right now. Check back soon!",
+    "upcoming": "Next jam starts in",
+    "active": "Jam ends in",
+    "complete": "Jam is live!",
+    "ended": "Jam has ended!"
+  }
+}
