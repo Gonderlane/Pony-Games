@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jam History Editor | Pony Game Hub</title>
+<style>
+  :root {
+    --color-bg: #1a1a2e;
+    --color-bg-alt: #16213e;
+    --color-surface: #0f3460;
+    --color-surface-hover: #1a4a7a;
+    --color-accent: #e94560;
+    --color-accent-soft: #ff6b81;
+    --color-text: #eaeaea;
+    --color-text-muted: #a0a0b8;
+    --color-border: #2a2a4a;
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    padding: 2rem 1.25rem 5rem;
+  }
+
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .intro {
+    color: var(--color-text-muted);
+    max-width: 640px;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro strong { color: var(--color-text); }
+
+  .steps {
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1rem 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .steps ol {
+    margin: 0.5rem 0 0 1.1rem;
+    padding: 0;
+    color: var(--color-text-muted);
+  }
+
+  .steps li { margin-bottom: 0.35rem; }
+  .steps li:last-child { margin-bottom: 0; }
+
+  .toolbar {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 0.92rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease, border-color 0.2s ease;
+  }
+
+  .btn:hover { background: var(--color-surface-hover); border-color: var(--color-surface-hover); }
+  .btn:active { transform: scale(0.97); }
+
+  .btn--accent {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+  }
+  .btn--accent:hover { background: var(--color-accent-soft); border-color: var(--color-accent-soft); }
+
+  .btn--ghost {
+    background: transparent;
+  }
+
+  .btn--icon {
+    padding: 0.45rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .btn--danger { color: var(--color-accent-soft); }
+
+  input[type="file"] { display: none; }
+
+  #jam-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .jam-row {
+    display: grid;
+    grid-template-columns: 100px 1fr auto;
+    gap: 1rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1rem;
+    align-items: start;
+  }
+
+  .jam-row__thumb {
+    width: 100px;
+    height: 60px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+  }
+
+  .jam-row__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .field label {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.25rem;
+  }
+
+  .field input {
+    width: 100%;
+    padding: 0.5rem 0.65rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font: inherit;
+    font-size: 0.9rem;
+  }
+
+  .field input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+
+  .jam-row__controls {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .empty-state {
+    text-align: center;
+    color: var(--color-text-muted);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 2.5rem 1rem;
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(to top, var(--color-bg) 70%, transparent);
+    padding: 1.25rem 0 0.5rem;
+  }
+
+  #status-msg {
+    font-size: 0.88rem;
+    color: var(--color-accent-soft);
+  }
+
+  .preview-section {
+    margin-top: 3rem;
+  }
+
+  .preview-section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .preview-section p {
+    color: var(--color-text-muted);
+    font-size: 0.88rem;
+    margin-bottom: 1rem;
+  }
+
+  .jam-history-preview {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+  }
+
+  .jam-history-preview__item {
+    flex: 0 0 auto;
+    width: 160px;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .jam-history-preview__item img {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    object-fit: cover;
+    background: var(--color-surface);
+    display: block;
+  }
+
+  .jam-history-preview__name {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  @media (max-width: 620px) {
+    .jam-row { grid-template-columns: 1fr; }
+    .jam-row__thumb { width: 100%; height: 120px; }
+    .jam-row__controls { flex-direction: row; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <h1>🎪 Jam History Editor</h1>
+    <p class="intro">
+      Fill in each past jam below — no code, no JSON syntax. When you're
+      done, click <strong>Download jams.json</strong> and send that file to
+      whoever uploads it to the site. That's it.
+    </p>
+
+    <div class="steps">
+      <strong>How this works:</strong>
+      <ol>
+        <li>If you already have the current <code>jams.json</code> file, click <strong>Load existing file</strong> to bring in what's already there.</li>
+        <li>Click <strong>+ Add a jam</strong> for each past jam. Fill in the name, an image URL, and a link to the jam page.</li>
+        <li>Use the ↑ / ↓ arrows to put them in the order you want them to appear on the site.</li>
+        <li>Click <strong>Download jams.json</strong> — this saves a ready-to-use file. Send that file to whoever uploads site files.</li>
+      </ol>
+    </div>
+
+    <div class="toolbar">
+      <label class="btn" for="load-file">📂 Load existing file</label>
+      <input type="file" id="load-file" accept="application/json,.json" />
+      <button type="button" class="btn btn--accent" id="add-jam">+ Add a jam</button>
+    </div>
+
+    <div id="jam-list"></div>
+
+    <div class="actions">
+      <button type="button" class="btn btn--accent" id="download-btn">⬇ Download jams.json</button>
+      <button type="button" class="btn" id="copy-btn">📋 Copy JSON instead</button>
+      <span id="status-msg" role="status"></span>
+    </div>
+
+    <div class="preview-section">
+      <h2>Preview</h2>
+      <p>This is how it'll look on the About page's Jam History strip.</p>
+      <div id="preview" class="jam-history-preview"></div>
+    </div>
+  </div>
+
+  <script>
+    let jams = [];
+
+    const listEl = document.getElementById("jam-list");
+    const previewEl = document.getElementById("preview");
+    const statusEl = document.getElementById("status-msg");
+    const fileInput = document.getElementById("load-file");
+
+    function setStatus(msg) {
+      statusEl.textContent = msg;
+      if (msg) setTimeout(() => { if (statusEl.textContent === msg) statusEl.textContent = ""; }, 3500);
+    }
+
+    function addJam(jam = { name: "", image: "", url: "" }) {
+      jams.push(jam);
+      render();
+    }
+
+    function removeJam(index) {
+      if (jams[index].name && !confirm(`Remove "${jams[index].name}"?`)) return;
+      jams.splice(index, 1);
+      render();
+    }
+
+    function moveJam(index, dir) {
+      const target = index + dir;
+      if (target < 0 || target >= jams.length) return;
+      [jams[index], jams[target]] = [jams[target], jams[index]];
+      render();
+    }
+
+    function renderList() {
+      if (jams.length === 0) {
+        listEl.innerHTML = `<div class="empty-state">No jams yet. Click "+ Add a jam" to start.</div>`;
+        return;
+      }
+
+      listEl.innerHTML = jams.map((jam, i) => `
+        <div class="jam-row" data-index="${i}">
+          <img class="jam-row__thumb" src="${jam.image || ""}" alt="" onerror="this.style.opacity='0.3'" />
+          <div class="jam-row__fields">
+            <div class="field">
+              <label for="name-${i}">Jam name</label>
+              <input id="name-${i}" type="text" data-field="name" data-index="${i}" value="${escapeAttr(jam.name)}" placeholder="e.g. Winter Pony Jam 2025" />
+            </div>
+            <div class="field">
+              <label for="image-${i}">Image URL</label>
+              <input id="image-${i}" type="text" data-field="image" data-index="${i}" value="${escapeAttr(jam.image)}" placeholder="https://..." />
+            </div>
+            <div class="field">
+              <label for="url-${i}">Jam page link</label>
+              <input id="url-${i}" type="text" data-field="url" data-index="${i}" value="${escapeAttr(jam.url)}" placeholder="https://..." />
+            </div>
+          </div>
+          <div class="jam-row__controls">
+            <button type="button" class="btn btn--icon btn--ghost" data-action="up" data-index="${i}" title="Move up" ${i === 0 ? "disabled" : ""}>↑</button>
+            <button type="button" class="btn btn--icon btn--ghost" data-action="down" data-index="${i}" title="Move down" ${i === jams.length - 1 ? "disabled" : ""}>↓</button>
+            <button type="button" class="btn btn--icon btn--ghost btn--danger" data-action="remove" data-index="${i}" title="Remove">✕</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderPreview() {
+      const usable = jams.filter((j) => j.name);
+      previewEl.innerHTML = usable.length
+        ? usable.map((j) => `
+          <div class="jam-history-preview__item">
+            <img src="${j.image || ""}" alt="${escapeAttr(j.name)}" onerror="this.style.opacity='0.3'" />
+            <span class="jam-history-preview__name">${escapeHtml(j.name)}</span>
+          </div>
+        `).join("")
+        : `<p style="color:var(--color-text-muted); font-size:0.85rem;">Nothing to preview yet.</p>`;
+    }
+
+    function render() {
+      renderList();
+      renderPreview();
+    }
+
+    function escapeHtml(str) {
+      return String(str || "").replace(/[&<>"']/g, (c) => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+      }[c]));
+    }
+    function escapeAttr(str) {
+      return escapeHtml(str);
+    }
+
+    listEl.addEventListener("input", (e) => {
+      const field = e.target.dataset.field;
+      const index = e.target.dataset.index;
+      if (field === undefined || index === undefined) return;
+      jams[index][field] = e.target.value;
+      if (field === "name" || field === "image") renderPreview();
+    });
+
+    listEl.addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-action]");
+      if (!btn) return;
+      const index = Number(btn.dataset.index);
+      const action = btn.dataset.action;
+      if (action === "up") moveJam(index, -1);
+      if (action === "down") moveJam(index, 1);
+      if (action === "remove") removeJam(index);
+    });
+
+    document.getElementById("add-jam").addEventListener("click", () => addJam());
+
+    document.getElementById("download-btn").addEventListener("click", () => {
+      const cleaned = jams.filter((j) => j.name.trim() || j.image.trim() || j.url.trim());
+      const missing = cleaned.some((j) => !j.name.trim() || !j.image.trim() || !j.url.trim());
+      const json = JSON.stringify(cleaned, null, 2);
+      const blob = new Blob([json], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "jams.json";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      setStatus(missing ? "Downloaded — but some jams are missing a name, image, or link!" : "Downloaded jams.json ✓");
+    });
+
+    document.getElementById("copy-btn").addEventListener("click", async () => {
+      const cleaned = jams.filter((j) => j.name.trim() || j.image.trim() || j.url.trim());
+      const json = JSON.stringify(cleaned, null, 2);
+      try {
+        await navigator.clipboard.writeText(json);
+        setStatus("Copied to clipboard ✓");
+      } catch (err) {
+        setStatus("Couldn't copy — try the Download button instead.");
+      }
+    });
+
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files[0];
+      if (!file) return;
+      try {
+        const text = await file.text();
+        const data = JSON.parse(text);
+        if (!Array.isArray(data)) throw new Error("not an array");
+        jams = data.map((j) => ({ name: j.name || "", image: j.image || "", url: j.url || "" }));
+        render();
+        setStatus(`Loaded ${jams.length} jam${jams.length === 1 ? "" : "s"} ✓`);
+      } catch (err) {
+        setStatus("That file didn't look like a valid jams.json — nothing was loaded.");
+      }
+      fileInput.value = "";
+    });
+
+    // Best-effort auto-load of the live data file when this tool is served
+    // over http(s) alongside the site (fails silently over file:// — use
+    // the "Load existing file" button in that case instead).
+    fetch("../data/jams.json")
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((data) => {
+        if (Array.isArray(data) && data.length && jams.length === 0) {
+          jams = data.map((j) => ({ name: j.name || "", image: j.image || "", url: j.url || "" }));
+          render();
+          setStatus(`Loaded ${jams.length} existing jams ✓`);
+        }
+      })
+      .catch(() => {});
+
+    render();
+  </script>
+</body>
+</html>
