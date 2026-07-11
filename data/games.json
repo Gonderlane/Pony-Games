@@ -2556,10 +2556,11 @@
       "engine": "Java",
       "platforms": [
         "Windows",
-        "OSX"
+        "OSX",
+        "Source code"
       ],
       "url": "https://www.equestriandreamers.com/",
-      "dateAdded": "",
+      "dateAdded": "2014?",
       "downloads": [
         {
           "label": "Windows",
@@ -2589,6 +2590,18 @@
             },
             {
               "url": "https://t.me/ponygamesarchive/149",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Source code",
+          "version": "",
+          "url": "https://games.mare.by/909",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2016",
               "label": "telegram"
             }
           ]
@@ -2664,8 +2677,20 @@
         "Windows"
       ],
       "url": "https://reconprobe.itch.io/bank-of-equestria",
-      "dateAdded": "08.06.2022",
+      "dateAdded": "04.06.2022",
       "downloads": [
+        {
+          "label": "Windows",
+          "version": "V1.0",
+          "url": "https://games.mare.by/915",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2022",
+              "label": "telegram"
+            }
+          ]
+        },
         {
           "label": "Windows",
           "version": "V1.2",
@@ -2989,7 +3014,7 @@
           "type": "Other"
         },
         {
-          "label": "Quest",
+          "label": "Adventure",
           "type": "Genre"
         }
       ],
@@ -3000,7 +3025,8 @@
       "status": "Released",
       "engine": "Unity",
       "platforms": [
-        "Windows"
+        "Windows",
+        "Linux"
       ],
       "url": "https://vk.com/wall-69019237_392",
       "dateAdded": "19.08.2019",
@@ -3036,6 +3062,18 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Linux",
+          "version": "19.08.2019",
+          "url": "https://games.mare.by/690",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2076",
+              "label": "telegram"
+            }
+          ]
         }
       ],
       "screenshots": [
@@ -3043,12 +3081,122 @@
       ]
     },
     {
-      "id": 48,
+      "id": 45,
+      "title": "Prooves of Death",
+      "author": [
+        "EquGames"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "\u0427\u0442\u043E-\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C. \u0427\u0442\u043E-\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u043F\u043B\u043E\u0445\u043E\u0435, \u0437\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u044E\u0449\u0435...",
+      "fullDescription": "\u0427\u0442\u043E-\u0442\u043E \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C. \u0427\u0442\u043E-\u0442\u043E \u043E\u0447\u0435\u043D\u044C \u043F\u043B\u043E\u0445\u043E\u0435, \u0437\u0430\u043F\u043E\u043C\u0438\u043D\u0430\u044E\u0449\u0435\u0435\u0441\u044F \u0432\u0441\u0435\u043C\u0438. \u041A\u0430\u0437\u0430\u043B\u043E\u0441\u044C \u0431\u044B, \u0437\u0434\u0435\u0441\u044C \u0432\u0441\u0451 \u043B\u0435\u0433\u043A\u043E, \u0432\u0441\u0451 \u0441\u0445\u043E\u0434\u0438\u0442\u0441\u044F \u0438 \u0432\u0441\u0451 \u043F\u043E\u043D\u044F\u0442\u043D\u043E. \u041D\u043E \u043A\u043E\u0433\u0434\u0430 \u0442\u044B \u043F\u0440\u0438\u0441\u043C\u0430\u0442\u0440\u0438\u0432\u0430\u0435\u0448\u044C\u0441\u044F, \u043A\u043E\u0433\u0434\u0430 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0448\u044C \u0447\u0443\u0432\u0441\u0442\u0432\u0430, \u0438\u0441\u043F\u044B\u0442\u044B\u0432\u0430\u0435\u043C\u044B\u0435 \u043D\u0435 \u0442\u043E\u0431\u043E\u0439, \u0438 \u043A\u043E\u0433\u0434\u0430 \u043D\u0430\u0445\u043E\u0434\u0438\u0448\u044C \u0432\u0441\u0435 \u0432\u043E\u0437\u043C\u043E\u0436\u043D\u044B\u0435 \u0432\u0430\u0440\u0438\u0430\u043D\u0442\u044B \u2014 \u0442\u044B \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0448\u044C, \u0447\u0442\u043E \u0432\u0441\u0451 \u0438\u043D\u0430\u0447\u0435...",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Detective",
+          "type": "Genre"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "30m-2h",
+      "status": "Released",
+      "engine": "Unity",
+      "platforms": [
+        "Windows",
+        "Android"
+      ],
+      "url": "https://vk.com/wall-69019237_392",
+      "dateAdded": "13.06.2017",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "1.1",
+          "url": "https://games.mare.by/13",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/13",
+              "label": "Scrogne"
+            },
+            {
+              "url": "https://t.me/ponygamesarchive/2074",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Windows",
+          "version": "1.0",
+          "url": "https://games.mare.by/448",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/448",
+              "label": "Scrogne"
+            },
+            {
+              "url": "https://t.me/ponygamesarchive/2072",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Android",
+          "version": "1.0",
+          "url": "https://games.mare.by/691",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2073",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 47,
       "title": "SMG\u0027s Nightfall",
       "author": [
         "Silly Mare Games"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Unknown"
+      ],
+      "playtime": "Unknown",
+      "status": "Released",
+      "engine": "Unknown",
+      "platforms": [],
+      "url": "https://sillymaregames.blogspot.com/p/downloads.html",
+      "dateAdded": "",
+      "downloads": null,
+      "screenshots": []
+    },
+    {
+      "id": 48,
+      "title": "Choke on My Woona, YOU NASTY CHANGELINGS",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3071,11 +3219,11 @@
     },
     {
       "id": 49,
-      "title": "Choke on My Woona, YOU NASTY CHANGELINGS",
+      "title": "Harmony PCG",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3098,11 +3246,11 @@
     },
     {
       "id": 50,
-      "title": "Harmony PCG",
+      "title": "MLP Warriors",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3125,11 +3273,11 @@
     },
     {
       "id": 51,
-      "title": "MLP Warriors",
+      "title": "Stroll",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3152,11 +3300,11 @@
     },
     {
       "id": 52,
-      "title": "Stroll",
+      "title": "My Little Rhythm",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3179,11 +3327,11 @@
     },
     {
       "id": 53,
-      "title": "My Little Rhythm",
+      "title": "Angel Bunny",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3206,7 +3354,34 @@
     },
     {
       "id": 54,
-      "title": "Angel Bunny",
+      "title": "Luna\u0027s Letter",
+      "author": [
+        "Jach Marsdonpone"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "Jach Marsdonpone decided to make his own entry for...",
+      "fullDescription": "Jach Marsdonpone decided to make his own entry for the My Little Game Dev Marathon. You fly around and touch colourful spheres and dodge incoming projectile with your boost.",
+      "tags": [
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Unknown"
+      ],
+      "playtime": "Unknown",
+      "status": "Released",
+      "engine": "Unknown",
+      "platforms": [],
+      "url": "https://sillymaregames.blogspot.com/p/downloads.html",
+      "dateAdded": "",
+      "downloads": null,
+      "screenshots": []
+    },
+    {
+      "id": 55,
+      "title": "The Unknown",
       "author": [
         "?"
       ],
@@ -3232,39 +3407,12 @@
       "screenshots": []
     },
     {
-      "id": 55,
-      "title": "Luna\u0027s Letter",
-      "author": [
-        "Jach Marsdonpone"
-      ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
-      "shortDescription": "Jach Marsdonpone decided to make his own entry for...",
-      "fullDescription": "Jach Marsdonpone decided to make his own entry for the My Little Game Dev Marathon. You fly around and touch colourful spheres and dodge incoming projectile with your boost.",
-      "tags": [
-        {
-          "label": "NSFW",
-          "type": "warning"
-        }
-      ],
-      "characters": [
-        "Unknown"
-      ],
-      "playtime": "Unknown",
-      "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
-      "url": "https://sillymaregames.blogspot.com/p/downloads.html",
-      "dateAdded": "",
-      "downloads": null,
-      "screenshots": []
-    },
-    {
       "id": 56,
-      "title": "The Unknown",
+      "title": "Luna Wander",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3287,11 +3435,11 @@
     },
     {
       "id": 57,
-      "title": "Luna Wander",
+      "title": "A world you should not know",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3314,38 +3462,11 @@
     },
     {
       "id": 58,
-      "title": "A world you should not know",
-      "author": [
-        "?"
-      ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
-      "shortDescription": "",
-      "fullDescription": "",
-      "tags": [
-        {
-          "label": "NSFW",
-          "type": "warning"
-        }
-      ],
-      "characters": [
-        "Unknown"
-      ],
-      "playtime": "Unknown",
-      "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
-      "url": "https://sillymaregames.blogspot.com/p/downloads.html",
-      "dateAdded": "",
-      "downloads": null,
-      "screenshots": []
-    },
-    {
-      "id": 59,
       "title": "No guns in canterlot",
       "author": [
         "Jach"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "No Guns in Canterlot is a game about shooting chan...",
       "fullDescription": "No Guns in Canterlot is a game about shooting changelings with guns. Players also have the choice of playing as Princess Celestia, Luna, Cadance and Shining Armor, each with their own weapons and magical abilities, which offers some more variety I guess.",
       "tags": [
@@ -3371,35 +3492,8 @@
       "screenshots": []
     },
     {
-      "id": 60,
+      "id": 59,
       "title": "Winter Wrap Up",
-      "author": [
-        "?"
-      ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
-      "shortDescription": "",
-      "fullDescription": "",
-      "tags": [
-        {
-          "label": "NSFW",
-          "type": "warning"
-        }
-      ],
-      "characters": [
-        "Unknown"
-      ],
-      "playtime": "Unknown",
-      "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
-      "url": "https://www.deviantart.com/jach-marsdonpony/art/All-old-fan-games-source-files-available-744370371",
-      "dateAdded": "",
-      "downloads": null,
-      "screenshots": []
-    },
-    {
-      "id": 61,
-      "title": "Appleloosan",
       "author": [
         "?"
       ],
@@ -3425,7 +3519,34 @@
       "screenshots": []
     },
     {
-      "id": 64,
+      "id": 60,
+      "title": "Appleloosan",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Unknown"
+      ],
+      "playtime": "Unknown",
+      "status": "Released",
+      "engine": "Unknown",
+      "platforms": [],
+      "url": "https://www.deviantart.com/jach-marsdonpony/art/All-old-fan-games-source-files-available-744370371",
+      "dateAdded": "",
+      "downloads": null,
+      "screenshots": []
+    },
+    {
+      "id": 63,
       "title": "Fighting is Magic",
       "author": [
         "mane6"
@@ -3637,14 +3758,14 @@
       ]
     },
     {
-      "id": 65,
+      "id": 64,
       "title": "Fallout Equestria RPG",
       "author": [
         "Plaristote",
         "Mrakoplaz",
         "Szamanx"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "We\u0027re about to change the world by bringing the fi...",
       "fullDescription": "We\u0027re about to change the world by bringing the first RPG bringing to life the universe of Fallout Equestria (all credits for the universe belong to Kkat). We will do this using Panda3D and delivering a Fallout-like (as in Black Isle Studio Fallout) gameplay. Cheers.",
       "tags": [
@@ -3693,12 +3814,12 @@
       "screenshots": []
     },
     {
-      "id": 71,
+      "id": 70,
       "title": "Sherlock Twi",
       "author": [
         "Master Time"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3744,7 +3865,75 @@
       "screenshots": []
     },
     {
-      "id": 76,
+      "id": 73,
+      "title": "Shadows of Shattered Dreams",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "?",
+      "fullDescription": "?",
+      "tags": [
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Unknown"
+      ],
+      "playtime": "Unknown",
+      "status": "In Development",
+      "engine": "Unknown",
+      "platforms": [
+        "Windows",
+        "OSX",
+        "Android"
+      ],
+      "url": "https://games.mare.by/-67",
+      "dateAdded": "?",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "Chapter 0",
+          "url": "https://games.mare.by/912",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2019",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "OSX",
+          "version": "Chapter 0",
+          "url": "https://games.mare.by/913",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2020",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Android",
+          "version": "Chapter 0",
+          "url": "https://games.mare.by/914",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2021",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 75,
       "title": "PonyAge: Chronicles",
       "author": [
         "PonyAge: Chronicles Contributors"
@@ -3860,7 +4049,7 @@
       ]
     },
     {
-      "id": 77,
+      "id": 76,
       "title": "NIA: Path Of Light",
       "author": [
         "\u0412\u0438\u043A\u0442\u043E\u0440 \u0411\u0443\u0447\u0438\u043D\u0441\u043A\u0438\u0439"
@@ -3924,12 +4113,12 @@
       ]
     },
     {
-      "id": 78,
+      "id": 77,
       "title": "My Silent Ville",
       "author": [
         "kaminakat"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -3978,7 +4167,69 @@
       "screenshots": []
     },
     {
-      "id": 80,
+      "id": 78,
+      "title": "Luna Game 3D",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "3D",
+          "type": "Other"
+        },
+        {
+          "label": "Horror",
+          "type": "Genre"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Unknown",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://games.mare.by/-67",
+      "dateAdded": "14.02.2018",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "102",
+          "url": "https://games.mare.by/907",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2013",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Windows",
+          "version": "102",
+          "url": "https://games.mare.by/908",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2014",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 79,
       "title": "MLP:FIM All Stars",
       "author": [
         "Botchos"
@@ -4029,7 +4280,7 @@
       "screenshots": []
     },
     {
-      "id": 82,
+      "id": 81,
       "title": "PonyTown",
       "author": [
         "Pony Town Team"
@@ -4057,10 +4308,25 @@
       "playtime": "2h-4h",
       "status": "Released",
       "engine": "HTML5",
-      "platforms": [],
+      "platforms": [
+        "Source code"
+      ],
       "url": "https://pony.town/",
       "dateAdded": "?",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Source code",
+          "version": "53",
+          "url": "https://games.mare.by/911",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2018",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": [
         "/s/33/1.jpg",
         "/s/33/2.jpg",
@@ -4068,7 +4334,7 @@
       ]
     },
     {
-      "id": 83,
+      "id": 82,
       "title": "Everfree Outpost",
       "author": [
         "?"
@@ -4107,7 +4373,7 @@
       "screenshots": []
     },
     {
-      "id": 85,
+      "id": 84,
       "title": "Unicorn Training",
       "author": [
         "yotesmark"
@@ -4146,7 +4412,7 @@
       "screenshots": []
     },
     {
-      "id": 86,
+      "id": 85,
       "title": "Spike\u0027s Time Off",
       "author": [
         "sonicboy112"
@@ -4224,12 +4490,79 @@
       ]
     },
     {
-      "id": 92,
+      "id": 88,
+      "title": "The Ponies",
+      "author": [
+        "The Ponies"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "The Ponies Project is a community-run project aimi...",
+      "fullDescription": "The Ponies Project is a community-run project aiming to create a \u201CSims\u201D style clone and spoof game (from scratch, of course), but the characters are not people, and are instead horse folk. These horse designs, along with some environments, take inspiration from Hasbro\u2019s critically-acclaimed show: My Little Pony: Friendship is Magic. The game is still in early development, and is being programmed in the C# language and being built in the Unity3D game engine. We plan to release early testing builds as we progress, so the game would be early access. These builds, including the final game will be free, and will not generate any profit.",
+      "tags": [
+        {
+          "label": "3D",
+          "type": "Other"
+        },
+        {
+          "label": "Top Down",
+          "type": "Other"
+        },
+        {
+          "label": "Simulation",
+          "type": "Genre"
+        },
+        {
+          "label": "Tamagotchi",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "2h-4h",
+      "status": "In Development",
+      "engine": "Unity",
+      "platforms": [
+        "Linux",
+        "Source code"
+      ],
+      "url": "https://theponies.org/download/",
+      "dateAdded": "07.06.2023",
+      "downloads": [
+        {
+          "label": "Linux",
+          "version": "",
+          "url": "https://games.mare.by/890",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2002",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Source code",
+          "version": "",
+          "url": "https://games.mare.by/891",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2003",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 91,
       "title": "My Little Karaoke",
       "author": [
         "Renard"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -4270,7 +4603,7 @@
       "screenshots": []
     },
     {
-      "id": 93,
+      "id": 92,
       "title": "PonyClicker",
       "author": [
         "Cloud Hop"
@@ -4325,7 +4658,7 @@
       ]
     },
     {
-      "id": 94,
+      "id": 93,
       "title": "Patapony",
       "author": [
         "Oddwarg"
@@ -4379,7 +4712,7 @@
       "screenshots": []
     },
     {
-      "id": 95,
+      "id": 94,
       "title": "Corruption",
       "author": [
         "Oddwarg"
@@ -4435,12 +4768,12 @@
       ]
     },
     {
-      "id": 96,
+      "id": 95,
       "title": "Cards Against Equestria",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Pony-themed clone of Cards Against Humanity",
       "fullDescription": "Pony-themed clone of Cards Against Humanity",
       "tags": [
@@ -4462,12 +4795,12 @@
       "screenshots": []
     },
     {
-      "id": 97,
+      "id": 96,
       "title": "Pony World",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "A MLP-FiM themed game, which uses the Blender Game...",
       "fullDescription": "A MLP-FiM themed game, which uses the Blender Game Engine.",
       "tags": [
@@ -4508,26 +4841,22 @@
       "screenshots": []
     },
     {
-      "id": 98,
+      "id": 97,
       "title": "PonyVRville",
       "author": [
         "kaitou42"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "A MLP inspired, and Oculus Rift DK2 (0.6 SDK) enab...",
       "fullDescription": "A MLP inspired, and Oculus Rift DK2 (0.6 SDK) enabled, virtual horse simulator.",
       "tags": [
         {
-          "label": "Quest",
-          "type": "Genre"
+          "label": "3D",
+          "type": "Other"
         },
         {
           "label": "Sandbox",
           "type": "Genre"
-        },
-        {
-          "label": "3D",
-          "type": "Other"
         },
         {
           "label": "NSFW",
@@ -4547,7 +4876,7 @@
       "screenshots": []
     },
     {
-      "id": 99,
+      "id": 98,
       "title": "Waiting is Magic",
       "author": [
         "Penta Studios"
@@ -4600,12 +4929,12 @@
       ]
     },
     {
-      "id": 100,
+      "id": 99,
       "title": "Equestrian Railways",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -4627,12 +4956,12 @@
       "screenshots": []
     },
     {
-      "id": 105,
+      "id": 104,
       "title": "Slaughter Horse(Pinkamena)",
       "author": [
         "CatfoodMcFly"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -4658,12 +4987,12 @@
       "screenshots": []
     },
     {
-      "id": 113,
+      "id": 112,
       "title": "Element of Justice",
       "author": [
         "softlava"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -4693,7 +5022,7 @@
       "screenshots": []
     },
     {
-      "id": 116,
+      "id": 115,
       "title": "Project Mania",
       "author": [
         "horror_n_oates"
@@ -4765,12 +5094,12 @@
       ]
     },
     {
-      "id": 117,
+      "id": 116,
       "title": "Dimensional Shift",
       "author": [
         "Valiant Studios LLC"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Dimensional Shift is a first-person, story-driven,...",
       "fullDescription": "Dimensional Shift is a first-person, story-driven, linear adventure game which takes great inspiration from games like Metroid Prime and Amnesia: The Dark Descent, but there is something about Dimensional Shift which makes it unique; nearly every part of the game is a puzzle\u2014from the enemies, to physical obstacles, to the very menus themselves\u2014and each of these puzzles are integrated in an organic fashion which makes them seem as if they are not contrived.",
       "tags": [
@@ -4800,7 +5129,7 @@
       "screenshots": []
     },
     {
-      "id": 125,
+      "id": 124,
       "title": "Harmony Eclipsed",
       "author": [
         "ismartman?"
@@ -4834,12 +5163,12 @@
       ]
     },
     {
-      "id": 128,
+      "id": 127,
       "title": "Chaos in Ponyville",
       "author": [
         "Waffle"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Help Twilight Sparkle stop Discord and save Ponyvi...",
       "fullDescription": "Help Twilight Sparkle stop Discord and save Ponyville!",
       "tags": [],
@@ -4875,12 +5204,12 @@
       "screenshots": []
     },
     {
-      "id": 129,
+      "id": 128,
       "title": "End of Chaos",
       "author": [
         "ToCoool"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [],
@@ -4916,7 +5245,7 @@
       "screenshots": []
     },
     {
-      "id": 134,
+      "id": 133,
       "title": "Apples vs. Chaos",
       "author": [
         "patrickgh3"
@@ -4973,7 +5302,7 @@
       ]
     },
     {
-      "id": 149,
+      "id": 148,
       "title": "Chaotic Dash",
       "author": [
         "?"
@@ -5029,7 +5358,7 @@
       ]
     },
     {
-      "id": 156,
+      "id": 155,
       "title": "Running from chaos",
       "author": [
         "Lemon Light"
@@ -5085,12 +5414,12 @@
       ]
     },
     {
-      "id": 158,
+      "id": 157,
       "title": "Discord\u0027s Labyrinth",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -5112,7 +5441,71 @@
       "screenshots": []
     },
     {
-      "id": 168,
+      "id": 162,
+      "title": "Alicorn Princess Blast",
+      "author": [
+        "The Gaming Colts"
+      ],
+      "thumbnail": "/s/315/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Top Down",
+          "type": "Other"
+        },
+        {
+          "label": "Shoot \u0027em Up",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "5m-30m",
+      "status": "In Development",
+      "engine": "Unity",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://games.mare.by/-67",
+      "dateAdded": "27.11.2016",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/916",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2025",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/917",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2026",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        "/s/315/1.jpg"
+      ]
+    },
+    {
+      "id": 167,
       "title": "FNAGame (the RPG one)",
       "author": [
         "?"
@@ -5169,7 +5562,7 @@
       ]
     },
     {
-      "id": 171,
+      "id": 170,
       "title": "Canterlot Siege",
       "author": [
         "futzi01"
@@ -5216,7 +5609,7 @@
       "screenshots": []
     },
     {
-      "id": 176,
+      "id": 175,
       "title": "Canterlot Defender",
       "author": [
         "futzi01"
@@ -5262,12 +5655,12 @@
       "screenshots": []
     },
     {
-      "id": 179,
+      "id": 178,
       "title": "My Lightly Pony",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -5289,7 +5682,7 @@
       "screenshots": []
     },
     {
-      "id": 180,
+      "id": 179,
       "title": "\u0414\u0435\u043D\u044C \u0446\u0432\u0435\u0442\u0435\u043D\u0438\u044F \u042D\u043A\u0432\u0435\u0441\u0442\u0440\u0438\u0438",
       "author": [
         "Celestial Novels"
@@ -5357,7 +5750,7 @@
       ]
     },
     {
-      "id": 189,
+      "id": 188,
       "title": "Pinkie Pie\u0027s Cupcake Party",
       "author": [
         "Eight Blackey"
@@ -5494,12 +5887,12 @@
       ]
     },
     {
-      "id": 191,
+      "id": 190,
       "title": "LTF - Containment is Magic [REMAKE]",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -5525,12 +5918,12 @@
       "screenshots": []
     },
     {
-      "id": 192,
+      "id": 191,
       "title": "Blur: Equestria",
       "author": [
         "MChuckGames"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -5579,12 +5972,12 @@
       "screenshots": []
     },
     {
-      "id": 193,
+      "id": 192,
       "title": "Joy Pony",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -5606,7 +5999,7 @@
       "screenshots": []
     },
     {
-      "id": 194,
+      "id": 193,
       "title": "My Putrid Ponies",
       "author": [
         "Ajolote Dev"
@@ -5647,7 +6040,7 @@
       ]
     },
     {
-      "id": 196,
+      "id": 195,
       "title": "Equestria: A Pony Role Playing Game (My Little Pony RPG)",
       "author": [
         "?"
@@ -5759,7 +6152,7 @@
       ]
     },
     {
-      "id": 197,
+      "id": 196,
       "title": "1000 Years Ago",
       "author": [
         "futzi01"
@@ -5809,7 +6202,7 @@
       "screenshots": []
     },
     {
-      "id": 198,
+      "id": 197,
       "title": "Price of Fear: Origins",
       "author": [
         "Neon Wings Studio",
@@ -5863,7 +6256,7 @@
       ]
     },
     {
-      "id": 199,
+      "id": 198,
       "title": "Price of Fear 2",
       "author": [
         "Neon Wings Studio",
@@ -5917,7 +6310,7 @@
       ]
     },
     {
-      "id": 200,
+      "id": 199,
       "title": "Price of Fear 3",
       "author": [
         "Neon Wings Studio",
@@ -5971,7 +6364,7 @@
       ]
     },
     {
-      "id": 201,
+      "id": 200,
       "title": "Price of Fear: Lifeless Space",
       "author": [
         "Neon Wings Studio",
@@ -6006,7 +6399,7 @@
       ]
     },
     {
-      "id": 202,
+      "id": 201,
       "title": "Price of Fear: After Dawn",
       "author": [
         "Neon Wings Studio",
@@ -6041,7 +6434,7 @@
       ]
     },
     {
-      "id": 203,
+      "id": 202,
       "title": "Silent Falleym: Snowfall",
       "author": [
         "Dark Seekers Studio",
@@ -6095,7 +6488,7 @@
       ]
     },
     {
-      "id": 204,
+      "id": 203,
       "title": "Silent Falleym 2: Bloodied Sign",
       "author": [
         "Dark Seekers Studio",
@@ -6149,7 +6542,7 @@
       ]
     },
     {
-      "id": 205,
+      "id": 204,
       "title": "Silent Falleym 3",
       "author": [
         "Dark Seekers Studio",
@@ -6203,7 +6596,7 @@
       ]
     },
     {
-      "id": 206,
+      "id": 205,
       "title": "Silent Falleym 4: The Dark Envoy",
       "author": [
         "Dark Seekers Studio",
@@ -6257,7 +6650,7 @@
       ]
     },
     {
-      "id": 207,
+      "id": 206,
       "title": "Alice: The Bleak Figures",
       "author": [
         "Dark Seekers Studio",
@@ -6311,7 +6704,7 @@
       ]
     },
     {
-      "id": 208,
+      "id": 207,
       "title": "Borders of Suffering",
       "author": [
         "Dark Seekers Studio",
@@ -6365,14 +6758,14 @@
       ]
     },
     {
-      "id": 209,
-      "title": "Cadence Toss",
+      "id": 208,
+      "title": "Cadance Toss",
       "author": [
         "futzi01"
       ],
       "thumbnail": "/s/71/0.jpg",
-      "shortDescription": "Cadence Toss is a game made by futzi01 in Adobe Fl...",
-      "fullDescription": "Cadence Toss is a game made by futzi01 in Adobe Flash, featuring art by FronzyZX, Firestorm-CAN, RainbowPlasma, FlutterbrO, and Grendo11; as well as music by Bass Rabbit. The game also takes sound effects from the Universal Soundbank and the Adobe Flash sound library. It is a 2-D Sidescroller, Infinite Obstacle Course Survival, with the current version being 1.1. It is based off the scene in the episode The Crystal Empire - Part 2 where Shining Armor chucks Princess Cadence off of a balcony so that she may save Spike and The Crystal Heart from King Sombra. The game was made available for the Android by Mihasik.",
+      "shortDescription": "So you liked Spike Toss, huh? Time to throw Cadanc...",
+      "fullDescription": "So you liked Spike Toss, huh? Time to throw Cadance!",
       "tags": [
         {
           "label": "2D",
@@ -6394,14 +6787,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/futzi01-reupload/art/Cadance-Toss-677486149",
-      "dateAdded": "",
+      "dateAdded": "28.04.2017",
       "downloads": [
         {
-          "label": "Web",
-          "version": "release",
+          "label": "Flash",
+          "version": "1.1",
           "url": "https://games.mare.by/98",
           "buttonText": "Download",
           "mirrors": [
@@ -6414,12 +6807,19 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.1",
+          "url": "https://flash.mare.by/g?id=98",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
     },
     {
-      "id": 210,
+      "id": 209,
       "title": "Alturious: Roleplay is Enhanced",
       "author": [
         "ALTURIOUS OFFICIAL"
@@ -6449,7 +6849,7 @@
       ]
     },
     {
-      "id": 211,
+      "id": 210,
       "title": "Cupcakes 4: New ZAT Era",
       "author": [
         "JFK Studios\u00AE \u0026 Tween Animations"
@@ -6484,7 +6884,7 @@
       "screenshots": []
     },
     {
-      "id": 212,
+      "id": 211,
       "title": "Cupcakes 3: Zombie Warfare",
       "author": [
         "JFK Studios\u00AE \u0026 Tween Animations"
@@ -6513,12 +6913,12 @@
       ]
     },
     {
-      "id": 213,
+      "id": 212,
       "title": "Cupcakes 2: Life of Death",
       "author": [
         "JFK Studios\u00AE \u0026 Tween Animations"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "?",
       "fullDescription": "?",
       "tags": [
@@ -6540,7 +6940,7 @@
       "screenshots": []
     },
     {
-      "id": 214,
+      "id": 213,
       "title": "Pegadrome",
       "author": [
         "futzi01"
@@ -6591,7 +6991,7 @@
       "screenshots": []
     },
     {
-      "id": 215,
+      "id": 214,
       "title": "Dreamy Rainbow",
       "author": [
         "Pokegamer2011"
@@ -6660,12 +7060,12 @@
       ]
     },
     {
-      "id": 216,
+      "id": 215,
       "title": "Dreamy Rainbow 2",
       "author": [
         "Pokegamer2011"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Once the player decides to play the game at night,...",
       "fullDescription": "Once the player decides to play the game at night, Rainbow Dash appears in a large field of grass, although it is dark and foggy. Soon, the title of the game appears. A small blast of static later, and Rainbow Dash appears in another \u0022otherworld\u0022 setting, but unlike the first game, this one is a deep maroon color. Proceed to the right, and Pinkie Pie appears there. She warns Rainbow Dash that she \u0022better leave\u0022, (Although it is impossible to do so) and Rainbow Dash simply ignores her and climbs up the pathway behind her. She pleads with Rainbow Dash to stop, but again, Rainbow Dash ignores her. Once the player climbs the small path and starts walking again, she says \u0022Don\u0027t say that I didn\u0027t warn you...\u0022. Rainbow Dash then falls down through the floor. Once she lands at the bottom of a shaft, small, bloody pieces of flesh fall down the shaft. Soon, Twilight Sparkle\u0027s dismembered arms, and then head falls down. Rainbow Dash will now look sad. It then cuts to a screen where it says \u0022WELL...\u0022, and then it says the name of your Windows folder. (I.e- C:\\WINDOWS)? and closes again. After a few seconds, the game re-opens. A picture of Pinkie appears along with static, and then Rainbow Dash appears in a small hallway. At the end of the hallway, a sprite of Pinkie Pie with evil eyes vanishes right as it gets into sight, and her laughter echoes as you keep moving forward. Rainbow Dash then hops across some platforms, (she can\u0027t actually fall, so the player can have Rainbow Dash pretty much walk forward.) and once she reaches the other side of a gap, an even-bloodier Pinkie Pie sprite appears but the static shows up quickly, so the player can\u0027t get a good look at it (if the player is lucky enough to get an error message, he/she can clearly look at it). Another message saying \u0022WELL DONEEEEEEEEEEEE-\u0022 appears, along with random keys and numbers. Then the game closes, but the sound of a heartbeat can soon be heard, along with Pinkie Pie\u0027s laughter. But nothing else pops up after the heartbeat fades away, and this is the end of the game.",
       "tags": [
@@ -6726,12 +7126,12 @@
       "screenshots": []
     },
     {
-      "id": 217,
+      "id": 216,
       "title": "Dreamy Rainbow 3",
       "author": [
         "Pokegamer2011"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Once the player plays this at night/change setting...",
       "fullDescription": "Once the player plays this at night/change settings to night, Rainbow Dash appears in a small field, along with some of her friends. The player can have Rainbow Dash speak to them, but otherwise, it\u0027s more or less a waiting game. Soon, a creepy picture of Pinkie Pie appear on the screen for several seconds, (it turns full screen if the window isn\u0027t maximized). And then Rainbow Dash appears in a completely black shaft. Every few seconds, the same picture of Pinkie Pie appears on the screen. It\u0027s interesting to note that this is actually animated- The picture noticably shakes. It\u0027s also interesting to note that after this picture, Rainbow Dash\u0027s eyes lower, as if she\u0027s scared. Soon, a sprite of Pinkie Pie appears running at the player, and the same picture appears on the screen. However, when it vanishes, a picture of Twilight appears on the screen (which is taken from Lesson Zero). Unlike the Pinkie Pie picture, this one gets closer to the screen, and is accompanied by heartbeats. Once it vanishes, the player appears in the familiar otherworld area. However, this area is fairly small. When the player has Rainbow Dash go down, the player loses the ability to make her jump. Once Rainbow Dash reaches the far-wall, the same sprite of Pinkie Pie runs at Rainbow Dash, and the Twilight picture appears again, along with a creepy noise. Then Rainbow Dash appears in a black room along with, interestingly enough, Princess Luna. She turns away from Rainbow Dash, and then a bloody sprite of Pinkie Pie appears behind Rainbow Dash, (again, the player can\u0027t get a good look at it) and the game closes with \u0022END\u0022. A few seconds later, a creepily written \u0022NO!\u0022 shows up, also making the word \u0022END\u0022 creepily crossed out. And then there will be a very creepy sound, and the game closes. For some reason, the player will be unable to control his/her mouse for a few seconds. Then a Notepad file with the title: \u0022She is coming, (username)\u0022 pops onscreen. When the player opens the file up, it says: [She WILL find you...] [She is coming...] [Your end is near...] If the player does not copy anything after playing the game but pastes anywhere, it will say: She will get you... Soon...If the player re-opens the game, it shows the ending again, and it does the same thing.",
       "tags": [
@@ -6793,12 +7193,12 @@
       "screenshots": []
     },
     {
-      "id": 218,
+      "id": 217,
       "title": "Dreamy Rainbow 4 Fanmade",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -6843,12 +7243,12 @@
       "screenshots": []
     },
     {
-      "id": 219,
+      "id": 218,
       "title": "Dreamy Rainbow 5",
       "author": [
         "Pokegamer2011"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -6893,7 +7293,7 @@
       "screenshots": []
     },
     {
-      "id": 221,
+      "id": 220,
       "title": "Equestria Tales",
       "author": [
         "Sethisto"
@@ -6928,7 +7328,7 @@
       ]
     },
     {
-      "id": 222,
+      "id": 221,
       "title": "Five Nights at Pinkie\u0027s",
       "author": [
         "Eidenz"
@@ -6982,7 +7382,7 @@
       ]
     },
     {
-      "id": 223,
+      "id": 222,
       "title": "GO FAST",
       "author": [
         "Mixermike622"
@@ -7003,13 +7403,13 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://mlpfanart.fandom.com/wiki/GO_FAST",
       "dateAdded": "28.02.2012",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "release",
           "url": "https://games.mare.by/110",
           "buttonText": "Download",
@@ -7023,12 +7423,19 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "release",
+          "url": "https://flash.mare.by/g?id=110",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
     },
     {
-      "id": 224,
+      "id": 223,
       "title": "Iron Pony Challenge",
       "author": [
         "Jinroh"
@@ -7053,13 +7460,13 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.newgrounds.com/portal/view/580103",
       "dateAdded": "?",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "1.3.1",
           "url": "https://games.mare.by/111",
           "buttonText": "Download",
@@ -7073,17 +7480,24 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.3.1",
+          "url": "https://flash.mare.by/g?id=111",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
     },
     {
-      "id": 226,
+      "id": 225,
       "title": "Flutter Island",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7109,12 +7523,12 @@
       "screenshots": []
     },
     {
-      "id": 227,
+      "id": 226,
       "title": "The Fiends of Dream Valley",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "One of the earliest fan games ",
       "fullDescription": "One of the earliest fan games ",
       "tags": [
@@ -7163,12 +7577,12 @@
       "screenshots": []
     },
     {
-      "id": 228,
+      "id": 227,
       "title": "Hidden Signal",
       "author": [
         "Pony in a Box"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Hidden Signal is Pony in a Box\u0027s first game. It is...",
       "fullDescription": "Hidden Signal is Pony in a Box\u0027s first game. It is a text adventure set in the Doctor Whooves universe. You play as The Doctor who has been detecting strange broadcasts throughout Equestria. You must think like The Doctor to solve the mystery of the Hidden Signal.",
       "tags": [
@@ -7221,7 +7635,7 @@
       "screenshots": []
     },
     {
-      "id": 229,
+      "id": 228,
       "title": "MareDare",
       "author": [
         "Rakan Haddad Software"
@@ -7256,7 +7670,7 @@
       ]
     },
     {
-      "id": 230,
+      "id": 229,
       "title": "MareDare 2: The Daring Sequel",
       "author": [
         "Rakan Haddad Software"
@@ -7291,12 +7705,12 @@
       ]
     },
     {
-      "id": 231,
+      "id": 230,
       "title": "MareDare 3",
       "author": [
         "Rakan Haddad Software"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "?",
       "fullDescription": "?",
       "tags": [
@@ -7322,7 +7736,7 @@
       "screenshots": []
     },
     {
-      "id": 232,
+      "id": 231,
       "title": "War of Harmony IV",
       "author": [
         "Marshal Ruffy"
@@ -7395,13 +7809,13 @@
       ]
     },
     {
-      "id": 233,
+      "id": 232,
       "title": "Cloptopia",
       "author": [
         "mittsies",
         "StaSyaN"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7498,12 +7912,12 @@
       "screenshots": []
     },
     {
-      "id": 234,
+      "id": 233,
       "title": "PoneRTK",
       "author": [
         "anonymous"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Romance of the Three Kingdoms inspired strategy ga...",
       "fullDescription": "Romance of the Three Kingdoms inspired strategy game. Was posted on the /mlp/ by anon",
       "tags": [
@@ -7548,7 +7962,7 @@
       "screenshots": []
     },
     {
-      "id": 235,
+      "id": 234,
       "title": "Pony Joust",
       "author": [
         "Nicky Case (NutcaseNightmare)"
@@ -7619,12 +8033,12 @@
       "screenshots": []
     },
     {
-      "id": 236,
+      "id": 235,
       "title": "Pony Joust lava edition",
       "author": [
         "Naner Bag?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7690,12 +8104,12 @@
       "screenshots": []
     },
     {
-      "id": 237,
+      "id": 236,
       "title": "Derpy\u0027s Fun House",
       "author": [
         "Raztudio"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7725,12 +8139,12 @@
       "screenshots": []
     },
     {
-      "id": 238,
+      "id": 237,
       "title": "Slime \u0026 Punishment: Phantom\u2019s Revenge",
       "author": [
         "Ben Saint"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7760,12 +8174,12 @@
       "screenshots": []
     },
     {
-      "id": 239,
+      "id": 238,
       "title": "The Difference Between Us",
       "author": [
         "Robin Daydream"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7791,12 +8205,12 @@
       "screenshots": []
     },
     {
-      "id": 240,
+      "id": 239,
       "title": "The Dog Days",
       "author": [
         "Tvio"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7830,7 +8244,7 @@
       "screenshots": []
     },
     {
-      "id": 241,
+      "id": 240,
       "title": "Lyra\u0027s Rampage",
       "author": [
         "Rotexun Games"
@@ -7887,12 +8301,12 @@
       ]
     },
     {
-      "id": 242,
+      "id": 241,
       "title": "Twilife",
       "author": [
         "ioncorupterx"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7918,12 +8332,12 @@
       "screenshots": []
     },
     {
-      "id": 243,
+      "id": 242,
       "title": "Equestria: Death Virus",
       "author": [
         "DVIGATEL"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7953,12 +8367,12 @@
       "screenshots": []
     },
     {
-      "id": 244,
+      "id": 243,
       "title": "The Big Pony Dating sim",
       "author": [
         "TheCrimsonDM Vanillia"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7984,12 +8398,12 @@
       "screenshots": []
     },
     {
-      "id": 245,
+      "id": 244,
       "title": "Tales of Discordia Remake!",
       "author": [
         "Eights"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8019,12 +8433,12 @@
       "screenshots": []
     },
     {
-      "id": 246,
+      "id": 245,
       "title": "My Little Pony: Dr. Discord\u0027s Conquest",
       "author": [
         "RetiredBrony"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "ROM hack of Mega Man 3",
       "fullDescription": "ROM hack of Mega Man 3",
       "tags": [
@@ -8070,12 +8484,12 @@
       "screenshots": []
     },
     {
-      "id": 248,
+      "id": 247,
       "title": "Friendship with Benefits 2",
       "author": [
         "TwistedScarlett60"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8105,13 +8519,13 @@
       "screenshots": []
     },
     {
-      "id": 251,
+      "id": 250,
       "title": "Pony torture 2",
       "author": [
         "Aleksey Stav",
         "Exotica Games"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8157,12 +8571,12 @@
       "screenshots": []
     },
     {
-      "id": 252,
+      "id": 251,
       "title": "Autism Quest",
       "author": [
         "anonymous"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Was posted anonymously on 4chan",
       "fullDescription": "Was posted anonymously on 4chan",
       "tags": [
@@ -8216,12 +8630,12 @@
       "screenshots": []
     },
     {
-      "id": 253,
+      "id": 252,
       "title": "Robin Steele the Waifu Thief",
       "author": [
         "Pix3M"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "In Robin Steele the Waifu Thief you journey as a y...",
       "fullDescription": "In Robin Steele the Waifu Thief you journey as a young alicorn in search for the heart of a princess. It is a small game created in 48 hours for the Crystal Games Challenge.",
       "tags": [
@@ -8272,12 +8686,12 @@
       "screenshots": []
     },
     {
-      "id": 254,
+      "id": 253,
       "title": "Robin Steele 2",
       "author": [
         "Pix3M"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8328,12 +8742,12 @@
       "screenshots": []
     },
     {
-      "id": 255,
+      "id": 254,
       "title": "Battle against a True Alicorn",
       "author": [
         "4as"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "A short crossover game between Undertale and Mlp",
       "fullDescription": "A short crossover game between Undertale and Mlp",
       "tags": [
@@ -8378,12 +8792,12 @@
       "screenshots": []
     },
     {
-      "id": 256,
+      "id": 255,
       "title": "Ponyville",
       "author": [
         "Halo12"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8413,12 +8827,12 @@
       "screenshots": []
     },
     {
-      "id": 257,
+      "id": 256,
       "title": "Mlp: Revenants of Chaos/Project Dash",
       "author": [
         "Okamikurainya"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8448,12 +8862,12 @@
       "screenshots": []
     },
     {
-      "id": 258,
+      "id": 257,
       "title": "Luna 2",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8502,12 +8916,12 @@
       "screenshots": []
     },
     {
-      "id": 259,
+      "id": 258,
       "title": "Luna Game",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "On April 3rd, 2011 on the Equestria Daily website,...",
       "fullDescription": "On April 3rd, 2011 on the Equestria Daily website, an anonymous user posted a game named as \u0027Luna Game\u0027. Bronies thought it would be a cute pony game where you play as Luna. When some of them downloaded the game, they were later proven wrong.",
       "tags": [
@@ -8557,12 +8971,12 @@
       "screenshots": []
     },
     {
-      "id": 260,
+      "id": 259,
       "title": "Luna Game 0",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8628,12 +9042,12 @@
       "screenshots": []
     },
     {
-      "id": 261,
+      "id": 260,
       "title": "Luna Game 3",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8682,12 +9096,12 @@
       "screenshots": []
     },
     {
-      "id": 262,
+      "id": 261,
       "title": "Luna Game 4",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8737,12 +9151,12 @@
       "screenshots": []
     },
     {
-      "id": 263,
+      "id": 262,
       "title": "Luna Game 5",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8791,12 +9205,12 @@
       "screenshots": []
     },
     {
-      "id": 264,
+      "id": 263,
       "title": "Luna Game 6",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8845,12 +9259,12 @@
       "screenshots": []
     },
     {
-      "id": 265,
+      "id": 264,
       "title": "Luna Game End",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8900,12 +9314,12 @@
       "screenshots": []
     },
     {
-      "id": 266,
+      "id": 265,
       "title": "Luna Game Prologue",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8954,12 +9368,12 @@
       "screenshots": []
     },
     {
-      "id": 267,
+      "id": 266,
       "title": "Luna Game X",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9008,12 +9422,12 @@
       "screenshots": []
     },
     {
-      "id": 268,
+      "id": 267,
       "title": "Luna Game 1",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9062,12 +9476,12 @@
       "screenshots": []
     },
     {
-      "id": 269,
+      "id": 268,
       "title": "Luna Game EQG",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9117,12 +9531,12 @@
       "screenshots": []
     },
     {
-      "id": 270,
+      "id": 269,
       "title": "Luna Game Reformed",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9172,12 +9586,12 @@
       "screenshots": []
     },
     {
-      "id": 271,
+      "id": 270,
       "title": "Flutter Island 2",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9226,12 +9640,12 @@
       "screenshots": []
     },
     {
-      "id": 272,
+      "id": 271,
       "title": "Flutter Island Remake",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9280,12 +9694,12 @@
       "screenshots": []
     },
     {
-      "id": 273,
+      "id": 272,
       "title": "Flutter Island Revival",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9334,12 +9748,12 @@
       "screenshots": []
     },
     {
-      "id": 274,
+      "id": 273,
       "title": "Flutter Island Revival 2",
       "author": [
         "LunaGame06"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9388,12 +9802,12 @@
       "screenshots": []
     },
     {
-      "id": 275,
+      "id": 274,
       "title": "PonyPony Paradise/ Equestria AI",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "VN anchor for mlp bots",
       "fullDescription": "VN anchor for mlp bots",
       "tags": [
@@ -9440,12 +9854,12 @@
       "screenshots": []
     },
     {
-      "id": 276,
+      "id": 275,
       "title": "PonyPony Paradise",
       "author": [
         "Anon"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "VN anchor for mlp bots",
       "fullDescription": "VN anchor for mlp bots",
       "tags": [
@@ -9509,12 +9923,12 @@
       "screenshots": []
     },
     {
-      "id": 277,
+      "id": 276,
       "title": "Starswirl Academy: Welcome to Starswirl (First Demo)",
       "author": [
         "Rosin Entertainment"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9559,12 +9973,12 @@
       "screenshots": []
     },
     {
-      "id": 278,
+      "id": 277,
       "title": "Starswirl Academy: Time and Again(Second Demo)",
       "author": [
         "Rosin Entertainment"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9625,7 +10039,7 @@
       "screenshots": []
     },
     {
-      "id": 280,
+      "id": 279,
       "title": "My Little Fucking Pony",
       "author": [
         "Hudomi"
@@ -9712,12 +10126,12 @@
       ]
     },
     {
-      "id": 281,
+      "id": 280,
       "title": "Pony Wings",
       "author": [
         "Nicky Case (NutcaseNightmare)"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Ponified version of Tiny Wings featuring Scootaloo...",
       "fullDescription": "Ponified version of Tiny Wings featuring Scootaloo.",
       "tags": [
@@ -9779,7 +10193,7 @@
       "screenshots": []
     },
     {
-      "id": 282,
+      "id": 281,
       "title": "Pone",
       "author": [
         "Graggl"
@@ -9832,12 +10246,12 @@
       ]
     },
     {
-      "id": 283,
+      "id": 282,
       "title": "hide and seek (20% Faster)",
       "author": [
         "\uC774\uBBFC\uCCA0 (Integralus)"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9859,12 +10273,12 @@
       "screenshots": []
     },
     {
-      "id": 291,
+      "id": 290,
       "title": "Anquestria",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9886,12 +10300,12 @@
       "screenshots": []
     },
     {
-      "id": 299,
+      "id": 298,
       "title": "Archery Game",
       "author": [
         "Hasbro"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9913,12 +10327,12 @@
       "screenshots": []
     },
     {
-      "id": 305,
+      "id": 304,
       "title": "Battle Royale: Forward to the Past",
       "author": [
         "Xinef"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9940,12 +10354,12 @@
       "screenshots": []
     },
     {
-      "id": 311,
+      "id": 310,
       "title": "Bridle Gossip Puzzles",
       "author": [
         "Hasbro"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9967,12 +10381,12 @@
       "screenshots": []
     },
     {
-      "id": 312,
+      "id": 311,
       "title": "Brony Cards",
       "author": [
         "BlitzProg"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9994,7 +10408,7 @@
       "screenshots": []
     },
     {
-      "id": 313,
+      "id": 312,
       "title": "Brony Hero of Equestria",
       "author": [
         "Ailurus Fulgens"
@@ -10008,7 +10422,7 @@
           "type": "Genre"
         },
         {
-          "label": "Quest",
+          "label": "Adventure",
           "type": "Genre"
         },
         {
@@ -10053,12 +10467,12 @@
       ]
     },
     {
-      "id": 328,
+      "id": 326,
       "title": "Chaos Dash",
       "author": [
         "ElectroKitty"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10080,12 +10494,12 @@
       "screenshots": []
     },
     {
-      "id": 336,
+      "id": 334,
       "title": "Colours Of Time",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10107,7 +10521,7 @@
       "screenshots": []
     },
     {
-      "id": 338,
+      "id": 336,
       "title": "Crystal Crunch Story",
       "author": [
         "futzi01"
@@ -10161,12 +10575,12 @@
       ]
     },
     {
-      "id": 353,
+      "id": 351,
       "title": "Dash Off",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10188,12 +10602,12 @@
       "screenshots": []
     },
     {
-      "id": 358,
+      "id": 356,
       "title": "Derp Till Dawn",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10215,7 +10629,7 @@
       "screenshots": []
     },
     {
-      "id": 402,
+      "id": 400,
       "title": "Flutternight",
       "author": [
         "Suomaf"
@@ -10244,13 +10658,13 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/suomafgamer/art/Flutternight-569330776",
       "dateAdded": "31.10.2015",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.0",
           "url": "https://games.mare.by/187",
           "buttonText": "Download",
@@ -10264,6 +10678,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.0",
+          "url": "https://flash.mare.by/g?id=187",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -10273,12 +10694,12 @@
       ]
     },
     {
-      "id": 411,
+      "id": 409,
       "title": "Gem Hunt",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10300,7 +10721,7 @@
       "screenshots": []
     },
     {
-      "id": 414,
+      "id": 412,
       "title": "Happy Birthday Dawnspark!",
       "author": [
         "hafunui"
@@ -10335,12 +10756,12 @@
       ]
     },
     {
-      "id": 432,
+      "id": 430,
       "title": "Legacy of the Pony",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10362,12 +10783,12 @@
       "screenshots": []
     },
     {
-      "id": 437,
+      "id": 435,
       "title": "Luna\u0027s Stars",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10389,7 +10810,7 @@
       "screenshots": []
     },
     {
-      "id": 460,
+      "id": 458,
       "title": "Minty Fresh Adventure",
       "author": [
         "Marcusmaximus"
@@ -10448,12 +10869,12 @@
       ]
     },
     {
-      "id": 461,
+      "id": 459,
       "title": "Minuette vs Tardiness ",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10475,12 +10896,12 @@
       "screenshots": []
     },
     {
-      "id": 486,
+      "id": 484,
       "title": "Rise of the Clockwork Stallions",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10502,12 +10923,12 @@
       "screenshots": []
     },
     {
-      "id": 497,
+      "id": 495,
       "title": "Mysterious Muffin Mercenary Mare",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10529,7 +10950,7 @@
       "screenshots": []
     },
     {
-      "id": 504,
+      "id": 502,
       "title": "Order of Twilight",
       "author": [
         "Stabyourself"
@@ -10621,7 +11042,7 @@
       ]
     },
     {
-      "id": 530,
+      "id": 528,
       "title": "Pinkie Pie Population Perforation Project",
       "author": [
         "Sparklepeep"
@@ -10673,12 +11094,12 @@
       ]
     },
     {
-      "id": 534,
+      "id": 532,
       "title": "PixelShy",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10700,7 +11121,7 @@
       "screenshots": []
     },
     {
-      "id": 549,
+      "id": 547,
       "title": "Ponykind Grind",
       "author": [
         "WindowsLogic Productions"
@@ -10734,12 +11155,12 @@
       ]
     },
     {
-      "id": 552,
+      "id": 550,
       "title": "PonyRL",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10761,12 +11182,12 @@
       "screenshots": []
     },
     {
-      "id": 560,
+      "id": 558,
       "title": "Pony Space",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10788,7 +11209,7 @@
       "screenshots": []
     },
     {
-      "id": 563,
+      "id": 561,
       "title": "Bullet Hell Ponies (Pony Touhou)",
       "author": [
         "huod umop apisdn"
@@ -10848,7 +11269,7 @@
       ]
     },
     {
-      "id": 568,
+      "id": 566,
       "title": "Ponyvania: Order of Equestria",
       "author": [
         "Ziggylung Studios"
@@ -10963,12 +11384,12 @@
       ]
     },
     {
-      "id": 589,
+      "id": 587,
       "title": "Rainbow Dash Shooter Project",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10990,7 +11411,7 @@
       "screenshots": []
     },
     {
-      "id": 598,
+      "id": 596,
       "title": "Raycord Legends",
       "author": [
         "Raycord Legends"
@@ -11085,12 +11506,12 @@
       ]
     },
     {
-      "id": 611,
+      "id": 609,
       "title": "Shattered Kingdom",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -11112,7 +11533,7 @@
       "screenshots": []
     },
     {
-      "id": 614,
+      "id": 612,
       "title": "Spike\u0027s Day Off",
       "author": [
         "sonicboy112"
@@ -11170,12 +11591,12 @@
       ]
     },
     {
-      "id": 617,
+      "id": 615,
       "title": "Spike Toss ",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -11197,7 +11618,7 @@
       "screenshots": []
     },
     {
-      "id": 620,
+      "id": 618,
       "title": "Sunset Defender",
       "author": [
         "?"
@@ -11247,7 +11668,7 @@
       "screenshots": []
     },
     {
-      "id": 629,
+      "id": 627,
       "title": "TWALAGHT SPARKUHLZ REVEHNGSHE",
       "author": [
         "Penta Studios"
@@ -11320,7 +11741,7 @@
       ]
     },
     {
-      "id": 680,
+      "id": 678,
       "title": "Banned [FOREVER]",
       "author": [
         "Pokehidden",
@@ -11387,7 +11808,7 @@
       ]
     },
     {
-      "id": 681,
+      "id": 679,
       "title": "A Devious Plot",
       "author": [
         "Zed001",
@@ -11456,7 +11877,7 @@
       "screenshots": []
     },
     {
-      "id": 682,
+      "id": 680,
       "title": "Fillyfuck Fiesta",
       "author": [
         "Mittsies",
@@ -11540,7 +11961,7 @@
       "screenshots": []
     },
     {
-      "id": 683,
+      "id": 681,
       "title": "Ponyville Brothel",
       "author": [
         "Highlight"
@@ -11628,12 +12049,12 @@
       ]
     },
     {
-      "id": 685,
+      "id": 683,
       "title": "Ponk Quest",
       "author": [
         "Tiarawhy"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "?",
       "fullDescription": "?",
       "tags": [
@@ -11683,12 +12104,12 @@
       "screenshots": []
     },
     {
-      "id": 686,
+      "id": 684,
       "title": "Ponyville Brothel 2",
       "author": [
         "Highlight"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -11733,7 +12154,7 @@
       "screenshots": []
     },
     {
-      "id": 687,
+      "id": 685,
       "title": "Amber Nights",
       "author": [
         "Highlight"
@@ -11744,10 +12165,6 @@
       "tags": [
         {
           "label": "RPG",
-          "type": "Genre"
-        },
-        {
-          "label": "Quest",
           "type": "Genre"
         },
         {
@@ -11793,7 +12210,7 @@
       ]
     },
     {
-      "id": 688,
+      "id": 686,
       "title": "Three Curious Ponies",
       "author": [
         "Mittsies",
@@ -11851,12 +12268,12 @@
       ]
     },
     {
-      "id": 689,
+      "id": 687,
       "title": "Pony Comic Generator",
       "author": [
         "GingerFoxy"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -11913,7 +12330,7 @@
       "screenshots": []
     },
     {
-      "id": 690,
+      "id": 688,
       "title": "Sweet Love (Chapter 1)",
       "author": [
         "Zarioly"
@@ -11957,12 +12374,12 @@
       ]
     },
     {
-      "id": 691,
+      "id": 689,
       "title": "Sweet Love (Chapter 2)",
       "author": [
         "Zarioly"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -11996,12 +12413,12 @@
       "screenshots": []
     },
     {
-      "id": 692,
+      "id": 690,
       "title": "Whisper Beyond",
       "author": [
         "Zarioly"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -12031,7 +12448,7 @@
       "screenshots": []
     },
     {
-      "id": 693,
+      "id": 691,
       "title": "Violet Mind and The Mysterious Island",
       "author": [
         "PLukol"
@@ -12080,7 +12497,7 @@
       ]
     },
     {
-      "id": 694,
+      "id": 692,
       "title": "Ponywile",
       "author": [
         "mergerbrony"
@@ -12122,7 +12539,7 @@
       ]
     },
     {
-      "id": 695,
+      "id": 693,
       "title": "AJ\u0027S Truck",
       "author": [
         "mandopony"
@@ -12175,7 +12592,7 @@
       ]
     },
     {
-      "id": 696,
+      "id": 694,
       "title": "AppleJack SoloGame",
       "author": [
         "Rainbow Team"
@@ -12231,7 +12648,7 @@
       ]
     },
     {
-      "id": 697,
+      "id": 695,
       "title": "Cloud Dodger",
       "author": [
         "flairton"
@@ -12287,7 +12704,7 @@
       ]
     },
     {
-      "id": 698,
+      "id": 696,
       "title": "MUFFIN",
       "author": [
         "COMPAHQ"
@@ -12344,7 +12761,7 @@
       ]
     },
     {
-      "id": 699,
+      "id": 697,
       "title": "My Little Laser",
       "author": [
         "Sircxyrtyx"
@@ -12401,7 +12818,7 @@
       ]
     },
     {
-      "id": 700,
+      "id": 698,
       "title": "Pegasus Attack!",
       "author": [
         "?"
@@ -12453,7 +12870,7 @@
       ]
     },
     {
-      "id": 701,
+      "id": 699,
       "title": "Pony Blaster in Space 3000",
       "author": [
         "?"
@@ -12506,7 +12923,7 @@
       ]
     },
     {
-      "id": 702,
+      "id": 700,
       "title": "Scootaloo\u0027s Scooter Scooting",
       "author": [
         "xigger"
@@ -12579,7 +12996,7 @@
       ]
     },
     {
-      "id": 703,
+      "id": 701,
       "title": "Square Ponies",
       "author": [
         "zztfox"
@@ -12635,7 +13052,7 @@
       ]
     },
     {
-      "id": 704,
+      "id": 702,
       "title": "Super Derpy Muffin Attack",
       "author": [
         "Sebastian Krzyszkowiak (dos)"
@@ -12688,7 +13105,7 @@
       ]
     },
     {
-      "id": 705,
+      "id": 703,
       "title": "Applejack stomach care doctor",
       "author": [
         "Girls Play"
@@ -12744,7 +13161,7 @@
       ]
     },
     {
-      "id": 706,
+      "id": 704,
       "title": "Rarity Dress Collection",
       "author": [
         "Just-Plain-Cat"
@@ -12794,7 +13211,7 @@
       "screenshots": []
     },
     {
-      "id": 707,
+      "id": 705,
       "title": "MLP:FiM Dress-Up Game",
       "author": [
         "yeaka"
@@ -12844,7 +13261,7 @@
       "screenshots": []
     },
     {
-      "id": 708,
+      "id": 706,
       "title": "Little Pony Ice Cream",
       "author": [
         "Color Girl Games"
@@ -12900,7 +13317,7 @@
       ]
     },
     {
-      "id": 709,
+      "id": 707,
       "title": "LOT \u0424\u0435\u0441\u0442\u0438\u0432\u0430\u043B\u044C \u043F\u0435\u0440\u0441\u0438\u043A\u043E\u0432, \u0447\u0430\u0441\u0442\u044C 1",
       "author": [
         "KaskeT"
@@ -12984,7 +13401,7 @@
       "screenshots": []
     },
     {
-      "id": 710,
+      "id": 708,
       "title": "Reichskommissar",
       "author": [
         "yra_romanow"
@@ -13059,7 +13476,7 @@
       ]
     },
     {
-      "id": 711,
+      "id": 709,
       "title": "\u0411\u0435\u0437\u044B\u043C\u044F\u043D\u043D\u0430\u044F \u0438\u0433\u0440\u0430 \u043E\u0442 \u041A\u0430\u0441\u043A\u0435\u0442\u0430",
       "author": [
         "KaskeT"
@@ -13113,7 +13530,7 @@
       "screenshots": []
     },
     {
-      "id": 712,
+      "id": 710,
       "title": "unnamed puzzle",
       "author": [
         "KaskeT"
@@ -13163,7 +13580,7 @@
       "screenshots": []
     },
     {
-      "id": 714,
+      "id": 712,
       "title": "Dog and Pony Game",
       "author": [
         "Rangelost"
@@ -13213,7 +13630,7 @@
       "screenshots": []
     },
     {
-      "id": 715,
+      "id": 713,
       "title": "My Little Pony The Bonds of Friendship",
       "author": [
         "fluttershyponygal"
@@ -13272,12 +13689,12 @@
       ]
     },
     {
-      "id": 716,
+      "id": 714,
       "title": "Pokepon",
       "author": [
         "Silverweed"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Pok\u00E9pon is a multiplayer Pok\u00E9mon-like battle simul...",
       "fullDescription": "Pok\u00E9pon is a multiplayer Pok\u00E9mon-like battle simulator with ponies.",
       "tags": [
@@ -13318,7 +13735,7 @@
       "screenshots": []
     },
     {
-      "id": 717,
+      "id": 715,
       "title": "halloweentwyd?",
       "author": [
         "Tiarawhy",
@@ -13371,7 +13788,7 @@
       ]
     },
     {
-      "id": 718,
+      "id": 716,
       "title": "My Little Pony RPG: The Elements of Harmony",
       "author": [
         "NurseDashie"
@@ -13430,7 +13847,7 @@
       ]
     },
     {
-      "id": 719,
+      "id": 717,
       "title": "My little Pony RPG 2: Cutie Mark Crusaders Warriors",
       "author": [
         "NurseDashie"
@@ -13489,7 +13906,7 @@
       ]
     },
     {
-      "id": 720,
+      "id": 718,
       "title": "My Little Pony World: MLP RPG 3",
       "author": [
         "NurseDashie"
@@ -13548,7 +13965,7 @@
       ]
     },
     {
-      "id": 721,
+      "id": 719,
       "title": "My Little Pony RPG 4",
       "author": [
         "NurseDashie"
@@ -13606,7 +14023,7 @@
       ]
     },
     {
-      "id": 722,
+      "id": 720,
       "title": "MY LITTLE PONY RPG 5",
       "author": [
         "NurseDashie"
@@ -13679,7 +14096,7 @@
       ]
     },
     {
-      "id": 723,
+      "id": 721,
       "title": "MY LITTLE PONY RPG 6",
       "author": [
         "NurseDashie"
@@ -13736,7 +14153,7 @@
       ]
     },
     {
-      "id": 724,
+      "id": 722,
       "title": "MY LITTLE PONY RPG 7",
       "author": [
         "NurseDashie"
@@ -13775,13 +14192,13 @@
       ]
     },
     {
-      "id": 725,
+      "id": 723,
       "title": "SLHRPG(Super Lesbian Horse RPG)",
       "author": [
         "Ponett",
         "translated by stsyn"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Ru version of SLHRPG",
       "fullDescription": "Ru version of SLHRPG",
       "tags": [
@@ -13843,7 +14260,7 @@
       "screenshots": []
     },
     {
-      "id": 726,
+      "id": 724,
       "title": "Within the Hinterland",
       "author": [
         "Rocgazelle",
@@ -13913,7 +14330,7 @@
       ]
     },
     {
-      "id": 727,
+      "id": 725,
       "title": "Sulphur Nimbus: Hel\u0027s Elixir",
       "author": [
         "Oddwarg"
@@ -14070,7 +14487,7 @@
       ]
     },
     {
-      "id": 729,
+      "id": 727,
       "title": "Trial of Harmony",
       "author": [
         "Trial of Harmony"
@@ -14133,7 +14550,7 @@
       ]
     },
     {
-      "id": 731,
+      "id": 729,
       "title": "Spike\u0027s Day Out",
       "author": [
         "sonicboy112"
@@ -14192,7 +14609,7 @@
       ]
     },
     {
-      "id": 732,
+      "id": 730,
       "title": "Detective Rarity Investigations",
       "author": [
         "sonicboy112"
@@ -14250,7 +14667,7 @@
       ]
     },
     {
-      "id": 733,
+      "id": 731,
       "title": "Rainbow Dash\u2019s Cloud Dodging Fun",
       "author": [
         "Penta Studios"
@@ -14302,7 +14719,7 @@
       ]
     },
     {
-      "id": 734,
+      "id": 732,
       "title": "Cadance Throw",
       "author": [
         "Sebastian Krzyszkowiak (dos)"
@@ -14350,7 +14767,7 @@
       ]
     },
     {
-      "id": 736,
+      "id": 734,
       "title": "Rainbow Dash - Pony Disaster",
       "author": [
         "Penta Studios"
@@ -14451,7 +14868,7 @@
       ]
     },
     {
-      "id": 737,
+      "id": 735,
       "title": "MLP squadron",
       "author": [
         "Solarring"
@@ -14514,7 +14931,7 @@
       ]
     },
     {
-      "id": 740,
+      "id": 738,
       "title": "Trixie breaks all assholes",
       "author": [
         "KaskeT"
@@ -14568,7 +14985,7 @@
       ]
     },
     {
-      "id": 746,
+      "id": 744,
       "title": "Stratospheric",
       "author": [
         "Solarring"
@@ -14621,7 +15038,7 @@
       ]
     },
     {
-      "id": 748,
+      "id": 746,
       "title": "The Stage",
       "author": [
         "Sparin"
@@ -14692,7 +15109,7 @@
       ]
     },
     {
-      "id": 749,
+      "id": 747,
       "title": "SpikeImpact",
       "author": [
         "bodqhrohro"
@@ -14765,7 +15182,7 @@
       ]
     },
     {
-      "id": 752,
+      "id": 750,
       "title": "Equestrian Soldiers",
       "author": [
         "graf_leon"
@@ -14822,7 +15239,7 @@
       ]
     },
     {
-      "id": 759,
+      "id": 757,
       "title": "Ponygame (by graf_leon)",
       "author": [
         "graf_leon"
@@ -14877,7 +15294,7 @@
       ]
     },
     {
-      "id": 760,
+      "id": 758,
       "title": "\u041D\u0435\u043E\u0436\u0438\u0434\u0430\u043D\u043D\u044B\u0439 \u043F\u043E\u0434\u0430\u0440\u043E\u043A",
       "author": [
         "KaskeT"
@@ -14934,7 +15351,7 @@
       ]
     },
     {
-      "id": 761,
+      "id": 759,
       "title": "MemoryFight",
       "author": [
         "ruslan2012"
@@ -14983,7 +15400,7 @@
       ]
     },
     {
-      "id": 763,
+      "id": 761,
       "title": "Derpy. Run and gun",
       "author": [
         "KaskeT"
@@ -15059,7 +15476,7 @@
       ]
     },
     {
-      "id": 764,
+      "id": 762,
       "title": "NHWT",
       "author": [
         "8a55"
@@ -15131,7 +15548,7 @@
       ]
     },
     {
-      "id": 765,
+      "id": 763,
       "title": "\u0421\u043A\u0432\u043E\u0437\u044C \u043A\u043E\u0448\u043C\u0430\u0440",
       "author": [
         "chaorace"
@@ -15184,7 +15601,7 @@
       ]
     },
     {
-      "id": 766,
+      "id": 764,
       "title": "Equestrian Revolution",
       "author": [
         "Daicy"
@@ -15237,7 +15654,7 @@
       ]
     },
     {
-      "id": 767,
+      "id": 765,
       "title": "SpaceArk",
       "author": [
         "ruslan2012"
@@ -15298,7 +15715,7 @@
       ]
     },
     {
-      "id": 768,
+      "id": 766,
       "title": "Equality",
       "author": [
         "Yurka86rus \u0026 Natsu_Zirok"
@@ -15354,7 +15771,7 @@
       ]
     },
     {
-      "id": 769,
+      "id": 767,
       "title": "Goldenblood\u0027s Sacrifice",
       "author": [
         "stsyn"
@@ -15411,7 +15828,7 @@
       ]
     },
     {
-      "id": 771,
+      "id": 769,
       "title": "PONY_TDS",
       "author": [
         "graf_leon"
@@ -15469,7 +15886,7 @@
       ]
     },
     {
-      "id": 772,
+      "id": 770,
       "title": "Grandmaster",
       "author": [
         "Solarring"
@@ -15529,7 +15946,7 @@
       ]
     },
     {
-      "id": 773,
+      "id": 771,
       "title": "Pondemic Creations",
       "author": [
         "vorodor"
@@ -15585,7 +16002,7 @@
       ]
     },
     {
-      "id": 774,
+      "id": 772,
       "title": "Trixie vs arcade",
       "author": [
         "KaskeT"
@@ -15642,7 +16059,7 @@
       ]
     },
     {
-      "id": 775,
+      "id": 773,
       "title": "Full Destroy / \u041F\u043E\u043B\u043D\u043E\u0435 \u0423\u043D\u0438\u0447\u0442\u043E\u0436\u0435\u043D\u0438\u0435",
       "author": [
         "TabunLadream"
@@ -15695,7 +16112,7 @@
       ]
     },
     {
-      "id": 776,
+      "id": 774,
       "title": "\u041C\u0438\u0440 \u0437\u0430\u043C\u043A\u043E\u0432",
       "author": [
         "Ambrelium"
@@ -15752,7 +16169,7 @@
       ]
     },
     {
-      "id": 778,
+      "id": 776,
       "title": "Project horizons",
       "author": [
         "James_Sparkle"
@@ -15810,12 +16227,12 @@
       ]
     },
     {
-      "id": 780,
+      "id": 778,
       "title": "Adventure Of Everfree",
       "author": [
         "nogard"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "\u0418\u0433\u0440\u0430 Adventure Of Everfree \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u0430 \u043D\u0430 \u043F\u0435\u0440\u0432\u044B\u0445 \u0434\u0432\u0443\u0445...",
       "fullDescription": "\u0418\u0433\u0440\u0430 Adventure Of Everfree \u043E\u0441\u043D\u043E\u0432\u0430\u043D\u0430 \u043D\u0430 \u043F\u0435\u0440\u0432\u044B\u0445 \u0434\u0432\u0443\u0445 \u0441\u0435\u0440\u0438\u044F\u0445 \u043F\u0435\u0440\u0432\u043E\u0433\u043E \u0441\u0435\u0437\u043E\u043D\u0430 \u0441\u0435\u0440\u0438\u0430\u043B\u0430 MLP. \u0421 \u043E\u0433\u043B\u044F\u0434\u043A\u043E\u0439 \u043D\u0430 \u0438\u0433\u0440\u043E\u0432\u0443\u044E \u0441\u043E\u0441\u0442\u0430\u0432\u043B\u044F\u044E\u0449\u0443\u044E. \u041F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043E\u0431\u043E\u0439 2D \u043F\u043B\u0430\u0442\u0444\u043E\u0440\u043C\u0435\u0440 (\u0443\u0440\u043E\u0432\u0435\u043D\u044C \u042D\u043F\u043F\u043B\u0434\u0436\u0435\u043A \u0431\u0435\u0433\u043E\u0432\u043E\u0439, \u0442\u0430\u043A \u043D\u0430\u0437\u044B\u0432\u0430\u0435\u043C\u044B\u0439 \u00AB\u0440\u0430\u043D\u043D\u0435\u0440\u00BB). \u0412 \u0434\u0430\u043D\u043D\u043E\u0439 \u0434\u0435\u043C\u043E \u0432\u0435\u0440\u0441\u0438\u0438 \u0440\u0435\u0430\u043B\u0438\u0437\u043E\u0432\u0430\u043D\u043E \u0442\u043E\u043B\u044C\u043A\u043E \u0434\u0432\u0430 \u0443\u0440\u043E\u0432\u043D\u044F \u2014 \u042D\u043F\u043F\u043B\u0434\u0436\u0435\u043A \u0438 \u0420\u044D\u0440\u0438\u0442\u0438.",
       "tags": [
@@ -15860,7 +16277,7 @@
       "screenshots": []
     },
     {
-      "id": 781,
+      "id": 779,
       "title": "Promise of Trixie Lulamoon",
       "author": [
         "Entern"
@@ -15918,7 +16335,7 @@
       ]
     },
     {
-      "id": 782,
+      "id": 780,
       "title": "Twilight Adventure",
       "author": [
         "Derpy_Hooves_X"
@@ -15966,7 +16383,7 @@
       ]
     },
     {
-      "id": 783,
+      "id": 781,
       "title": "Trixie\u0027s Marvelous Snowfight",
       "author": [
         "Ginger_Strings \u0026 gawk"
@@ -16020,7 +16437,7 @@
       ]
     },
     {
-      "id": 784,
+      "id": 782,
       "title": "HWE",
       "author": [
         "chaorace"
@@ -16075,7 +16492,7 @@
       ]
     },
     {
-      "id": 785,
+      "id": 783,
       "title": "Once Upon a Equestria: Snowdrop and Hearth\u0027s Warming Eve",
       "author": [
         "Entern"
@@ -16128,12 +16545,12 @@
       ]
     },
     {
-      "id": 786,
+      "id": 784,
       "title": "SCCTR",
       "author": [
         "Oreh"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "\u0422\u0432\u0430\u0439\u043A\u0430 \u0445\u043E\u0447\u0435\u0442 \u043F\u043E\u0434\u0430\u0440\u0438\u0442\u044C \u0441\u0432\u043E\u0438\u043C \u0434\u0440\u0443\u0437\u044C\u044F\u043C \u043F\u043E\u0434\u0430\u0440\u043A\u0438, \u043D\u043E \u0441\u0434...",
       "fullDescription": "\u0422\u0432\u0430\u0439\u043A\u0430 \u0445\u043E\u0447\u0435\u0442 \u043F\u043E\u0434\u0430\u0440\u0438\u0442\u044C \u0441\u0432\u043E\u0438\u043C \u0434\u0440\u0443\u0437\u044C\u044F\u043C \u043F\u043E\u0434\u0430\u0440\u043A\u0438, \u043D\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C \u044D\u0442\u043E \u043E\u0441\u043E\u0431\u0435\u043D\u043D\u043E.",
       "tags": [
@@ -16155,7 +16572,7 @@
       "screenshots": []
     },
     {
-      "id": 787,
+      "id": 785,
       "title": "Fixi the Game",
       "author": [
         "KaskeT"
@@ -16228,7 +16645,7 @@
       ]
     },
     {
-      "id": 788,
+      "id": 786,
       "title": "PTD (\u00AB\u041F\u0440\u043E\u0441\u0442\u043E \u0422\u043E\u0432\u0435\u0440 \u0414\u0435\u0444\u0435\u043D\u0441\u00BB -_-)",
       "author": [
         "Solarring"
@@ -16259,7 +16676,7 @@
       "screenshots": []
     },
     {
-      "id": 789,
+      "id": 787,
       "title": "Story of Nyrna: rain everywhere",
       "author": [
         "RPG Maker Pony"
@@ -16315,7 +16732,7 @@
       ]
     },
     {
-      "id": 790,
+      "id": 788,
       "title": "Encounters",
       "author": [
         "badunius"
@@ -16368,7 +16785,7 @@
       ]
     },
     {
-      "id": 791,
+      "id": 789,
       "title": "Crusader\u0027s Drone",
       "author": [
         "ruslan2012"
@@ -16423,7 +16840,7 @@
       ]
     },
     {
-      "id": 792,
+      "id": 790,
       "title": "Applejack\u0027s \u00ABDay\u00BB Off",
       "author": [
         "gawk"
@@ -16492,7 +16909,7 @@
       ]
     },
     {
-      "id": 793,
+      "id": 791,
       "title": "Crossroads of War",
       "author": [
         "EquGames"
@@ -16554,7 +16971,7 @@
       ]
     },
     {
-      "id": 794,
+      "id": 792,
       "title": "Space Sparcle",
       "author": [
         "vorodor"
@@ -16607,7 +17024,7 @@
       ]
     },
     {
-      "id": 795,
+      "id": 793,
       "title": "Another Nightmare",
       "author": [
         "ziro_em",
@@ -16661,7 +17078,7 @@
       ]
     },
     {
-      "id": 796,
+      "id": 794,
       "title": "Frozen Heart",
       "author": [
         "OldTeaOwl"
@@ -16711,7 +17128,7 @@
       "screenshots": []
     },
     {
-      "id": 797,
+      "id": 795,
       "title": "New Pony Happy Year(NPHY)",
       "author": [
         "BlazerDom",
@@ -16766,7 +17183,7 @@
       ]
     },
     {
-      "id": 798,
+      "id": 796,
       "title": "Twi \u0026 donjon",
       "author": [
         "KaskeT"
@@ -16820,7 +17237,7 @@
       ]
     },
     {
-      "id": 799,
+      "id": 797,
       "title": "ProjectPon",
       "author": [
         "ziro_em"
@@ -16890,7 +17307,7 @@
       ]
     },
     {
-      "id": 800,
+      "id": 798,
       "title": "The Story",
       "author": [
         "OldTeaOwl"
@@ -16955,7 +17372,7 @@
       ]
     },
     {
-      "id": 801,
+      "id": 799,
       "title": "M____",
       "author": [
         "stsyn"
@@ -17014,7 +17431,7 @@
       ]
     },
     {
-      "id": 802,
+      "id": 800,
       "title": "Starlight In The Forest",
       "author": [
         "BlazerDom"
@@ -17071,7 +17488,7 @@
       ]
     },
     {
-      "id": 803,
+      "id": 801,
       "title": "N.D.",
       "author": [
         "BecauseYay"
@@ -17119,7 +17536,7 @@
       ]
     },
     {
-      "id": 804,
+      "id": 802,
       "title": "YanAH.",
       "author": [
         "Yurka86rus"
@@ -17173,7 +17590,7 @@
       ]
     },
     {
-      "id": 805,
+      "id": 803,
       "title": "Puff",
       "author": [
         "KaskeT"
@@ -17221,7 +17638,7 @@
       ]
     },
     {
-      "id": 806,
+      "id": 804,
       "title": "Evie the Virus",
       "author": [
         "ziro_em"
@@ -17269,7 +17686,7 @@
       ]
     },
     {
-      "id": 807,
+      "id": 805,
       "title": "\u041E\u041A\u0418",
       "author": [
         "shadowiq"
@@ -17322,7 +17739,7 @@
       ]
     },
     {
-      "id": 808,
+      "id": 806,
       "title": "AJ vs haters",
       "author": [
         "KaskeT"
@@ -17375,7 +17792,7 @@
       ]
     },
     {
-      "id": 809,
+      "id": 807,
       "title": "Luna Escape",
       "author": [
         "chaorace"
@@ -17423,7 +17840,7 @@
       ]
     },
     {
-      "id": 810,
+      "id": 808,
       "title": "Discordush",
       "author": [
         "chaorace"
@@ -17471,7 +17888,7 @@
       ]
     },
     {
-      "id": 811,
+      "id": 809,
       "title": "Phoenix2",
       "author": [
         "VaJa72"
@@ -17590,7 +18007,7 @@
       ]
     },
     {
-      "id": 812,
+      "id": 810,
       "title": "\u0411\u0438\u0437\u043E\u043D\u044B \u043D\u0430\u0431\u0438\u0433\u0430\u044E\u0442!",
       "author": [
         "Kujivunia"
@@ -17658,7 +18075,7 @@
       ]
     },
     {
-      "id": 813,
+      "id": 811,
       "title": "Starlight on the Weather Factory Demo",
       "author": [
         "ziro_em"
@@ -17722,7 +18139,7 @@
       ]
     },
     {
-      "id": 814,
+      "id": 812,
       "title": "\u041B\u0443\u043D\u0430 \u0445\u043E\u0434\u0438\u0442 \u043F\u043E \u0441\u043D\u0430\u043C",
       "author": [
         "shadowiq"
@@ -17772,7 +18189,7 @@
       ]
     },
     {
-      "id": 815,
+      "id": 813,
       "title": "LoT",
       "author": [
         "KaskeT"
@@ -17825,7 +18242,7 @@
       ]
     },
     {
-      "id": 817,
+      "id": 815,
       "title": "My Little Selly: Gamedev is Magic",
       "author": [
         "vorodor"
@@ -17858,27 +18275,11 @@
         {
           "label": "Windows",
           "version": "",
-          "url": "https://games.mare.by/376",
+          "url": "https://games.mare.by/208",
           "buttonText": "Download",
           "mirrors": [
             {
-              "url": "https://mlpgames.mariusdavid.fr/376",
-              "label": "Scrogne"
-            },
-            {
-              "url": "https://t.me/ponygamesarchive/1206",
-              "label": "telegram"
-            }
-          ]
-        },
-        {
-          "label": "Windows",
-          "version": "",
-          "url": "https://games.mare.by/207",
-          "buttonText": "Download",
-          "mirrors": [
-            {
-              "url": "https://mlpgames.mariusdavid.fr/207",
+              "url": "https://mlpgames.mariusdavid.fr/208",
               "label": "Scrogne"
             },
             {
@@ -17893,7 +18294,59 @@
       ]
     },
     {
-      "id": 818,
+      "id": 816,
+      "title": "My Little Selly",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/s/218/0.jpg",
+      "shortDescription": "\u0411\u0435\u0433\u0438 \u0421\u0435\u043B\u044F!!! \u0411\u0435\u0433\u0438!!!",
+      "fullDescription": "\u0411\u0435\u0433\u0438 \u0421\u0435\u043B\u044F!!! \u0411\u0435\u0433\u0438!!!",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Construct",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://stsyn.art/oki/#filters=%5B%226OKI%22%5D",
+      "dateAdded": "15.09.2020",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/376",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/376",
+              "label": "Scrogne"
+            },
+            {
+              "url": "https://t.me/ponygamesarchive/1206",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        "/s/218/1.jpg"
+      ]
+    },
+    {
+      "id": 817,
       "title": "World without Time",
       "author": [
         "Psyche Games"
@@ -17950,7 +18403,7 @@
       ]
     },
     {
-      "id": 819,
+      "id": 818,
       "title": "Night of the living AJ",
       "author": [
         "GadS"
@@ -18006,7 +18459,7 @@
       ]
     },
     {
-      "id": 820,
+      "id": 819,
       "title": "P.E.G.A.S.",
       "author": [
         "McFord"
@@ -18059,7 +18512,7 @@
       ]
     },
     {
-      "id": 821,
+      "id": 820,
       "title": "Royal Flying Corps",
       "author": [
         "McFord"
@@ -18136,7 +18589,7 @@
       ]
     },
     {
-      "id": 822,
+      "id": 821,
       "title": "HideNSeek64",
       "author": [
         "VaJa72"
@@ -18200,7 +18653,7 @@
       ]
     },
     {
-      "id": 823,
+      "id": 822,
       "title": "Cold Survival",
       "author": [
         "ziro_em"
@@ -18269,7 +18722,7 @@
       ]
     },
     {
-      "id": 824,
+      "id": 823,
       "title": "Pony_oki",
       "author": [
         "konevod"
@@ -18327,7 +18780,7 @@
       ]
     },
     {
-      "id": 825,
+      "id": 824,
       "title": "LoT alchemy",
       "author": [
         "KaskeT"
@@ -18379,7 +18832,7 @@
       ]
     },
     {
-      "id": 826,
+      "id": 825,
       "title": "\u042D\u041A\u0412\u0415\u0421\u0422\u0420\u0418\u0415 \u0412 \u041E\u041F\u0410\u0421\u041D\u0410\u0421\u0422\u0418",
       "author": [
         "kujivunia"
@@ -18435,7 +18888,7 @@
       ]
     },
     {
-      "id": 827,
+      "id": 826,
       "title": "Pony Defence",
       "author": [
         "vorodor"
@@ -18521,7 +18974,7 @@
       ]
     },
     {
-      "id": 829,
+      "id": 828,
       "title": "Hearth\u0027s Warming Quest",
       "author": [
         "kujivunia"
@@ -18574,7 +19027,7 @@
       ]
     },
     {
-      "id": 831,
+      "id": 830,
       "title": "Crypt",
       "author": [
         "ziro_em"
@@ -18622,7 +19075,7 @@
       ]
     },
     {
-      "id": 832,
+      "id": 831,
       "title": "Strikely\u0027s Top Secret Mission",
       "author": [
         "VaJa72"
@@ -18637,6 +19090,10 @@
         },
         {
           "label": "Action",
+          "type": "Genre"
+        },
+        {
+          "label": "Stealth",
           "type": "Genre"
         }
       ],
@@ -18711,7 +19168,7 @@
       ]
     },
     {
-      "id": 833,
+      "id": 832,
       "title": "WildHit",
       "author": [
         "Phelanhik"
@@ -18764,7 +19221,7 @@
       ]
     },
     {
-      "id": 834,
+      "id": 833,
       "title": "Snowfall Frost",
       "author": [
         "LikeAPrincess"
@@ -18850,7 +19307,7 @@
       ]
     },
     {
-      "id": 835,
+      "id": 834,
       "title": "The Little Match Filly",
       "author": [
         "LittleTinyBit"
@@ -18970,7 +19427,7 @@
       ]
     },
     {
-      "id": 836,
+      "id": 835,
       "title": "Frostpony Clicker",
       "author": [
         "vorodor"
@@ -19022,7 +19479,7 @@
       ]
     },
     {
-      "id": 837,
+      "id": 836,
       "title": "Metal Pony",
       "author": [
         "styrbo"
@@ -19075,7 +19532,7 @@
       ]
     },
     {
-      "id": 838,
+      "id": 837,
       "title": "Royal Cupcakes",
       "author": [
         "VaJa72",
@@ -19128,7 +19585,7 @@
       ]
     },
     {
-      "id": 839,
+      "id": 838,
       "title": "TvsT",
       "author": [
         "KaskeT"
@@ -19182,7 +19639,7 @@
       ]
     },
     {
-      "id": 840,
+      "id": 839,
       "title": "Blast Cake Party",
       "author": [
         "LittleTinyBit"
@@ -19249,7 +19706,7 @@
       ]
     },
     {
-      "id": 841,
+      "id": 840,
       "title": "gallop",
       "author": [
         "pavel_karasal"
@@ -19305,7 +19762,7 @@
       ]
     },
     {
-      "id": 842,
+      "id": 841,
       "title": "\u0422\u0435\u0430\u0442\u0440 \u041F\u043E\u043D\u0438",
       "author": [
         "LikeAPrincess"
@@ -19376,7 +19833,7 @@
       ]
     },
     {
-      "id": 843,
+      "id": 842,
       "title": "PlayParaspritePolka",
       "author": [
         "LittleTinyBit"
@@ -19445,7 +19902,7 @@
       ]
     },
     {
-      "id": 844,
+      "id": 843,
       "title": "\u0414\u0435\u043D\u044C \u0413\u043E\u0440\u044F\u0449\u0435\u0433\u043E \u041E\u0447\u0430\u0433\u0430",
       "author": [
         "kujivunia"
@@ -19503,7 +19960,7 @@
       ]
     },
     {
-      "id": 845,
+      "id": 844,
       "title": "The Soil",
       "author": [
         "ziro_em"
@@ -19560,7 +20017,7 @@
       ]
     },
     {
-      "id": 846,
+      "id": 845,
       "title": "My Little Potions",
       "author": [
         "vorodor"
@@ -19625,7 +20082,7 @@
       ]
     },
     {
-      "id": 847,
+      "id": 846,
       "title": "Making Cupcake Cutie Mark ",
       "author": [
         "LittleTinyBit"
@@ -19679,7 +20136,7 @@
       ]
     },
     {
-      "id": 848,
+      "id": 847,
       "title": "\u0428\u0418\u041F600",
       "author": [
         "KaskeT"
@@ -19740,7 +20197,7 @@
       ]
     },
     {
-      "id": 849,
+      "id": 848,
       "title": "\u041A\u043E\u043D\u0432\u0435\u0440\u041F\u043E\u043D\u0438\u0413\u0435\u043D\u0446\u0438\u044F",
       "author": [
         "LikeAPrincess"
@@ -19793,7 +20250,7 @@
       ]
     },
     {
-      "id": 850,
+      "id": 849,
       "title": "Lyra\u0027s Awakening",
       "author": [
         "LittleTinyBit"
@@ -19880,7 +20337,7 @@
       ]
     },
     {
-      "id": 851,
+      "id": 850,
       "title": "EverfreeFishing",
       "author": [
         "Weege"
@@ -19933,7 +20390,7 @@
       ]
     },
     {
-      "id": 852,
+      "id": 851,
       "title": "horseHordeMode",
       "author": [
         "virGli"
@@ -19995,7 +20452,7 @@
       ]
     },
     {
-      "id": 853,
+      "id": 852,
       "title": "pony war game",
       "author": [
         "Rusty Snoot"
@@ -20047,7 +20504,7 @@
       ]
     },
     {
-      "id": 854,
+      "id": 853,
       "title": "PumpkinLinky",
       "author": [
         "carrotpone"
@@ -20100,7 +20557,7 @@
       ]
     },
     {
-      "id": 855,
+      "id": 854,
       "title": "sleepless in everfree",
       "author": [
         "cluster bright"
@@ -20185,7 +20642,7 @@
       ]
     },
     {
-      "id": 856,
+      "id": 855,
       "title": "The Legend of Mareghoul",
       "author": [
         "Zv\u0027n"
@@ -20241,7 +20698,7 @@
       ]
     },
     {
-      "id": 857,
+      "id": 856,
       "title": "Twilight\u0027s nightmare",
       "author": [
         "Shark_vil",
@@ -20346,7 +20803,7 @@
       ]
     },
     {
-      "id": 858,
+      "id": 857,
       "title": "The Manor Adventure",
       "author": [
         "Marethief"
@@ -20405,7 +20862,7 @@
       ]
     },
     {
-      "id": 859,
+      "id": 858,
       "title": "Vinyl ate a hayburger and died",
       "author": [
         "serverok"
@@ -20475,7 +20932,7 @@
       ]
     },
     {
-      "id": 860,
+      "id": 859,
       "title": "Everfree Spirits",
       "author": [
         "RealLifePze"
@@ -20528,7 +20985,7 @@
       ]
     },
     {
-      "id": 861,
+      "id": 860,
       "title": "Haunted Hooves",
       "author": [
         "watercolor"
@@ -20555,7 +21012,7 @@
       "screenshots": []
     },
     {
-      "id": 862,
+      "id": 861,
       "title": "cadence against bugs",
       "author": [
         "?"
@@ -20613,7 +21070,7 @@
       ]
     },
     {
-      "id": 863,
+      "id": 862,
       "title": "Canterlot Invaders",
       "author": [
         "?"
@@ -20665,7 +21122,7 @@
       ]
     },
     {
-      "id": 864,
+      "id": 863,
       "title": "Canterlot Rails",
       "author": [
         "sleepypony"
@@ -20694,7 +21151,8 @@
       "status": "Released",
       "engine": "Godot",
       "platforms": [
-        "Windows"
+        "Windows",
+        "Source code"
       ],
       "url": "https://sleepypony.itch.io/canterlot-rails",
       "dateAdded": "01.07.2023",
@@ -20716,17 +21174,17 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Source code",
           "version": "",
-          "url": "https://games.mare.by/340",
+          "url": "https://games.mare.by/440",
           "buttonText": "Download",
           "mirrors": [
             {
-              "url": "https://mlpgames.mariusdavid.fr/340",
+              "url": "https://mlpgames.mariusdavid.fr/440",
               "label": "Scrogne"
             },
             {
-              "url": "https://t.me/ponygamesarchive/1430",
+              "url": "https://t.me/ponygamesarchive/2075",
               "label": "telegram"
             }
           ]
@@ -20738,7 +21196,7 @@
       ]
     },
     {
-      "id": 866,
+      "id": 865,
       "title": "Name Annie\u0027s Adventure",
       "author": [
         "thebatfang"
@@ -20795,7 +21253,7 @@
       ]
     },
     {
-      "id": 867,
+      "id": 866,
       "title": "Poneroids",
       "author": [
         "?"
@@ -20902,7 +21360,7 @@
       ]
     },
     {
-      "id": 868,
+      "id": 867,
       "title": "Twilight Sparkle\u0027s Race to the Finish!",
       "author": [
         "?"
@@ -20960,7 +21418,7 @@
       ]
     },
     {
-      "id": 869,
+      "id": 868,
       "title": "Mare Miner",
       "author": [
         "SeafoodDinner"
@@ -21014,7 +21472,7 @@
       ]
     },
     {
-      "id": 870,
+      "id": 869,
       "title": "PonySide",
       "author": [
         "RosacePony"
@@ -21069,12 +21527,12 @@
       ]
     },
     {
-      "id": 872,
+      "id": 871,
       "title": "Besti",
       "author": [
         "Skunkfrakker"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -21678,7 +22136,7 @@
       "screenshots": []
     },
     {
-      "id": 873,
+      "id": 872,
       "title": "Rarity is a whore",
       "author": [
         "swfpony"
@@ -21735,7 +22193,7 @@
       ]
     },
     {
-      "id": 874,
+      "id": 873,
       "title": "Twilights Training",
       "author": [
         "Tentacle Muffin"
@@ -21789,7 +22247,7 @@
       "screenshots": []
     },
     {
-      "id": 875,
+      "id": 874,
       "title": "hold on sweetie",
       "author": [
         "Kurohoof"
@@ -21843,7 +22301,7 @@
       "screenshots": []
     },
     {
-      "id": 876,
+      "id": 875,
       "title": "twilight pov",
       "author": [
         "swfpony"
@@ -21897,7 +22355,7 @@
       "screenshots": []
     },
     {
-      "id": 877,
+      "id": 876,
       "title": "37",
       "author": [
         "pokehidden"
@@ -21967,7 +22425,7 @@
       "screenshots": []
     },
     {
-      "id": 878,
+      "id": 877,
       "title": "aj rd alc",
       "author": [
         "Negasy"
@@ -22021,7 +22479,7 @@
       "screenshots": []
     },
     {
-      "id": 879,
+      "id": 878,
       "title": "daring do and magic tentacles",
       "author": [
         "swfpony"
@@ -22075,7 +22533,7 @@
       "screenshots": []
     },
     {
-      "id": 880,
+      "id": 879,
       "title": "paying the rent",
       "author": [
         "swfpony"
@@ -22132,7 +22590,7 @@
       ]
     },
     {
-      "id": 881,
+      "id": 880,
       "title": "Twilight Escape from Staliongrad",
       "author": [
         "AdamMasterArt"
@@ -22189,7 +22647,7 @@
       ]
     },
     {
-      "id": 882,
+      "id": 881,
       "title": "Pony RTC",
       "author": [
         "?"
@@ -22235,7 +22693,7 @@
       "screenshots": []
     },
     {
-      "id": 883,
+      "id": 882,
       "title": "Ramage",
       "author": [
         "Plumage"
@@ -22306,7 +22764,7 @@
       ]
     },
     {
-      "id": 884,
+      "id": 883,
       "title": "Our Fetishes",
       "author": [
         "Moogibis"
@@ -22383,7 +22841,7 @@
       ]
     },
     {
-      "id": 885,
+      "id": 884,
       "title": "Muffin Love",
       "author": [
         "Lemon Drop"
@@ -22454,7 +22912,7 @@
       ]
     },
     {
-      "id": 886,
+      "id": 885,
       "title": "Space Pones",
       "author": [
         "carrotpone"
@@ -22557,7 +23015,7 @@
       ]
     },
     {
-      "id": 887,
+      "id": 886,
       "title": "Dinner with the Librarian",
       "author": [
         "alki555"
@@ -22611,7 +23069,7 @@
       ]
     },
     {
-      "id": 888,
+      "id": 887,
       "title": "Bug Begone!",
       "author": [
         "SeafoodDinner"
@@ -22664,7 +23122,7 @@
       ]
     },
     {
-      "id": 889,
+      "id": 888,
       "title": "Ponies VS Zebras",
       "author": [
         "ponkerds"
@@ -22737,7 +23195,7 @@
       ]
     },
     {
-      "id": 891,
+      "id": 890,
       "title": "Post Poners",
       "author": [
         "ponkerds",
@@ -22828,7 +23286,7 @@
       ]
     },
     {
-      "id": 892,
+      "id": 891,
       "title": "Meet-a-Mare Special Episode: True Love is a Rarity!",
       "author": [
         "Mystic Moonglow"
@@ -22884,7 +23342,7 @@
       ]
     },
     {
-      "id": 893,
+      "id": 892,
       "title": "MARE WARE",
       "author": [
         "Weege"
@@ -22947,7 +23405,7 @@
       ]
     },
     {
-      "id": 894,
+      "id": 893,
       "title": "Find Your Mare Simulator 2025",
       "author": [
         "McFord"
@@ -23002,7 +23460,7 @@
       ]
     },
     {
-      "id": 895,
+      "id": 894,
       "title": "Replica, Replica",
       "author": [
         "alki555"
@@ -23058,7 +23516,7 @@
       ]
     },
     {
-      "id": 896,
+      "id": 895,
       "title": "Dress to impress",
       "author": [
         "anon"
@@ -23112,7 +23570,7 @@
       ]
     },
     {
-      "id": 897,
+      "id": 896,
       "title": "Farmare",
       "author": [
         "Marejam"
@@ -23168,7 +23626,7 @@
       ]
     },
     {
-      "id": 898,
+      "id": 897,
       "title": "Melody\u0027s Afternoon Walk",
       "author": [
         "BristolPone"
@@ -23240,7 +23698,7 @@
       ]
     },
     {
-      "id": 899,
+      "id": 898,
       "title": "numget survivors",
       "author": [
         "SigilPonies"
@@ -23298,7 +23756,7 @@
       ]
     },
     {
-      "id": 900,
+      "id": 899,
       "title": "Derpy\u0027s hearts and hooves day mailroom sorting simulator",
       "author": [
         "QTStudios"
@@ -23357,7 +23815,7 @@
       ]
     },
     {
-      "id": 901,
+      "id": 900,
       "title": "The Lyra Parable Prototype",
       "author": [
         "LivingLinguini"
@@ -23411,7 +23869,7 @@
       ]
     },
     {
-      "id": 902,
+      "id": 901,
       "title": "Colgate 3d",
       "author": [
         "a393"
@@ -23465,7 +23923,7 @@
       ]
     },
     {
-      "id": 903,
+      "id": 902,
       "title": "Lyra the Oat Thief",
       "author": [
         "carrotpone"
@@ -23585,7 +24043,7 @@
       ]
     },
     {
-      "id": 904,
+      "id": 903,
       "title": "Anon VS",
       "author": [
         "Kasket"
@@ -23645,7 +24103,7 @@
       ]
     },
     {
-      "id": 905,
+      "id": 904,
       "title": "Cheharda",
       "author": [
         "LittleInchyBit"
@@ -23700,7 +24158,7 @@
       ]
     },
     {
-      "id": 906,
+      "id": 905,
       "title": "Pixel Buckball",
       "author": [
         "Shub"
@@ -23752,7 +24210,7 @@
       ]
     },
     {
-      "id": 907,
+      "id": 906,
       "title": "My Little Gear Solid Demo",
       "author": [
         "LittleInchyBit"
@@ -23840,7 +24298,7 @@
       ]
     },
     {
-      "id": 908,
+      "id": 907,
       "title": "The Bartender",
       "author": [
         "VaJa72"
@@ -23897,7 +24355,7 @@
       ]
     },
     {
-      "id": 909,
+      "id": 908,
       "title": "The Kirin Brews Some Tea",
       "author": [
         "carrotpone"
@@ -24018,7 +24476,7 @@
       ]
     },
     {
-      "id": 910,
+      "id": 909,
       "title": "Flutter\u0027s Cloud Watching",
       "author": [
         "alki555"
@@ -24087,7 +24545,7 @@
       ]
     },
     {
-      "id": 911,
+      "id": 910,
       "title": "Jammin\u0027 With Lyra",
       "author": [
         "ponerponee"
@@ -24153,7 +24611,7 @@
       ]
     },
     {
-      "id": 912,
+      "id": 911,
       "title": "Sunset Smoothies",
       "author": [
         "Lemon Drop"
@@ -24223,7 +24681,7 @@
       ]
     },
     {
-      "id": 913,
+      "id": 912,
       "title": "Mare Fair: Tendie Frenzy",
       "author": [
         "Mare Fair"
@@ -24276,7 +24734,7 @@
       ]
     },
     {
-      "id": 914,
+      "id": 913,
       "title": "Scooter Scoots",
       "author": [
         "noponyinparticular"
@@ -24316,7 +24774,7 @@
       ]
     },
     {
-      "id": 915,
+      "id": 914,
       "title": "Sweetie Puncher",
       "author": [
         "ComicTM"
@@ -24373,7 +24831,7 @@
       ]
     },
     {
-      "id": 916,
+      "id": 915,
       "title": "Melody\u0027s Secret Hobby",
       "author": [
         "BristolPone"
@@ -24451,12 +24909,12 @@
       ]
     },
     {
-      "id": 918,
+      "id": 917,
       "title": "Fruitilitious",
       "author": [
         "stsyn"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "When you\u0027re told to find a hobby, but all your tim...",
       "fullDescription": "When you\u0027re told to find a hobby, but all your time is taken up with all sorts of royal stuff, what are you going to do? Run to the first event that comes your way? Probably not, but who asked your opinion? Now you\u0027re going to the harvest season, and don\u0027t even think about being late! What, you\u0027re a princess and you\u0027re not supposed to work on the farm? Nonsense.",
       "tags": [
@@ -24506,12 +24964,12 @@
       "screenshots": []
     },
     {
-      "id": 919,
+      "id": 918,
       "title": "MareFall",
       "author": [
         "a393"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -24560,12 +25018,12 @@
       "screenshots": []
     },
     {
-      "id": 920,
+      "id": 919,
       "title": "Mare-y Oat Bros.",
       "author": [
         "mane6gaming"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Help Applejack and Pinkie stack crates of apple ci...",
       "fullDescription": "Help Applejack and Pinkie stack crates of apple cider so Pinkie(??) can drive them to who knows where.",
       "tags": [
@@ -24610,12 +25068,12 @@
       "screenshots": []
     },
     {
-      "id": 921,
+      "id": 920,
       "title": "Lyrant Foot Simulator",
       "author": [
         "ElectroKaplosion"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Protect Zippers from the Lyrants",
       "fullDescription": "Protect Zippers from the Lyrants",
       "tags": [
@@ -24664,12 +25122,12 @@
       "screenshots": []
     },
     {
-      "id": 922,
+      "id": 921,
       "title": "EEEEE! (Echo\u0027s Eerily Enigmatic Eldritch Expedition)",
       "author": [
         "Seslidareous"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Echo loves spelunking! For her, noting matches the...",
       "fullDescription": "Echo loves spelunking! For her, noting matches the excitement of being the first to discover the mysteries buried under the stone for many centuries. But when her day off leads her to an unexplored cave straight out her deepest dreams, she might find more than what she asked for, and unearth the secrets of batponies kept buried by the Princesses for millennia.",
       "tags": [
@@ -24735,12 +25193,12 @@
       "screenshots": []
     },
     {
-      "id": 923,
+      "id": 922,
       "title": "Dragon Solitaire",
       "author": [
         "Kasket"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "The goal of the game, in this version, is to get t...",
       "fullDescription": "The goal of the game, in this version, is to get to the Hive and defeat Queen Chrysalis. To do this, you need to go through a number of locations.",
       "tags": [
@@ -24821,7 +25279,7 @@
       "screenshots": []
     },
     {
-      "id": 924,
+      "id": 923,
       "title": "Airhead Academy Classic",
       "author": [
         "nomsar"
@@ -25390,12 +25848,12 @@
       ]
     },
     {
-      "id": 925,
+      "id": 924,
       "title": "Airhead Academy",
       "author": [
         "nomsar"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Airhead Academy is a dating sim inspired by tradit...",
       "fullDescription": "Airhead Academy is a dating sim inspired by traditional visual novels with the added twist of bimbofication being an option. The characters are humanized versions of characters you may already be familiar with. However, even if you don\u2019t recognize the characters, or if you\u0027re not into bimbofication, you can still enjoy the content and story as long as you like cute girls.",
       "tags": [
@@ -25503,12 +25961,12 @@
       "screenshots": []
     },
     {
-      "id": 926,
+      "id": 925,
       "title": "My Little Pony: Everfree Roguelike",
       "author": [
         "Tifu"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -25557,12 +26015,12 @@
       "screenshots": []
     },
     {
-      "id": 927,
+      "id": 926,
       "title": "Bimbo Horse Game",
       "author": [
         "nomsar"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -25667,7 +26125,7 @@
       "screenshots": []
     },
     {
-      "id": 928,
+      "id": 927,
       "title": "\u0421\u043E\u0431\u0435\u0440\u0438 \u043F\u043E\u043D\u044F\u0448\u0435\u043A",
       "author": [
         "No One Cares Games"
@@ -25717,12 +26175,12 @@
       ]
     },
     {
-      "id": 929,
+      "id": 928,
       "title": "Touch the Mare",
       "author": [
         "moistlimit"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "One button to touch the mare ",
       "fullDescription": "One button to touch the mare ",
       "tags": [
@@ -25771,12 +26229,12 @@
       "screenshots": []
     },
     {
-      "id": 930,
+      "id": 929,
       "title": "Time For Ponies",
       "author": [
         "EnjoyerOfMares"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Time For Ponies is a spin on the Swedish board gam...",
       "fullDescription": "Time For Ponies is a spin on the Swedish board game \u0022N\u00E4r D\u00E5 D\u00E5\u0022. The objective of the game is to build a timeline out of as many events as you can from five categories; Kino, Music, Ponies, Canon and Fandom.",
       "tags": [
@@ -25838,12 +26296,12 @@
       "screenshots": []
     },
     {
-      "id": 931,
+      "id": 930,
       "title": "Sweetie Puncher 2",
       "author": [
         "ComicTM"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "After the events of Sweetie Puncher, Apple Jack hi...",
       "fullDescription": "After the events of Sweetie Puncher, Apple Jack hits the streets.",
       "tags": [
@@ -25889,12 +26347,12 @@
       "screenshots": []
     },
     {
-      "id": 932,
+      "id": 931,
       "title": "Jam Entry: The Great Button Press Pony Game",
       "author": [
         "TheCrimsonDM Vanillia"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "You work in the far north pushing a single button ...",
       "fullDescription": "You work in the far north pushing a single button all day, will you survive the night? Probably why not?",
       "tags": [
@@ -25995,12 +26453,12 @@
       "screenshots": []
     },
     {
-      "id": 933,
+      "id": 932,
       "title": "My Little Pony Pop",
       "author": [
         "Leddaq Pony"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Fight against iconic villains (in order) in this p...",
       "fullDescription": "Fight against iconic villains (in order) in this physics based puzzle game!",
       "tags": [
@@ -26050,12 +26508,12 @@
       "screenshots": []
     },
     {
-      "id": 934,
+      "id": 933,
       "title": "Derpy Delivery (by SeafoodDinner)",
       "author": [
         "SeafoodDinner"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Made for the 2025 /mlp/ Game Jam: One Button Chall...",
       "fullDescription": "Made for the 2025 /mlp/ Game Jam: One Button Challenge! As the name says, only one button for gameplay, or click in this case! Left click to throw packages, make sure to aim at the doorsteps! Also dodge obstacles and resupply more packages while you do so!",
       "tags": [
@@ -26117,12 +26575,12 @@
       "screenshots": []
     },
     {
-      "id": 935,
+      "id": 934,
       "title": "Let Her In",
       "author": [
         "anonmare"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "It starts in a dream.",
       "fullDescription": "It starts in a dream.",
       "tags": [
@@ -26168,12 +26626,12 @@
       "screenshots": []
     },
     {
-      "id": 936,
+      "id": 935,
       "title": "My Pretty tiny HORSE LOST IN HEAVEN: Tactical Diplomacy Simulation \u0026 Dating",
       "author": [
         "horseracerone"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Life of all pony-kind is blessed by the light of o...",
       "fullDescription": "Life of all pony-kind is blessed by the light of our one and only Divine and Holy Godess - Princess Harmony.",
       "tags": [
@@ -26218,12 +26676,12 @@
       "screenshots": []
     },
     {
-      "id": 937,
+      "id": 936,
       "title": "Cherry Berry Goes Berry Fast",
       "author": [
         "carrotpone"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Winter has arrived in Equestria, and Cherry Berry ...",
       "fullDescription": "Winter has arrived in Equestria, and Cherry Berry is going sledding!  Help her navigate down a slope, picking up speed and avoiding obstacles.  Your only control is the space bar.   As long as you hold space, the slope in front of Cherry Berry will angle upwards, whereas it will angle down when space is not pressed.",
       "tags": [
@@ -26335,12 +26793,12 @@
       "screenshots": []
     },
     {
-      "id": 938,
+      "id": 937,
       "title": "Pony (Mis)Match",
       "author": [
         "skelmach"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "My first game. Written in C# / .Net framework. The...",
       "fullDescription": "My first game. Written in C# / .Net framework. The only program I\u0027d made before this was getchar(); and printf(); in a console window.",
       "tags": [
@@ -26385,13 +26843,13 @@
       "screenshots": []
     },
     {
-      "id": 939,
+      "id": 938,
       "title": "A game about a batpony spending her social security savings on a slot machine: EEE edition",
       "author": [
         "ponkerds",
         "Bilivrayka"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Flim and Flam are back in town! Always scheming so...",
       "fullDescription": "Flim and Flam are back in town! Always scheming something, this time they\u0027ve build a casino smack-dab in the middle of Ponyville! Of course they don\u0027t ever play fair and (YOU) have a hunch that this time, it won\u0027t be any different. With a cutie mark promising to break any slot machine, you will make an end to their stupid games, by breaking the bank!",
       "tags": [
@@ -26454,12 +26912,12 @@
       "screenshots": []
     },
     {
-      "id": 940,
+      "id": 939,
       "title": "Behind you, Rainbow!",
       "author": [
         "minktusk"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Once again Rainbow Dash and Apple Jack are at the ...",
       "fullDescription": "Once again Rainbow Dash and Apple Jack are at the Castle of the Two sisters",
       "tags": [
@@ -26508,12 +26966,12 @@
       "screenshots": []
     },
     {
-      "id": 941,
+      "id": 940,
       "title": "Anon\u0027s Pony Adventure 18\u002B",
       "author": [
         "Marethief"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "A short adventure starring the legendary Time Crun...",
       "fullDescription": "A short adventure starring the legendary Time Crunch made in two weeks for the /mlp/ off-con Game Jam! Have fun but don\u0027t take it too seriously! If you don\u0027t frequent /mlp/ this game isn\u0027t for you!",
       "tags": [
@@ -26575,12 +27033,12 @@
       "screenshots": []
     },
     {
-      "id": 942,
+      "id": 941,
       "title": "Mare Admirer",
       "author": [
         "Pony_UteUk"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "This is a silly game made for fun. The whole \u0022good...",
       "fullDescription": "This is a silly game made for fun. The whole \u0022good vs. bad\u0022 art thing is just a gameplay mechanic based on one Anon\u0027s very specific tastes.",
       "tags": [
@@ -26602,12 +27060,12 @@
       "screenshots": []
     },
     {
-      "id": 943,
+      "id": 942,
       "title": "Pinkie\u0027s One Button Adventure",
       "author": [
         "LittleInchyBit"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Pinkie Pie can only hop, and she hopping around an...",
       "fullDescription": "Pinkie Pie can only hop, and she hopping around and helping some critters.",
       "tags": [
@@ -26669,12 +27127,12 @@
       "screenshots": []
     },
     {
-      "id": 944,
+      "id": 943,
       "title": "I\u0027m Hungry",
       "author": [
         "QTStudios"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Help Queen Chrysalis to pop Canterlots shields!",
       "fullDescription": "Help Queen Chrysalis to pop Canterlots shields!",
       "tags": [
@@ -26719,12 +27177,12 @@
       "screenshots": []
     },
     {
-      "id": 945,
+      "id": 944,
       "title": "Forest walk",
       "author": [
         "Kasket"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Spike just wants to go for a walk in the woods, bu...",
       "fullDescription": "Spike just wants to go for a walk in the woods, but he\u0027s constantly getting in the way. Help the dragon by pressing one button. I hope you can handle such a difficult job. I believe in you!",
       "tags": [
@@ -26769,12 +27227,12 @@
       "screenshots": []
     },
     {
-      "id": 946,
+      "id": 945,
       "title": "Jam Entry: Fluttershy\u0027s Laundromat Troubles",
       "author": [
         "TheCrimsonDM Vanillia"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "A shy pony is trying to make friends at the Laundr...",
       "fullDescription": "A shy pony is trying to make friends at the Laundromat, will things go well?",
       "tags": [
@@ -26824,12 +27282,12 @@
       "screenshots": []
     },
     {
-      "id": 947,
+      "id": 946,
       "title": "Mare Honking Simulator",
       "author": [
         "ponerponee"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Honk at a master procrastinator mare! Help her fin...",
       "fullDescription": "Honk at a master procrastinator mare! Help her finish her game before the deadline.",
       "tags": [
@@ -26891,12 +27349,12 @@
       "screenshots": []
     },
     {
-      "id": 948,
+      "id": 947,
       "title": "Apple Road",
       "author": [
         "Shub"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "How far along can you help Applejack travel this e...",
       "fullDescription": "How far along can you help Applejack travel this endless path.",
       "tags": [
@@ -26945,12 +27403,12 @@
       "screenshots": []
     },
     {
-      "id": 949,
+      "id": 948,
       "title": "maredodge",
       "author": [
         "a393"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "first html5 game no idea how to write music",
       "fullDescription": "first html5 game no idea how to write music",
       "tags": [
@@ -26995,12 +27453,12 @@
       "screenshots": []
     },
     {
-      "id": 950,
+      "id": 949,
       "title": "Luna copter",
       "author": [
         "Kasket"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Ponification an old mobile game",
       "fullDescription": "Ponification an old mobile game",
       "tags": [
@@ -27045,12 +27503,12 @@
       "screenshots": []
     },
     {
-      "id": 951,
+      "id": 950,
       "title": "cactus",
       "author": [
         "a393"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "space, up, W to jump",
       "fullDescription": "space, up, W to jump",
       "tags": [
@@ -27099,12 +27557,12 @@
       "screenshots": []
     },
     {
-      "id": 952,
+      "id": 951,
       "title": "Ponyhida (Pony game)",
       "author": [
         "Pegacy"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "A game about a little pony named Ponyhida, who run...",
       "fullDescription": "A game about a little pony named Ponyhida, who runs through the mountains in search of golden teapots. Along the way, she encounters many red teapots that stand in her way and try to keep her from reaching her ultimate goal. The game also features items that grant extra lives, represented by the main character floating head.",
       "tags": [
@@ -27153,12 +27611,12 @@
       "screenshots": []
     },
     {
-      "id": 953,
+      "id": 952,
       "title": "Pony Car Smasher",
       "author": [
         "Snecy"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "The little pony needs to cross the road to find ha...",
       "fullDescription": "The little pony needs to cross the road to find happiness on the other side.",
       "tags": [
@@ -27203,12 +27661,55 @@
       "screenshots": []
     },
     {
-      "id": 956,
+      "id": 954,
+      "title": "The Darkening of the Purple Bloodline",
+      "author": [
+        "Malfurian Digimatta"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        }
+      ],
+      "characters": [
+        "OC",
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "RPGMaker",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://malfurian-digimatta.itch.io/the-darkening-of-the-purple-bloodline",
+      "dateAdded": "08.02.2026",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/692",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2047",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 955,
       "title": "Spooky Stories",
       "author": [
         "VaJa72"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "This game is about a small group of ponies spendin...",
       "fullDescription": "This game is about a small group of ponies spending a night around campfire and sharing creepy stories to each other.",
       "tags": [
@@ -27275,12 +27776,12 @@
       "screenshots": []
     },
     {
-      "id": 957,
+      "id": 956,
       "title": "City To The South",
       "author": [
         "nth_moon"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "In recent years, archaeologists have made new disc...",
       "fullDescription": "In recent years, archaeologists have made new discoveries regarding a particular ancient civilization. The more about it they uncover, the less it seems to fit within our previous understanding of history.",
       "tags": [
@@ -27326,12 +27827,12 @@
       "screenshots": []
     },
     {
-      "id": 958,
+      "id": 957,
       "title": "Glue",
       "author": [
         "Glim Glam"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "The mane six receive a mysterious invite to Prince...",
       "fullDescription": "The mane six receive a mysterious invite to Princess Luna\u0027s secluded mansion in the Tramplevanian Alps. They are looking forward to a fun weekend of rest and relaxation, but things keep getting weird..",
       "tags": [
@@ -27423,13 +27924,13 @@
       "screenshots": []
     },
     {
-      "id": 959,
+      "id": 958,
       "title": "F.A.G.G.O.T.R.Y.",
       "author": [
         "Bilivrayka",
         "ponkerds"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Help... ;c; Help... ;c;",
       "fullDescription": "Help... ;c; Help... ;c;",
       "tags": [
@@ -27452,296 +27953,995 @@
       "playtime": "Unknown",
       "status": "Released",
       "engine": "Godot",
-      "platforms": [],
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
       "url": "https://bilivrayka.itch.io/faggotry",
       "dateAdded": "26.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/892",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1950",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Linux",
+          "version": "",
+          "url": "https://games.mare.by/893",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1951",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 960,
+      "id": 959,
       "title": "Tavi",
       "author": [
         "Kasket"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "The game was made in three days. I\u0027m sorry she cam...",
       "fullDescription": "The game was made in three days. I\u0027m sorry she came out like this. ",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
-      "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "In Development",
+      "engine": "Construct",
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://konstantin-kasket.itch.io/tavi",
       "dateAdded": "29.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "0.1",
+          "url": "https://games.mare.by/894",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1956",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Windows",
+          "version": "0.2",
+          "url": "https://games.mare.by/895",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1957",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 961,
+      "id": 960,
       "title": "CELETIA GAME",
       "author": [
         "a393"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "i made it in an hour when i got drunk",
       "fullDescription": "i made it in an hour when i got drunk",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Gamemaker",
+      "platforms": [
+        "Web"
+      ],
       "url": "https://a393.itch.io/celetia-game",
       "dateAdded": "26.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/896",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1963",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 962,
+      "id": 961,
       "title": "One Day",
       "author": [
         "stsyn"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "So, just a normal poni day. Nothing scary, right?",
       "fullDescription": "So, just a normal poni day. Nothing scary, right?",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Stealth",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "OC"
+      ],
+      "playtime": "5m-30m",
       "status": "Released",
       "engine": "Unknown",
-      "platforms": [],
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://stsyn.itch.io/one-day",
       "dateAdded": "11.05.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/897",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1967",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 963,
+      "id": 962,
       "title": "Cheer and Warm",
       "author": [
         "LittleInchyBit"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Rarity enthusiastically accepted the invitation to...",
       "fullDescription": "Rarity enthusiastically accepted the invitation to a Hearth\u0027s Warming party in a real winter forest. Unfortunately, their negligent coachpony got lost on the way, he went for help, but never returned. Rarity will have to walk into the blizzard at random. She wouldn\u0027t have been so worried if she hadn\u0027t brought her younger sister with her.",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "3D",
+          "type": "Other"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        },
+        {
+          "label": "Action",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "M6",
+        "CMC"
+      ],
+      "playtime": "5m-30m",
       "status": "In Development",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Unity",
+      "platforms": [
+        "Windows",
+        "OSX",
+        "Linux",
+        "Web"
+      ],
       "url": "https://littleinchybit.itch.io/cheer-and-warm",
-      "dateAdded": "22.06.2026",
-      "downloads": null,
+      "dateAdded": "22.04.2026",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/898",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1972",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "OSX",
+          "version": "",
+          "url": "https://games.mare.by/899",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1974",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Linux",
+          "version": "",
+          "url": "https://games.mare.by/900",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1973",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/901",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1975",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 964,
+      "id": 963,
       "title": "Anon Fucking Dies: The Video Game",
       "author": [
         "Marethief"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Ded",
       "fullDescription": "Ded",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Visual Novel",
+          "type": "Genre"
+        },
+        {
+          "label": "Point \u0026 Click",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "OC"
+      ],
+      "playtime": "5m-30m",
       "status": "Released",
       "engine": "Unknown",
-      "platforms": [],
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://marethief.itch.io/anonfuckingdies",
       "dateAdded": "26.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/902",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1980",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 965,
+      "id": 964,
       "title": "Only Flesh",
       "author": [
         "Quanthon"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Parasprites did stop eating food! They eat... poni...",
       "fullDescription": "Parasprites did stop eating food! They eat... ponies.",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Shooter",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Godot",
+      "platforms": [
+        "Web"
+      ],
       "url": "https://quanthon.itch.io/only-flesh",
       "dateAdded": "27.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/903",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1985",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 966,
+      "id": 965,
       "title": "THE KILLER gets a marefriend",
       "author": [
         "chirps-too-much"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "the long awaited THE KILLER\u0027s (my original charact...",
       "fullDescription": "the long awaited THE KILLER\u0027s (my original character originally from my old game called 200 BIT FISH) backstory where THE KILLER gets a creepy marefriend thing.",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Shoot \u0027em Up",
+          "type": "Genre"
+        },
+        {
+          "label": "Shooter",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "OC"
+      ],
+      "playtime": "5m-30m",
       "status": "Released",
       "engine": "Unknown",
-      "platforms": [],
+      "platforms": [
+        "Web"
+      ],
       "url": "https://caws-too-much.itch.io/the-killer-gets-a-marefriend",
       "dateAdded": "29.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/904",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1990",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 967,
+      "id": 966,
       "title": "Nightfall",
       "author": [
         "Legion990"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "3D",
+          "type": "Other"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "OC"
+      ],
+      "playtime": "5m-30m",
       "status": "Released",
       "engine": "Unknown",
-      "platforms": [],
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://drive.google.com/drive/folders/1-naZaGOvBGsIucBFHeAwSeMivuEY_lnl",
       "dateAdded": "27.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/689",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2001",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 968,
+      "id": 967,
       "title": "Luna\u0027s Maze Adventure",
       "author": [
         "ProfessorGlobehead"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "A curse has been casted on Equestria and has cause...",
       "fullDescription": "A curse has been casted on Equestria and has caused some ponies to become horrific versions of themselves. Luna must escape from the Canterlot Garden Maze to find a way to lift the curse and save her friends.",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Gore",
+          "type": "warning"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "Secondary Cast",
+        "M6",
+        "CMC"
+      ],
+      "playtime": "\u003C5 min",
       "status": "In Development",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Godot",
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://professorglobehead.itch.io/lunas-maze-adventure",
       "dateAdded": "27.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/905",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/1995",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 969,
+      "id": 968,
       "title": "Violence is a Last Resort",
       "author": [
         "LeBronyJames"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "In Bizarro Equestria, twilight sparkle has been ca...",
       "fullDescription": "In Bizarro Equestria, twilight sparkle has been called upon to rescue her friends. No other lore",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "3D",
+          "type": "Other"
+        },
+        {
+          "label": "Shooter",
+          "type": "Genre"
+        },
+        {
+          "label": "Action",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "5m-30m",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Godot",
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://lebronyjames.itch.io/violence-is-a-last-resort",
       "dateAdded": "29.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/693",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2015",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 970,
+      "id": 969,
       "title": "My Little Necrogotchi",
       "author": [
         "ponerponee"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "Pony lost her body, help her",
       "fullDescription": "Pony lost her body, help her",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Simulation",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Godot",
+      "platforms": [
+        "Web"
+      ],
       "url": "https://ponerponee.itch.io/my-little-necrogotchi",
       "dateAdded": "31.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/694",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2031",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 971,
+      "id": 970,
       "title": "AJ shooter",
       "author": [
         "LazyPone"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Protect Sweet Apple Acres from the invading monste...",
       "fullDescription": "Protect Sweet Apple Acres from the invading monsters!",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Shooter",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Gamemaker",
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://lazypone.itch.io/aj-shooter",
       "dateAdded": "29.03.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/906",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2008",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
-      "id": 972,
+      "id": 971,
       "title": "Sleuth Applejack",
       "author": [
         "anonmare"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Applejack does an investigation.",
       "fullDescription": "Applejack does an investigation.",
-      "tags": [],
-      "characters": [
-        "Unknown"
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        },
+        {
+          "label": "Puzzle",
+          "type": "Genre"
+        }
       ],
-      "playtime": "Unknown",
+      "characters": [
+        "M6",
+        "OC"
+      ],
+      "playtime": "30m-2h",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "RPGMaker",
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://anonmare.itch.io/sleuth-applejack",
       "dateAdded": "12.06.2026",
-      "downloads": null,
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "01-04",
+          "url": "https://games.mare.by/695",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2042",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 972,
+      "title": "treasure hunting bonus",
+      "author": [
+        "Bluebean"
+      ],
+      "thumbnail": "/s/316/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://games.mare.by/-67",
+      "dateAdded": "?",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/918",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2034",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        "/s/316/1.jpg"
+      ]
+    },
+    {
+      "id": 973,
+      "title": "twilight and spike continuation",
+      "author": [
+        "ButtercupSaiyan"
+      ],
+      "thumbnail": "/s/317/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://games.mare.by/-67",
+      "dateAdded": "?",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/919",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2036",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 974,
+      "title": "Desert Pony",
+      "author": [
+        "KarasuTheClumsy"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "Gallop Gulch is under attack, and it\u0027s up to Moons...",
+      "fullDescription": "Gallop Gulch is under attack, and it\u0027s up to Moonshot to go get help",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        }
+      ],
+      "characters": [
+        "M6",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Godot",
+      "platforms": [
+        "Web"
+      ],
+      "url": "https://karasutheclumsy.itch.io/desert-pony",
+      "dateAdded": "03.06.2026",
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/696",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2052",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 975,
+      "title": "Canterlot Besieged",
+      "author": [
+        "KarasuTheClumsy"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "After 3 months with 0 commits and anxiety at the t...",
+      "fullDescription": "After 3 months with 0 commits and anxiety at the thought of touching anything I finally decided to cut my losses, remove the trigger to start the bossfight, and release what I had as-is.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Shoot \u0027em Up",
+          "type": "Genre"
+        },
+        {
+          "label": "Shooter",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Godot",
+      "platforms": [
+        "Web"
+      ],
+      "url": "https://karasutheclumsy.itch.io/canterlot-besieged-html-ver-10",
+      "dateAdded": "14.06.2026",
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/697",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2057",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 976,
+      "title": "ReRoll",
+      "author": [
+        "zpn_1999"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "\u0417\u0430\u0434\u0430\u0447\u0430 \u0434\u043E\u043F\u0440\u044B\u0433\u0430\u0442\u044C \u043A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u0434\u0430\u043B\u044C\u0448\u0435, \u043F\u043E\u043A\u0430 \u043D\u0435 \u0437\u0430\u043A\u043E\u043D\u0447\u0430...",
+      "fullDescription": "\u0417\u0430\u0434\u0430\u0447\u0430 \u0434\u043E\u043F\u0440\u044B\u0433\u0430\u0442\u044C \u043A\u0430\u043A \u043C\u043E\u0436\u043D\u043E \u0434\u0430\u043B\u044C\u0448\u0435, \u043F\u043E\u043A\u0430 \u043D\u0435 \u0437\u0430\u043A\u043E\u043D\u0447\u0430\u0442\u0441\u044F \u0431\u0440\u043E\u0441\u043A\u0438. \u0414\u043B\u0438\u043D\u0430 \u043F\u0440\u044B\u0436\u043A\u0430 \u0437\u0430\u0432\u0438\u0441\u0438\u0442 \u0432\u044B\u043F\u0430\u0432\u0448\u0435\u0433\u043E \u043A\u0443\u0431\u0438\u043A\u0430. \u0411\u0440\u043E\u0441\u043A\u0438 \u043C\u043E\u0436\u043D\u043E \u0443\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u0443\u0434\u0430\u0447\u043D\u043E \u043F\u0440\u044B\u0433\u0430\u044F \u043D\u0430 \u0437\u0435\u043B\u0435\u043D\u044B\u0435 \u043F\u043E\u043B\u044F, \u0441\u0438\u043D\u0438\u0435 \u043F\u043E\u043B\u044F \u0443\u043C\u043D\u043E\u0436\u0430\u044E\u0442 \u0431\u0440\u043E\u0441\u043A\u0438. \u041A\u0440\u0430\u0441\u043D\u044B\u0435 \u0441\u043B\u0435\u0434\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u043D\u043E \u043E\u0442\u043D\u0438\u043C\u0430\u044E\u0442 \u0431\u0440\u043E\u0441\u043A\u0438. \u041A\u0432\u0430\u0434\u0440\u0430\u0442\u043D\u044B\u0435 \u0441\u043A\u043E\u0431\u043A\u0438 \u043F\u0440\u0438\u0431\u0430\u0432\u043B\u044F\u044E\u0442 \u043E\u0434\u0438\u043D \u043A\u0443\u0431\u0438\u043A (\u043C\u0430\u043A\u0441\u0438\u043C\u0443\u043C 4). \u0420\u0435\u0420\u043E\u043B\u043B \u044D\u0442\u043E \u043F\u043E\u0432\u0442\u043E\u0440\u043D\u044B\u0439 \u0431\u0440\u043E\u0441\u043E\u043A \u043A\u0443\u0431\u0438\u043A\u043E\u0432, \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C \u043D\u0430\u0438\u0431\u043E\u043B\u0435\u0435 \u043F\u043E\u0434\u0445\u043E\u0434\u044F\u0449\u0438\u0439 \u043F\u0440\u044B\u0436\u043E\u043A.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Construct",
+      "platforms": [
+        "Windows",
+        "Linux",
+        "OSX"
+      ],
+      "url": "https://tabun.everypony.ru/blog/OKI/223201.html",
+      "dateAdded": "31.03.2026",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/698",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2065",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/699",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2064",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Linux",
+          "version": "32x",
+          "url": "https://games.mare.by/700",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2062",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Linux",
+          "version": "64x",
+          "url": "https://games.mare.by/701",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2063",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "OSX",
+          "version": "",
+          "url": "https://games.mare.by/702",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2061",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     }
   ]
