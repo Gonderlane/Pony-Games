@@ -65,6 +65,11 @@ collections:
                 widget: "list"
                 field: { label: "Character", name: "character", widget: "string" }
               - { label: "Playtime", name: "playtime", widget: "string" }
+              - label: "Release Date"
+                name: "releaseDate"
+                widget: "string"
+                required: false
+                hint: "Format: YYYY-MM-DD if the exact day is known (e.g. 2015-08-21), YYYY if only the year is known (e.g. 2015), or leave blank if unknown. Do not use DD.MM.YYYY."
               - { label: "Game URL (source / author site)", name: "url", widget: "string", required: false }
               - label: "Downloads"
                 name: "downloads"

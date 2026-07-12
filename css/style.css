@@ -1339,6 +1339,12 @@ body {
   margin-bottom: 0.5rem;
 }
 
+.detail-panel__release {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75rem;
+}
+
 .detail-panel__playtime-wrap {
   margin-bottom: 1rem;
 }

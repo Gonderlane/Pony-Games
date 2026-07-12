@@ -44,11 +44,37 @@ function normalizeListData(data, key) {
 }
 
 function formatDate(dateString) {
+  // Date-only strings ("YYYY-MM-DD") parse as UTC midnight, but
+  // toLocaleDateString renders in the local timezone by default — in any
+  // timezone behind UTC that silently rolls the displayed date back by
+  // one day. Rendering in UTC keeps it matching the date that was typed.
   return new Date(dateString).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
     day: "numeric",
+    timeZone: "UTC",
   });
+}
+
+// The parser sends release dates at three different precisions: a full
+// ISO date ("2015-08-21") when the exact day is known, a bare year
+// ("2015") when only the year is known, or the field is omitted/empty
+// when it's unknown entirely. Returns null for "don't show anything"
+// so callers can just hide the element.
+function formatReleaseDate(releaseDate) {
+  if (!releaseDate) return null;
+  const value = String(releaseDate).trim();
+  if (!value) return null;
+
+  if (/^\d{4}$/.test(value)) return value;
+
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const date = new Date(value);
+    if (!Number.isNaN(date.getTime())) return formatDate(value);
+  }
+
+  console.warn(`main.js: unrecognized releaseDate format "${releaseDate}" (expected YYYY-MM-DD, YYYY, or empty) — hiding it.`);
+  return null;
 }
 
 function formatRelativeDate(dateString) {
@@ -507,6 +533,17 @@ function initDetailPanel(options = {}) {
         authorEl.hidden = false;
       } else {
         authorEl.hidden = true;
+      }
+    }
+
+    const releaseEl = panel.querySelector(".detail-panel__release");
+    if (releaseEl) {
+      const releaseText = formatReleaseDate(item.releaseDate);
+      if (releaseText) {
+        releaseEl.textContent = `Released ${releaseText}`;
+        releaseEl.hidden = false;
+      } else {
+        releaseEl.hidden = true;
       }
     }
 
