@@ -5,6 +5,16 @@
 const POSTS_PER_PAGE = 10;
 const TAG_PRIORITY = { warning: 0, black: 1, genre: 2, other: 3 };
 
+// Tag types come from the CMS/import data and aren't guaranteed to match our
+// casing ("Genre", "Black Tags", etc.) — normalize to the lowercase keys
+// TAG_PRIORITY and the .tag--* CSS classes actually use.
+function normalizeTagType(type) {
+  const t = String(type || "").toLowerCase().trim();
+  if (t.startsWith("black")) return "black";
+  if (t === "warning" || t === "genre") return t;
+  return "other";
+}
+
 // Download/source entry classification (see openPanel downloads rendering).
 const DOWNLOAD_BUTTON_TEXT = { source: "Author Site", web: "Play", download: "Download" };
 const DOWNLOAD_TYPE_ORDER = { source: 0, web: 1, download: 2 };
@@ -65,8 +75,8 @@ function formatRelativeDate(dateString) {
 
 function sortTagsByPriority(tags) {
   return [...tags].sort((a, b) => {
-    const typeA = typeof a === "string" ? "other" : a.type;
-    const typeB = typeof b === "string" ? "other" : b.type;
+    const typeA = typeof a === "string" ? "other" : normalizeTagType(a.type);
+    const typeB = typeof b === "string" ? "other" : normalizeTagType(b.type);
     return (TAG_PRIORITY[typeA] ?? 99) - (TAG_PRIORITY[typeB] ?? 99);
   });
 }
@@ -75,7 +85,7 @@ function renderGameTag(tag) {
   if (typeof tag === "string") {
     return `<span class="tag">${tag}</span>`;
   }
-  return `<span class="tag tag--${tag.type}">${tag.label}</span>`;
+  return `<span class="tag tag--${normalizeTagType(tag.type)}">${tag.label}</span>`;
 }
 
 function createTagElements(tags) {
@@ -108,7 +118,7 @@ function renderAuthorLinks(item, className) {
 
 function isNsfwItem(item) {
   return (item.tags || []).some(
-    (t) => t && typeof t === "object" && String(t.type || "").toLowerCase() === "warning"
+    (t) => t && typeof t === "object" && normalizeTagType(t.type) === "warning"
   );
 }
 
@@ -747,7 +757,7 @@ function gameMatchesFilters(game, filters) {
     // only happen to match one of the words.
     if (!terms.every(matchesTerm)) return false;
   }
-  if (genres.size && !game.tags.some((t) => t.type && t.type.toLowerCase() === "genre" && genres.has(t.label))) return false;
+  if (genres.size && !game.tags.some((t) => normalizeTagType(t.type) === "genre" && genres.has(t.label))) return false;
   if (tags.size && !game.tags.some((t) => tags.has(t.label))) return false;
   if (playtimes.size && !playtimes.has(game.playtime)) return false;
   if (statuses.size && !statuses.has(game.status)) return false;
@@ -790,8 +800,11 @@ async function initGamesPage() {
 
   allGames.forEach((game) => {
     (game.tags || []).forEach((t) => {
-      tagSet.add(t.label);
-      if (t.type && t.type.toLowerCase() === "genre") genreSet.add(t.label);
+      // Genre-typed tags get their own filter section, so they're excluded
+      // from the general Tags set instead of showing up as a filter chip
+      // in both places.
+      if (normalizeTagType(t.type) === "genre") genreSet.add(t.label);
+      else tagSet.add(t.label);
     });
     if (game.playtime) playtimeSet.add(game.playtime);
     if (game.status) statusSet.add(game.status);
