@@ -30,7 +30,8 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Windows",
+        "Flash"
       ],
       "url": "https://foe-remains.gitlab.io/main_en.html",
       "releaseDate": "2025-07-05",
@@ -69,7 +70,7 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "Hotfix #8",
           "url": "https://games.mare.by/210",
           "buttonText": "Download",
@@ -83,6 +84,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "Hotfix #8",
+          "url": "https://flash.mare.by/g?id=210",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Windows",
@@ -386,7 +394,6 @@
       "engine": "Flash",
       "platforms": [
         "Flash",
-        "Windows",
         "Android"
       ],
       "url": "http://www.pokehidden.net/banned_from_equestria_daily/game.swf",
@@ -417,7 +424,7 @@
           "mirrors": []
         },
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.5ru1.1",
           "url": "https://games.mare.by/169",
           "buttonText": "Download",
@@ -431,6 +438,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.5ru1.1",
+          "url": "https://flash.mare.by/g?id=169",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Android",
@@ -449,7 +463,7 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.6ch",
           "url": "https://games.mare.by/212",
           "buttonText": "Download",
@@ -463,6 +477,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.6ch",
+          "url": "https://flash.mare.by/g?id=212",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Android",
@@ -6108,14 +6129,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://futzi01.deviantart.com/art/Canterlot-Siege-321540151",
       "releaseDate": "2012-06-16",
       "dateAdded": "2025-01-05",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "release",
           "url": "https://games.mare.by/67",
           "buttonText": "Download",
@@ -6129,6 +6150,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "release",
+          "url": "https://flash.mare.by/g?id=67",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -6155,14 +6183,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "http://web.archive.org/web/20160411141804/futzi01.deviantart.com/art/Canterlot-Defender-303305344",
       "releaseDate": "2012-05-20",
       "dateAdded": "2025-01-05",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "release",
           "url": "https://games.mare.by/68",
           "buttonText": "Download",
@@ -6176,6 +6204,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "release",
+          "url": "https://flash.mare.by/g?id=68",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -6711,14 +6746,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/futzi01-pony-archive/art/1000-Years-Ago-669357334",
       "releaseDate": "",
       "dateAdded": "2025-03-03",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "release",
           "url": "https://games.mare.by/88",
           "buttonText": "Download",
@@ -6732,6 +6767,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "release",
+          "url": "https://flash.mare.by/g?id=88",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -7517,14 +7559,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.equestriadaily.com/2012/06/game-pegadrome.html",
       "releaseDate": "2012-06-25",
       "dateAdded": "2026-04-23",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "release",
           "url": "https://games.mare.by/99",
           "buttonText": "Download",
@@ -7538,6 +7580,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "release",
+          "url": "https://flash.mare.by/g?id=99",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -8407,6 +8456,7 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
+        "Flash",
         "Windows"
       ],
       "url": "https://darkpony.space/cloptopia-1-22c-ru-luchshe-pozdno-chem-nikogda-da",
@@ -8414,7 +8464,7 @@
       "dateAdded": "2026-04-24",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1-22c-ru",
           "url": "https://games.mare.by/171",
           "buttonText": "Download",
@@ -8430,7 +8480,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "1-22c-ru",
+          "url": "https://flash.mare.by/g?id=171",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "v1.08b_ru1.1b",
           "url": "https://games.mare.by/172",
           "buttonText": "Download",
@@ -8446,7 +8503,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "v1.08b_ru1.1b",
+          "url": "https://flash.mare.by/g?id=172",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "v1.22c_sfw_ru1",
           "url": "https://games.mare.by/173",
           "buttonText": "Download",
@@ -8460,6 +8524,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "v1.22c_sfw_ru1",
+          "url": "https://flash.mare.by/g?id=173",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Windows",
@@ -9250,14 +9321,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/pix3m/art/Robin-Steele-the-Waifu-Thief-V2-1-465750323",
       "releaseDate": "2014-07-05",
       "dateAdded": "2026-04-11",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "2.1",
           "url": "https://games.mare.by/122",
           "buttonText": "Download",
@@ -9271,6 +9342,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "2.1",
+          "url": "https://flash.mare.by/g?id=122",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -11485,14 +11563,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://mlp-gaming.fandom.com/wiki/Minty_Fresh_Adventure",
       "releaseDate": "2012-04-02",
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/199",
           "buttonText": "Download",
@@ -11506,6 +11584,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=199",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -11718,14 +11803,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://mlp-gaming.fandom.com/wiki/Pinkie_Pie_Population_Perforation_Project",
       "releaseDate": "2012-11-17",
       "dateAdded": "2026-04-23",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/191",
           "buttonText": "Download",
@@ -11739,6 +11824,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=191",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -12193,7 +12285,7 @@
       ],
       "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
+      "engine": "Flash",
       "platforms": [
         "Flash"
       ],
@@ -12255,7 +12347,7 @@
       ],
       "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
+      "engine": "Flash",
       "platforms": [
         "Flash"
       ],
@@ -12368,7 +12460,7 @@
       ],
       "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
+      "engine": "Flash",
       "platforms": [
         "Flash"
       ],
@@ -12420,7 +12512,7 @@
       ],
       "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
+      "engine": "Flash",
       "platforms": [
         "Flash"
       ],
@@ -12480,7 +12572,7 @@
       ],
       "playtime": "5m-30m",
       "status": "Released",
-      "engine": "Unknown",
+      "engine": "Flash",
       "platforms": [
         "Flash"
       ],
@@ -12534,7 +12626,7 @@
       ],
       "playtime": "\u003C5 min",
       "status": "Released",
-      "engine": "Unknown",
+      "engine": "Flash",
       "platforms": [
         "Flash"
       ],
@@ -12625,14 +12717,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.newgrounds.com/portal/view/670660",
       "releaseDate": "2016-02-15",
       "dateAdded": "2026-06-19",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/288",
           "buttonText": "Download",
@@ -12646,6 +12738,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=288",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -12763,14 +12862,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://flashgames.cx/game/twalaght-sparkuhlz-revehngshe",
       "releaseDate": "2012-08-10",
       "dateAdded": "2026-06-21",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "1.0",
           "url": "https://games.mare.by/298",
           "buttonText": "Download",
@@ -12786,7 +12885,14 @@
           ]
         },
         {
-          "label": "Web",
+          "label": "Flash",
+          "version": "1.0",
+          "url": "https://flash.mare.by/g?id=298",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "1.1.3",
           "url": "https://games.mare.by/299",
           "buttonText": "Download",
@@ -12800,6 +12906,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.1.3",
+          "url": "https://flash.mare.by/g?id=299",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -12847,14 +12960,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "2023-01-05",
       "dateAdded": "2026-04-28",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "alpha ?.? ru",
           "url": "https://games.mare.by/175",
           "buttonText": "Download",
@@ -12868,6 +12981,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "alpha ?.? ru",
+          "url": "https://flash.mare.by/g?id=175",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -12904,14 +13024,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "2018-02-18",
       "dateAdded": "2026-04-28",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "HQru",
           "url": "https://games.mare.by/176",
           "buttonText": "Download",
@@ -12927,7 +13047,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "HQru",
+          "url": "https://flash.mare.by/g?id=176",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "ru",
           "url": "https://games.mare.by/177",
           "buttonText": "Download",
@@ -12941,6 +13068,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "ru",
+          "url": "https://flash.mare.by/g?id=177",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -12973,14 +13107,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "2016",
       "dateAdded": "2026-04-28",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.01ru",
           "url": "https://games.mare.by/178",
           "buttonText": "Download",
@@ -12996,7 +13130,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "1.01ru",
+          "url": "https://flash.mare.by/g?id=178",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "1.01",
           "url": "https://games.mare.by/180",
           "buttonText": "Download",
@@ -13012,7 +13153,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "1.01",
+          "url": "https://flash.mare.by/g?id=180",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "1.02",
           "url": "https://games.mare.by/181",
           "buttonText": "Download",
@@ -13026,6 +13174,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.02",
+          "url": "https://flash.mare.by/g?id=181",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -13060,6 +13215,7 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
+        "Flash",
         "Windows"
       ],
       "url": "https://games.mare.by/-67",
@@ -13067,7 +13223,7 @@
       "dateAdded": "2026-04-28",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.3.7",
           "url": "https://games.mare.by/521",
           "buttonText": "Download",
@@ -13083,7 +13239,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "1.3.7",
+          "url": "https://flash.mare.by/g?id=521",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "1.3.7ru",
           "url": "https://games.mare.by/179",
           "buttonText": "Download",
@@ -13097,6 +13260,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.3.7ru",
+          "url": "https://flash.mare.by/g?id=179",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Windows",
@@ -13205,14 +13375,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://web.archive.org/web/20170319212022/http://to-the-plothole.blogspot.co.uk/p/ponyville-brothel-2.html",
       "releaseDate": "2016-11-30",
       "dateAdded": "2026-04-24",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "2.2.2",
           "url": "https://games.mare.by/522",
           "buttonText": "Download",
@@ -13222,6 +13392,13 @@
               "label": "Scrogne"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "2.2.2",
+          "url": "https://flash.mare.by/g?id=522",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -13315,14 +13492,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-05-21",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.1",
           "url": "https://games.mare.by/238",
           "buttonText": "Download",
@@ -13336,6 +13513,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.1",
+          "url": "https://flash.mare.by/g?id=238",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -13368,6 +13552,7 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
+        "Flash",
         "Windows"
       ],
       "url": "https://www.deviantart.com/gingerfoxy/art/Pony-Comic-Generator-v1-01-Vacation-Update-682817608",
@@ -13375,7 +13560,7 @@
       "dateAdded": "2026-04-28",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.01",
           "url": "https://games.mare.by/182",
           "buttonText": "Download",
@@ -13385,6 +13570,13 @@
               "label": "Scrogne"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.01",
+          "url": "https://flash.mare.by/g?id=182",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Windows",
@@ -13645,14 +13837,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/renaissancebrony/art/AJ-s-Truck-456794006",
       "releaseDate": "",
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/184",
           "buttonText": "Download",
@@ -13666,6 +13858,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=184",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -13875,14 +14074,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/sircxyrtyx/art/My-little-Laser-269270216",
       "releaseDate": "2011-11-16",
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "1.2",
           "url": "https://games.mare.by/189",
           "buttonText": "Download",
@@ -13896,6 +14095,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.2",
+          "url": "https://flash.mare.by/g?id=189",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -14040,6 +14246,7 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
+        "Flash",
         "Web"
       ],
       "url": "https://www.deviantart.com/xigger/art/Scootaloo-s-Scooter-Scooting-NEW-HTML5-VERSION-278048179",
@@ -14047,7 +14254,7 @@
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/194",
           "buttonText": "Download",
@@ -14061,6 +14268,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=194",
+          "buttonText": "Play",
+          "mirrors": []
         },
         {
           "label": "Web",
@@ -14114,14 +14328,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/zztfox/art/Square-Ponies-397328752",
       "releaseDate": "2013-09-01",
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/195",
           "buttonText": "Download",
@@ -14135,6 +14349,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=195",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -14225,14 +14446,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://girlsplay.com/",
       "releaseDate": "",
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/200",
           "buttonText": "Download",
@@ -14246,6 +14467,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=200",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -14278,14 +14506,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/just-plain-cat/art/Rarity-Dress-Collection-289745310",
       "releaseDate": "2012-03-11",
       "dateAdded": "2026-06-21",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/201",
           "buttonText": "Download",
@@ -14299,6 +14527,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=201",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -14329,14 +14564,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/yeaka/art/MLP-FiM-Dress-Up-Game-256803784",
       "releaseDate": "2011-09-05",
       "dateAdded": "2026-06-21",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/202",
           "buttonText": "Download",
@@ -14350,6 +14585,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=202",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -14384,14 +14626,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://www.y8.com/games/little_pony_ice_cream",
       "releaseDate": "2013-08-01",
       "dateAdded": "2026-06-21",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/203",
           "buttonText": "Download",
@@ -14405,6 +14647,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=203",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -15694,14 +15943,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.newgrounds.com/portal/view/674596",
       "releaseDate": "2016-05-12",
       "dateAdded": "2026-06-19",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/290",
           "buttonText": "Download",
@@ -15715,6 +15964,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=290",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -15754,14 +16010,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.newgrounds.com/portal/view/675455",
       "releaseDate": "2016-05-30",
       "dateAdded": "2026-06-19",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/291",
           "buttonText": "Download",
@@ -15775,6 +16031,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=291",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -15808,14 +16071,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://flashgames.cx/game/rainbow-dash-s-cloud-dodging-fun",
       "releaseDate": "2012-12-27",
       "dateAdded": "2026-06-21",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "1.0.4",
           "url": "https://games.mare.by/294",
           "buttonText": "Download",
@@ -15829,6 +16092,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.0.4",
+          "url": "https://flash.mare.by/g?id=294",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -16132,14 +16402,14 @@
       "status": "In Development",
       "engine": "Flash",
       "platforms": [
-        "Web"
+        "Flash"
       ],
       "url": "https://www.deviantart.com/solarring/art/Stratospheric-631423246",
       "releaseDate": "2016-08-30",
       "dateAdded": "2026-06-22",
       "downloads": [
         {
-          "label": "Web",
+          "label": "Flash",
           "version": "v 0.1",
           "url": "https://games.mare.by/306",
           "buttonText": "Download",
@@ -16153,6 +16423,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "v 0.1",
+          "url": "https://flash.mare.by/g?id=306",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -23396,14 +23673,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/523",
           "buttonText": "Download",
@@ -23417,6 +23694,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=523",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -23454,14 +23738,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/524",
           "buttonText": "Download",
@@ -23475,6 +23759,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=524",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -23509,14 +23800,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/525",
           "buttonText": "Download",
@@ -23530,6 +23821,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=525",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -23564,14 +23862,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/526",
           "buttonText": "Download",
@@ -23585,6 +23883,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=526",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -23619,14 +23924,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/527",
           "buttonText": "Download",
@@ -23642,7 +23947,14 @@
           ]
         },
         {
-          "label": "Windows",
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=527",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
           "version": "even more magic",
           "url": "https://games.mare.by/528",
           "buttonText": "Download",
@@ -23656,6 +23968,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "even more magic",
+          "url": "https://flash.mare.by/g?id=528",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -23690,14 +24009,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/529",
           "buttonText": "Download",
@@ -23711,6 +24030,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=529",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -23745,14 +24071,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/530",
           "buttonText": "Download",
@@ -23766,6 +24092,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=530",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
@@ -23800,14 +24133,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-06-29",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/531",
           "buttonText": "Download",
@@ -23821,6 +24154,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=531",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -24796,14 +25136,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://desuarchive.org/mlp/thread/43202910/#q43309066",
       "releaseDate": "2026-06-20",
       "dateAdded": "2026-07-01",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/538",
           "buttonText": "Download",
@@ -24817,6 +25157,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=538",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -30281,14 +30628,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-07-11",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/918",
           "buttonText": "Download",
@@ -30302,6 +30649,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=918",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": [
@@ -30334,14 +30688,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows"
+        "Flash"
       ],
       "url": "https://games.mare.by/-67",
       "releaseDate": "",
       "dateAdded": "2026-07-11",
       "downloads": [
         {
-          "label": "Windows",
+          "label": "Flash",
           "version": "",
           "url": "https://games.mare.by/919",
           "buttonText": "Download",
@@ -30355,6 +30709,13 @@
               "label": "telegram"
             }
           ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=919",
+          "buttonText": "Play",
+          "mirrors": []
         }
       ],
       "screenshots": []
