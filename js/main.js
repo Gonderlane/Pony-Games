@@ -404,6 +404,11 @@ function initDetailPanel(options = {}) {
   const closeBtn = panel.querySelector(".detail-panel__close");
   const content = panel.querySelector(".detail-panel__content");
   const isGame = options.isGame ?? false;
+  // On pages with a page-wide "Show NSFW" toggle, that toggle is already
+  // explicit consent, so re-blurring and demanding another click per game
+  // is redundant. Pages without a toggle (e.g. the homepage sidebar, where
+  // NSFW games can surface unannounced in "Random") keep the per-item gate.
+  const skipNsfwBlur = typeof options.skipNsfwBlur === "function" ? options.skipNsfwBlur : () => false;
 
   function closePanel() {
     panel.classList.remove("is-open");
@@ -464,7 +469,7 @@ function initDetailPanel(options = {}) {
       const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
       if (oldOverlay) oldOverlay.remove();
       carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-      if (isNsfwItem(item)) {
+      if (isNsfwItem(item) && !skipNsfwBlur()) {
         carousel.classList.add("detail-panel__carousel--nsfw-blurred");
         const overlayBtn = document.createElement("button");
         overlayBtn.type = "button";
@@ -804,7 +809,9 @@ async function initGamesPage() {
   const filterForm = document.getElementById("games-filter");
   if (!grid || !filterForm) return;
 
-  const detail = initDetailPanel({ isGame: true });
+  // nsfwToggle is declared further down, but this callback only runs later
+  // (on card click), by which point it's assigned — closures, not hoisting.
+  const detail = initDetailPanel({ isGame: true, skipNsfwBlur: () => !!nsfwToggle?.checked });
   if (!detail) return;
 
   grid.innerHTML = renderSkeletonCards(6);
