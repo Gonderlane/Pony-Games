@@ -95,7 +95,7 @@ collections:
                     name: "mirrors"
                     widget: "list"
                     required: false
-                    hint: "Extra buttons for the same build hosted elsewhere (Telegram, backup server, etc.) — stopgap for high-traffic events"
+                    hint: "Extra buttons for the same build hosted elsewhere (Telegram, backup server, etc.)"
                     summary: "{{fields.label}}"
                     fields:
                       - { label: "Label", name: "label", widget: "string" }

@@ -58,7 +58,7 @@ button {
   color: inherit;
 }
 
-/* --- CSS Variables (edit here for theming) --- */
+/* --- Variables --- */
 :root {
   --color-bg: #1a1a2e;
   --color-bg-alt: #16213e;
@@ -231,7 +231,7 @@ body {
 }
 
 /* ==========================================================================
-   Jam Timer (index.html, powered by js/timer.js)
+   Jam Timer (index.html)
    ========================================================================== */
 .jam-timer {
   background: var(--color-surface);
@@ -487,7 +487,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Pagination (main.js) --- */
+/* --- Pagination --- */
 .pagination {
   display: flex;
   align-items: center;
@@ -1165,7 +1165,7 @@ body {
 }
 
 /* ==========================================================================
-   Detail Panel (games.html & resources.html, main.js)
+   Detail Panel (games.html & resources.html)
    ========================================================================== */
 .detail-panel {
   display: none;
@@ -1426,8 +1426,7 @@ body {
   background: var(--color-accent-soft);
 }
 
-/* Mirror buttons (Telegram / backup server, etc.) — same build hosted
-   elsewhere, so they're visually secondary next to the main download. */
+/* mirror buttons are secondary next to the main download */
 .download-row__btn--mirror {
   background: var(--color-surface-hover);
   padding: 0.4rem 0.85rem;

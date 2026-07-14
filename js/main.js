@@ -1,13 +1,8 @@
-/**
- * Main JavaScript - js/main.js
- */
-
 const POSTS_PER_PAGE = 10;
 const TAG_PRIORITY = { warning: 0, black: 1, genre: 2, other: 3 };
 
-// Tag types come from the CMS/import data and aren't guaranteed to match our
-// casing ("Genre", "Black Tags", etc.) — normalize to the lowercase keys
-// TAG_PRIORITY and the .tag--* CSS classes actually use.
+// Data has mixed casing ("Genre", "Black Tags"); keep the keys lowercase
+// to match TAG_PRIORITY and the .tag--* classes.
 function normalizeTagType(type) {
   const t = String(type || "").toLowerCase().trim();
   if (t.startsWith("black")) return "black";
@@ -44,10 +39,8 @@ function normalizeListData(data, key) {
 }
 
 function formatDate(dateString) {
-  // Date-only strings ("YYYY-MM-DD") parse as UTC midnight, but
-  // toLocaleDateString renders in the local timezone by default — in any
-  // timezone behind UTC that silently rolls the displayed date back by
-  // one day. Rendering in UTC keeps it matching the date that was typed.
+  // timeZone: UTC matters. "YYYY-MM-DD" parses as UTC midnight, so local
+  // rendering shows the previous day for anyone west of Greenwich.
   return new Date(dateString).toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
@@ -56,11 +49,8 @@ function formatDate(dateString) {
   });
 }
 
-// The parser sends release dates at three different precisions: a full
-// ISO date ("2015-08-21") when the exact day is known, a bare year
-// ("2015") when only the year is known, or the field is omitted/empty
-// when it's unknown entirely. Returns null for "don't show anything"
-// so callers can just hide the element.
+// releaseDate comes in three precisions: "YYYY-MM-DD", bare "YYYY", or
+// empty/missing when unknown. Returns null when there's nothing to show.
 function formatReleaseDate(releaseDate) {
   if (!releaseDate) return null;
   const value = String(releaseDate).trim();
@@ -73,7 +63,7 @@ function formatReleaseDate(releaseDate) {
     if (!Number.isNaN(date.getTime())) return formatDate(value);
   }
 
-  console.warn(`main.js: unrecognized releaseDate format "${releaseDate}" (expected YYYY-MM-DD, YYYY, or empty) — hiding it.`);
+  console.warn(`releaseDate "${releaseDate}" is not YYYY-MM-DD or YYYY, hiding it`);
   return null;
 }
 
@@ -128,8 +118,7 @@ function pickRandomItems(array, count) {
   return picked;
 }
 
-// Author can be a single string (legacy) or an array of strings
-// (multiple credited authors). Always normalize to an array.
+// author is a plain string in old entries, an array in newer ones
 function getAuthors(item) {
   if (Array.isArray(item.author)) return item.author.filter(Boolean);
   if (item.author) return [item.author];
@@ -232,10 +221,7 @@ function renderSkeletonSidebar(count = 3) {
 
 function staggerCards(grid) {
   const cards = grid.querySelectorAll(".card");
-  // Uncapped, this delay used to scale with the full card count (45ms each) —
-  // fine for 6 placeholder games, but with 100+ real games the last cards
-  // wouldn't finish entering for several seconds. Cap it so the stagger is
-  // only ever noticeable for the first screenful of cards.
+  // cap the stagger so big grids don't spend seconds animating in
   const MAX_STAGGER_MS = 450;
   cards.forEach((card, i) => {
     card.classList.add("card--enter");
@@ -412,7 +398,7 @@ function initDetailPanel(options = {}) {
     const nextBtn = panel.querySelector(".carousel__btn--next");
     const screenshots = item.screenshots && item.screenshots.length ? item.screenshots : [];
 
-    // Always use the carousel slot — thumbnail is first image, screenshots follow
+    // thumbnail is the first slide, screenshots follow
     const allImages = [item.thumbnail, ...(item.screenshots || [])];
     const hasMultiple = allImages.length > 1;
 
@@ -447,9 +433,7 @@ function initDetailPanel(options = {}) {
         dot.onclick = () => goTo(Number(dot.dataset.index));
       });
 
-      // NSFW blur — the panel element is reused across openPanel() calls,
-      // so always clear any previous overlay before deciding whether to add
-      // a fresh one for this item.
+      // the panel is reused between opens, clear any leftover NSFW overlay
       const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
       if (oldOverlay) oldOverlay.remove();
       carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
@@ -458,7 +442,7 @@ function initDetailPanel(options = {}) {
         const overlayBtn = document.createElement("button");
         overlayBtn.type = "button";
         overlayBtn.className = "detail-panel__nsfw-overlay";
-        overlayBtn.textContent = "🔞 NSFW — click to reveal";
+        overlayBtn.textContent = "🔞 NSFW, click to reveal";
         overlayBtn.addEventListener("click", () => {
           carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
           overlayBtn.remove();
@@ -475,28 +459,18 @@ function initDetailPanel(options = {}) {
     panel.querySelector(".detail-panel__description").textContent = item.fullDescription;
     const downloadsEl = panel.querySelector(".detail-panel__downloads");
     if (downloadsEl) {
-      // item.url is the source/author-site link (Steam, itch, homepage) and
-      // item.downloads is the list of actual build files — these are separate
-      // things and both should show when both exist. The old code only fell
-      // back to item.url when downloads was empty, which silently dropped
-      // the source link entirely for any game that also had build downloads.
+      // item.url is the author/source page, item.downloads are the build
+      // files. Both show when both exist, source first.
       const sourceEntry = item.url
         ? [{ label: item.platform || "Source", version: item.version, url: item.url, type: "source" }]
         : [];
       const buildEntries = (item.downloads || []).filter((d) => d.url !== item.url);
       const rawEntries = [...sourceEntry, ...buildEntries];
-      // Source links (author site / Steam / itch page) sort first and get
-      // "Author Site" text, browser-playable builds get "Play", everything
-      // else gets "Download". Prefer an explicit d.type from the data;
-      // fall back to guessing from the label/url when it's missing.
+      // explicit d.type wins, otherwise guess from the label/url
       const entries = rawEntries
         .map((d) => ({ ...d, _type: classifyDownloadEntry(d) }))
         .sort((a, b) => (DOWNLOAD_TYPE_ORDER[a._type] ?? 3) - (DOWNLOAD_TYPE_ORDER[b._type] ?? 3));
-      // Optional per-entry "mirrors" (e.g. Telegram / backup server) are a
-      // stopgap for high-load events — extra buttons pointing at the same
-      // build hosted elsewhere, so one host going down doesn't take the
-      // download off the site entirely. Not automatic failover, just more
-      // buttons; see DOWNLOAD_BUTTON_TEXT/mirrors schema note in the CMS config.
+      // mirrors = same build hosted elsewhere (telegram, backup server)
       downloadsEl.innerHTML = entries.map(d => `
         <div class="download-row">
           <div class="download-row__btns">
@@ -692,7 +666,7 @@ function renderGameCard(item) {
     <article class="card card--game" data-id="${item.id}" tabindex="0" role="button" aria-label="View details for ${item.title}">
       <div class="card__thumb-wrap">
         <img class="card__thumb${nsfw ? " card__thumb--nsfw" : ""}" src="${item.thumbnail}" alt="${item.title} thumbnail" loading="lazy" />
-        ${nsfw ? `<span class="card__nsfw-badge" title="NSFW — hover to preview">🔞</span>` : ""}
+        ${nsfw ? `<span class="card__nsfw-badge" title="NSFW, hover to preview">🔞</span>` : ""}
       </div>
       <div class="card__body">
         <h3 class="card__title">${item.title}</h3>
@@ -738,7 +712,7 @@ function renderResourceCard(item) {
 function parseMinutes(playtime) {
   if (!playtime) return 0;
   const s = playtime.toLowerCase();
-  // Agreed buckets: <5 min, 5m–30m, 30m–2h, 2h–4h, 4h–10h, 10h+
+  // buckets: <5 min, 5m-30m, 30m-2h, 2h-4h, 4h-10h, 10h+
   if (s.startsWith("<5")) return 0;
   if (s.startsWith("5m")) return 5;
   if (s.startsWith("30m")) return 30;
@@ -774,11 +748,7 @@ function buildTagFilterChips(containerId, values, activeSet, onToggle, sortFn) {
 function gameMatchesFilters(game, filters) {
   const { search, genres, tags, playtimes, statuses, engines, platforms, showNsfw } = filters;
 
-  // Any tag typed "warning" in the CMS counts as NSFW-gated content, whatever
-  // its label text is (NSFW, Mature, 18+, etc.) — the old check required the
-  // label to be the exact string "NSFW", which silently hid the toggle's
-  // effect on any game whose warning tag was worded differently, and it
-  // would also throw if a game had no tags array at all.
+  // NSFW-gated = any tag with type "warning", whatever its label says
   if (isNsfwItem(game) && !showNsfw) return false;
 
   if (search) {
@@ -789,9 +759,7 @@ function gameMatchesFilters(game, filters) {
       authorText.includes(term) ||
       game.tags.some((t) => t.label.toLowerCase().includes(term)) ||
       (game.characters || []).some((c) => c.toLowerCase().includes(term));
-    // Every typed word must match somewhere, so a multi-word author name
-    // (e.g. "Elecro Capsilon LLC") doesn't pull in unrelated games that
-    // only happen to match one of the words.
+    // every word must match somewhere, or multi-word authors match too loosely
     if (!terms.every(matchesTerm)) return false;
   }
   if (genres.size && !game.tags.some((t) => normalizeTagType(t.type) === "genre" && genres.has(t.label))) return false;
@@ -832,14 +800,11 @@ async function initGamesPage() {
   const engineSet = new Set();
   const platformSet = new Set();
 
-  // Agreed playtime order
-  const PLAYTIME_ORDER = ["<5 min", "5m–30m", "30m–2h", "2h–4h", "4h–10h", "10h+"];
+  const PLAYTIME_ORDER = ["<5 min", "5m-30m", "30m-2h", "2h-4h", "4h-10h", "10h+"];
 
   allGames.forEach((game) => {
     (game.tags || []).forEach((t) => {
-      // Genre-typed tags get their own filter section, so they're excluded
-      // from the general Tags set instead of showing up as a filter chip
-      // in both places.
+      // genres have their own filter section, keep them out of the tag chips
       if (normalizeTagType(t.type) === "genre") genreSet.add(t.label);
       else tagSet.add(t.label);
     });
@@ -917,11 +882,8 @@ async function initGamesPage() {
   function sortGames(games) {
     const sort = sortSelect ? sortSelect.value : "newest";
     const sorted = [...games];
-    // A missing or malformed dateAdded parses to NaN, and NaN - NaN comparisons
-    // leave sort order untouched — with 100+ real games this quietly turned
-    // "Newest first"/"Oldest first" into a no-op for any pair of bad dates.
-    // Treat unparseable dates as epoch 0 so sorting still does something
-    // sensible instead of silently failing.
+    // bad dates parse to NaN and NaN comparisons no-op the sort, so pin
+    // them to epoch 0 instead
     const parseDateSafe = (d) => {
       const t = new Date(d).getTime();
       return Number.isNaN(t) ? 0 : t;
@@ -942,7 +904,12 @@ async function initGamesPage() {
     renderGrid(filtered, animate);
   }
 
-  const playtimeSort = (a, b) => PLAYTIME_ORDER.indexOf(a) - PLAYTIME_ORDER.indexOf(b);
+  // values not in PLAYTIME_ORDER ("Unknown" etc) go last
+  const playtimeIndex = (v) => {
+    const i = PLAYTIME_ORDER.indexOf(v);
+    return i === -1 ? PLAYTIME_ORDER.length : i;
+  };
+  const playtimeSort = (a, b) => playtimeIndex(a) - playtimeIndex(b);
 
   buildTagFilterChips("filter-genre-chips", genreSet, active.genres, applyFilters);
   buildTagFilterChips("filter-tag-chips", tagSet, active.tags, applyFilters);
@@ -954,9 +921,7 @@ async function initGamesPage() {
   filterForm.addEventListener("submit", (e) => e.preventDefault());
   filterForm.addEventListener("input", () => applyFilters(false));
   filterForm.addEventListener("keyup", () => applyFilters(false));
-  // Some browsers don't fire "input" reliably for <select> elements, so
-  // listen for "change" too — this is what was silently breaking the
-  // Newest/Oldest sort dropdown.
+  // "change" is needed for the <select>s, they don't always fire "input"
   filterForm.addEventListener("change", () => applyFilters(false));
   if (clearBtn) clearBtn.addEventListener("click", clearAllFilters);
 
@@ -967,9 +932,7 @@ async function initGamesPage() {
   }
 
   bindCardInteractions(grid, itemMap, detail);
-  // Route the very first render through applyFilters too, so the initial
-  // sort order (defaults to "newest") actually applies on page load
-  // instead of showing games.json's raw order until you touch a filter.
+  // first render goes through applyFilters so the default sort applies
   applyFilters(true);
 
   // Auto-open panel from ?game=ID
@@ -1045,7 +1008,6 @@ async function initCardGrid(jsonPath) {
           (item.shortDescription || "").toLowerCase().includes(term) ||
           (item.tags || []).some((t) => t.toLowerCase().includes(term)) ||
           (item.type || "").toLowerCase().includes(term);
-        // Every typed word must match somewhere (see gameMatchesFilters for why).
         if (!terms.every(matchesTerm)) return false;
       }
       if (activeTags.size && !(item.tags || []).some((t) => activeTags.has(t))) return false;
@@ -1057,8 +1019,7 @@ async function initCardGrid(jsonPath) {
     if (filtered.length) {
       grid.innerHTML = filtered.map(renderResourceCard).join("");
     } else if (items.length === 0) {
-      // No resources have been published at all — a distinct message from
-      // "your filters excluded everything," since there's nothing to clear.
+      // nothing published yet, different message than "filters matched nothing"
       grid.innerHTML = `
         <div class="games-empty games-empty--friendly">
           <p class="games-empty__title">Resources are coming soon!</p>
