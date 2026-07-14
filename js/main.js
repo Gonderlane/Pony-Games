@@ -67,6 +67,33 @@ function formatReleaseDate(releaseDate) {
   return null;
 }
 
+// Comparable timestamp for sorting: full dates use their exact time,
+// year-only uses Jan 1 of that year, unknown returns null so callers can
+// sort those to the end instead of treating them as the oldest/newest.
+function releaseDateValue(releaseDate) {
+  const value = String(releaseDate || "").trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+    const t = Date.parse(`${value}T00:00:00Z`);
+    return Number.isNaN(t) ? null : t;
+  }
+  if (/^\d{4}$/.test(value)) return Date.UTC(Number(value), 0, 1);
+  return null;
+}
+
+// direction 1 = oldest first, -1 = newest first. Unknown release dates
+// always sort last regardless of direction, so reversing for "newest"
+// can't be done by just swapping arguments (that would also flip which
+// end the unknowns land on) — direction only flips the known-vs-known
+// comparison.
+function compareReleaseDates(a, b, direction) {
+  const av = releaseDateValue(a.releaseDate);
+  const bv = releaseDateValue(b.releaseDate);
+  if (av === null && bv === null) return 0;
+  if (av === null) return 1;
+  if (bv === null) return -1;
+  return (av - bv) * direction;
+}
+
 function formatRelativeDate(dateString) {
   const date = new Date(dateString);
   const now = new Date();
@@ -829,6 +856,18 @@ async function initGamesPage() {
   const clearBtn = document.getElementById("filter-clear");
   const nsfwToggle = document.getElementById("filter-nsfw");
   const sortSelect = document.getElementById("filter-sort");
+  const perPageSelect = document.getElementById("filter-perpage");
+  const paginationNav = document.getElementById("games-pagination");
+  const prevPageBtn = document.getElementById("games-prev");
+  const nextPageBtn = document.getElementById("games-next");
+  const pageInfoEl = document.getElementById("games-page-info");
+
+  let currentPage = 1;
+
+  function getPerPage() {
+    const v = perPageSelect ? perPageSelect.value : "50";
+    return v === "all" ? Infinity : parseInt(v, 10);
+  }
 
   function getFilters() {
     return {
@@ -871,9 +910,23 @@ async function initGamesPage() {
         </div>
       `;
       document.getElementById("empty-clear-filters")?.addEventListener("click", clearAllFilters);
+      if (paginationNav) paginationNav.hidden = true;
     } else {
-      grid.innerHTML = games.map(renderGameCard).join("");
+      const perPage = getPerPage();
+      const totalPages = Math.max(1, Math.ceil(games.length / perPage));
+      currentPage = Math.min(currentPage, totalPages);
+      const start = (currentPage - 1) * perPage;
+      const pageGames = Number.isFinite(perPage) ? games.slice(start, start + perPage) : games;
+
+      grid.innerHTML = pageGames.map(renderGameCard).join("");
       if (animate) staggerCards(grid);
+
+      if (paginationNav) {
+        paginationNav.hidden = totalPages <= 1;
+        if (prevPageBtn) prevPageBtn.disabled = currentPage <= 1;
+        if (nextPageBtn) nextPageBtn.disabled = currentPage >= totalPages;
+        if (pageInfoEl) pageInfoEl.textContent = `Page ${currentPage} of ${totalPages}`;
+      }
     }
     animateCount(resultsEl, games.length);
     if (clearBtn) clearBtn.hidden = !hasActiveFilters();
@@ -893,15 +946,24 @@ async function initGamesPage() {
       case "oldest":  return sorted.sort((a, b) => parseDateSafe(a.dateAdded) - parseDateSafe(b.dateAdded));
       case "az":      return sorted.sort((a, b) => a.title.localeCompare(b.title));
       case "za":      return sorted.sort((a, b) => b.title.localeCompare(a.title));
+      case "release-newest": return sorted.sort((a, b) => compareReleaseDates(a, b, -1));
+      case "release-oldest": return sorted.sort((a, b) => compareReleaseDates(a, b, 1));
       case "playtime-asc":  return sorted.sort((a, b) => parseMinutes(a.playtime) - parseMinutes(b.playtime));
       case "playtime-desc": return sorted.sort((a, b) => parseMinutes(b.playtime) - parseMinutes(a.playtime));
       default: return sorted;
     }
   }
 
-  function applyFilters(animate = false) {
+  function applyFilters(animate = false, resetPage = true) {
+    if (resetPage) currentPage = 1;
     const filtered = sortGames(allGames.filter((g) => gameMatchesFilters(g, getFilters())));
     renderGrid(filtered, animate);
+  }
+
+  function goToPage(page) {
+    currentPage = page;
+    applyFilters(false, false);
+    grid.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   // values not in PLAYTIME_ORDER ("Unknown" etc) go last
@@ -924,6 +986,9 @@ async function initGamesPage() {
   // "change" is needed for the <select>s, they don't always fire "input"
   filterForm.addEventListener("change", () => applyFilters(false));
   if (clearBtn) clearBtn.addEventListener("click", clearAllFilters);
+
+  if (prevPageBtn) prevPageBtn.addEventListener("click", () => goToPage(currentPage - 1));
+  if (nextPageBtn) nextPageBtn.addEventListener("click", () => goToPage(currentPage + 1));
 
   // Pre-fill search from URL param (e.g. clicking author from another page)
   const urlSearch = new URLSearchParams(window.location.search).get("search");

@@ -33,8 +33,15 @@
     </p>
 
     <div class="games-layout">
-      <!-- ===================== CARD GRID ===================== -->
-      <div id="card-grid" class="card-grid" data-type="games"></div>
+      <!-- ===================== CARD GRID + PAGINATION ===================== -->
+      <div>
+        <div id="card-grid" class="card-grid" data-type="games"></div>
+        <nav id="games-pagination" class="pagination" aria-label="Games pagination" hidden>
+          <button id="games-prev" class="pagination__btn" type="button">← Prev</button>
+          <span id="games-page-info" class="pagination__info">Page 1 of 1</span>
+          <button id="games-next" class="pagination__btn" type="button">Next →</button>
+        </nav>
+      </div>
 
       <!-- ===================== SEARCH & FILTER PANEL ===================== -->
       <aside class="games-filter" aria-label="Search and filter games">
@@ -48,8 +55,21 @@
               <option value="oldest">Oldest first</option>
               <option value="az">A → Z</option>
               <option value="za">Z → A</option>
+              <option value="release-newest">Release date (newest)</option>
+              <option value="release-oldest">Release date (oldest)</option>
               <option value="playtime-asc">Playtime (short → long)</option>
               <option value="playtime-desc">Playtime (long → short)</option>
+            </select>
+          </div>
+
+          <div class="games-filter__group">
+            <label for="filter-perpage">Show</label>
+            <select id="filter-perpage">
+              <option value="50">50 per page</option>
+              <option value="100">100 per page</option>
+              <option value="200">200 per page</option>
+              <option value="500">500 per page</option>
+              <option value="all">All at once</option>
             </select>
           </div>
 
