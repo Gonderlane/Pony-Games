@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- set the theme before first paint, avoids a flash of the wrong theme -->
+  <script>
+    try {
+      var pgTheme = localStorage.getItem("pg-theme");
+      if (pgTheme) document.documentElement.dataset.theme = pgTheme;
+    } catch (e) {}
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Pony Games: your central directory for pony games, jams, and community resources." />
   <title>Pony Games</title>
@@ -24,6 +31,10 @@
         <a href="games.html">Games</a>
         <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
+        <select id="theme-switcher" class="theme-switcher" aria-label="Site theme">
+          <option value="midnight">🌙 Midnight</option>
+          <option value="light">☀️ Daylight</option>
+        </select>
       </nav>
     </div>
   </header>
@@ -72,6 +83,12 @@
       </aside>
 
     </div>
+
+    <!-- ===================== UPCOMING / IN DEVELOPMENT ===================== -->
+    <section class="upcoming-section" aria-label="Upcoming games">
+      <h2 class="section-title">Upcoming &amp; In Development</h2>
+      <div id="upcoming-grid" class="upcoming-scroll"></div>
+    </section>
 
   </main>
 

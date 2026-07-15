@@ -80,6 +80,14 @@ function releaseDateValue(releaseDate) {
   return null;
 }
 
+// year bucket for the "Published" filter chips, "Unknown" if unset/unparseable
+function releaseYearOf(item) {
+  const value = String(item.releaseDate || "").trim();
+  if (/^\d{4}-\d{2}-\d{2}$/.test(value)) return value.slice(0, 4);
+  if (/^\d{4}$/.test(value)) return value;
+  return "Unknown";
+}
+
 // direction 1 = oldest first, -1 = newest first. Unknown release dates
 // always sort last regardless of direction, so reversing for "newest"
 // can't be done by just swapping arguments (that would also flip which
@@ -162,6 +170,20 @@ function isNsfwItem(item) {
   return (item.tags || []).some(
     (t) => t && typeof t === "object" && normalizeTagType(t.type) === "warning"
   );
+}
+
+// lowercase labels of every warning-type tag on the item, e.g. ["nsfw", "gore"]
+function warningLabelsOf(item) {
+  return (item.tags || [])
+    .filter((t) => t && typeof t === "object" && normalizeTagType(t.type) === "warning")
+    .map((t) => String(t.label || "").toLowerCase());
+}
+
+// true only if every warning label the item carries is toggled visible.
+// A game tagged both nsfw and gore needs both toggles on. Unrecognized
+// warning labels default to gated-by-showNsfw, the safer side.
+function warningsSatisfied(item, showNsfw, showGore) {
+  return warningLabelsOf(item).every((label) => (label === "gore" ? showGore : showNsfw));
 }
 
 function getPlaytimeLevel(playtime) {
@@ -275,6 +297,27 @@ function initAuthorSearch() {
       // Navigate to games page with search param
       window.location.href = `games.html?search=${encodeURIComponent(author)}`;
     }
+  });
+}
+
+function initThemeSwitcher() {
+  const select = document.getElementById("theme-switcher");
+  if (!select) return;
+
+  // the inline head script already applied a saved theme before paint;
+  // this just syncs the dropdown to match it (defaults to "midnight")
+  select.value = document.documentElement.dataset.theme || "midnight";
+
+  select.addEventListener("change", () => {
+    const theme = select.value;
+    if (theme === "midnight") {
+      delete document.documentElement.dataset.theme;
+    } else {
+      document.documentElement.dataset.theme = theme;
+    }
+    try {
+      localStorage.setItem("pg-theme", theme);
+    } catch (e) {}
   });
 }
 
@@ -409,6 +452,8 @@ function initDetailPanel(options = {}) {
   // is redundant. Pages without a toggle (e.g. the homepage sidebar, where
   // NSFW games can surface unannounced in "Random") keep the per-item gate.
   const skipNsfwBlur = typeof options.skipNsfwBlur === "function" ? options.skipNsfwBlur : () => false;
+  // skipNsfwBlur receives the item so it can check per-item warning labels
+  // against whichever content toggles the page has (not just one flag)
 
   function closePanel() {
     panel.classList.remove("is-open");
@@ -469,7 +514,7 @@ function initDetailPanel(options = {}) {
       const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
       if (oldOverlay) oldOverlay.remove();
       carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-      if (isNsfwItem(item) && !skipNsfwBlur()) {
+      if (isNsfwItem(item) && !skipNsfwBlur(item)) {
         carousel.classList.add("detail-panel__carousel--nsfw-blurred");
         const overlayBtn = document.createElement("button");
         overlayBtn.type = "button";
@@ -619,6 +664,11 @@ async function initGameSidebar() {
   const recentContainer = document.getElementById("sidebar-recent");
   const randomContainer = document.getElementById("sidebar-random");
   const shuffleBtn = document.getElementById("sidebar-shuffle");
+  // "Upcoming" lives on the same page and needs the same detail-panel
+  // instance and the same fetched games list, so it's handled here rather
+  // than as its own init function (that would double up both).
+  const upcomingSection = document.querySelector(".upcoming-section");
+  const upcomingContainer = document.getElementById("upcoming-grid");
   if (!recentContainer || !randomContainer) return;
 
   const detail = initDetailPanel({ isGame: true });
@@ -626,6 +676,7 @@ async function initGameSidebar() {
 
   recentContainer.innerHTML = renderSkeletonSidebar(3);
   randomContainer.innerHTML = renderSkeletonSidebar(3);
+  if (upcomingContainer) upcomingContainer.innerHTML = renderSkeletonCards(4);
 
   let games = [];
   let sorted = [];
@@ -639,8 +690,22 @@ async function initGameSidebar() {
     remainingPool = sorted.slice(3);
   } catch (err) {
     recentContainer.innerHTML = `<p>Unable to load games.</p>`;
+    if (upcomingSection) upcomingSection.hidden = true;
     console.error(err);
     return;
+  }
+
+  if (upcomingContainer) {
+    const upcoming = games
+      .filter((g) => String(g.status || "").toLowerCase() === "in development")
+      .sort((a, b) => new Date(b.dateAdded) - new Date(a.dateAdded));
+
+    if (upcoming.length === 0) {
+      if (upcomingSection) upcomingSection.hidden = true;
+    } else {
+      upcomingContainer.innerHTML = upcoming.map(renderGameCard).join("");
+      bindCardInteractions(upcomingContainer, itemMap, detail);
+    }
   }
 
   function renderRecent() {
@@ -778,10 +843,9 @@ function buildTagFilterChips(containerId, values, activeSet, onToggle, sortFn) {
 }
 
 function gameMatchesFilters(game, filters) {
-  const { search, genres, tags, playtimes, statuses, engines, platforms, showNsfw } = filters;
+  const { search, genres, tags, releaseYears, playtimes, statuses, engines, platforms, showNsfw, showGore } = filters;
 
-  // NSFW-gated = any tag with type "warning", whatever its label says
-  if (isNsfwItem(game) && !showNsfw) return false;
+  if (!warningsSatisfied(game, showNsfw, showGore)) return false;
 
   if (search) {
     const terms = search.toLowerCase().split(/[\s,]+/).filter(Boolean);
@@ -796,6 +860,7 @@ function gameMatchesFilters(game, filters) {
   }
   if (genres.size && !game.tags.some((t) => normalizeTagType(t.type) === "genre" && genres.has(t.label))) return false;
   if (tags.size && !game.tags.some((t) => tags.has(t.label))) return false;
+  if (releaseYears.size && !releaseYears.has(releaseYearOf(game))) return false;
   if (playtimes.size && !playtimes.has(game.playtime)) return false;
   if (statuses.size && !statuses.has(game.status)) return false;
   if (engines.size && !engines.has(game.engine)) return false;
@@ -809,9 +874,12 @@ async function initGamesPage() {
   const filterForm = document.getElementById("games-filter");
   if (!grid || !filterForm) return;
 
-  // nsfwToggle is declared further down, but this callback only runs later
-  // (on card click), by which point it's assigned — closures, not hoisting.
-  const detail = initDetailPanel({ isGame: true, skipNsfwBlur: () => !!nsfwToggle?.checked });
+  // nsfwToggle/goreToggle are declared further down, but this callback only
+  // runs later (on card click), by which point they're assigned — closures.
+  const detail = initDetailPanel({
+    isGame: true,
+    skipNsfwBlur: (item) => warningsSatisfied(item, !!nsfwToggle?.checked, !!goreToggle?.checked),
+  });
   if (!detail) return;
 
   grid.innerHTML = renderSkeletonCards(6);
@@ -829,6 +897,7 @@ async function initGamesPage() {
 
   const genreSet = new Set();
   const tagSet = new Set();
+  const releaseYearSet = new Set();
   const playtimeSet = new Set();
   const statusSet = new Set();
   const engineSet = new Set();
@@ -842,6 +911,7 @@ async function initGamesPage() {
       if (normalizeTagType(t.type) === "genre") genreSet.add(t.label);
       else tagSet.add(t.label);
     });
+    releaseYearSet.add(releaseYearOf(game));
     if (game.playtime) playtimeSet.add(game.playtime);
     if (game.status) statusSet.add(game.status);
     if (game.engine) engineSet.add(game.engine);
@@ -852,6 +922,7 @@ async function initGamesPage() {
   const active = {
     genres: new Set(),
     tags: new Set(),
+    releaseYears: new Set(),
     playtimes: new Set(),
     statuses: new Set(),
     engines: new Set(),
@@ -862,6 +933,7 @@ async function initGamesPage() {
   const resultsEl = document.getElementById("filter-results");
   const clearBtn = document.getElementById("filter-clear");
   const nsfwToggle = document.getElementById("filter-nsfw");
+  const goreToggle = document.getElementById("filter-gore");
   const sortSelect = document.getElementById("filter-sort");
   const perPageSelect = document.getElementById("filter-perpage");
   const paginationNav = document.getElementById("games-pagination");
@@ -881,17 +953,19 @@ async function initGamesPage() {
       search: searchInput ? searchInput.value.trim() : "",
       genres: active.genres,
       tags: active.tags,
+      releaseYears: active.releaseYears,
       playtimes: active.playtimes,
       statuses: active.statuses,
       engines: active.engines,
       platforms: active.platforms,
       showNsfw: nsfwToggle ? nsfwToggle.checked : false,
+      showGore: goreToggle ? goreToggle.checked : false,
     };
   }
 
   function hasActiveFilters() {
     const f = getFilters();
-    return f.search || f.genres.size || f.tags.size || f.playtimes.size
+    return f.search || f.genres.size || f.tags.size || f.releaseYears.size || f.playtimes.size
       || f.statuses.size || f.engines.size || f.platforms.size;
   }
 
@@ -900,6 +974,7 @@ async function initGamesPage() {
     Object.values(active).forEach((s) => s.clear());
     buildTagFilterChips("filter-genre-chips", genreSet, active.genres, applyFilters);
     buildTagFilterChips("filter-tag-chips", tagSet, active.tags, applyFilters);
+    buildTagFilterChips("filter-releaseyear-chips", releaseYearSet, active.releaseYears, applyFilters, yearSort);
     buildTagFilterChips("filter-playtime-chips", playtimeSet, active.playtimes, applyFilters, playtimeSort);
     buildTagFilterChips("filter-status-chips", statusSet, active.statuses, applyFilters);
     buildTagFilterChips("filter-engine-chips", engineSet, active.engines, applyFilters);
@@ -979,9 +1054,16 @@ async function initGamesPage() {
     return i === -1 ? PLAYTIME_ORDER.length : i;
   };
   const playtimeSort = (a, b) => playtimeIndex(a) - playtimeIndex(b);
+  // newest year first, "Unknown" always last
+  const yearSort = (a, b) => {
+    if (a === "Unknown") return 1;
+    if (b === "Unknown") return -1;
+    return Number(b) - Number(a);
+  };
 
   buildTagFilterChips("filter-genre-chips", genreSet, active.genres, applyFilters);
   buildTagFilterChips("filter-tag-chips", tagSet, active.tags, applyFilters);
+  buildTagFilterChips("filter-releaseyear-chips", releaseYearSet, active.releaseYears, applyFilters, yearSort);
   buildTagFilterChips("filter-playtime-chips", playtimeSet, active.playtimes, applyFilters, playtimeSort);
   buildTagFilterChips("filter-status-chips", statusSet, active.statuses, applyFilters);
   buildTagFilterChips("filter-engine-chips", engineSet, active.engines, applyFilters);
@@ -1207,6 +1289,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  initThemeSwitcher();
   initGlobalJuice();
   initAuthorSearch();
   initSearchShortcut();
