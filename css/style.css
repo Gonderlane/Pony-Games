@@ -58,10 +58,13 @@ button {
   color: inherit;
 }
 
-/* --- CSS Variables (edit here for theming) --- */
+/* --- Variables ---
+   Themes only override the palette values above the blank line in each
+   block; radius/font/transition/shadow stay constant across themes. */
 :root {
   --color-bg: #1a1a2e;
   --color-bg-alt: #16213e;
+  --color-bg-alt-rgb: 22, 33, 62;
   --color-surface: #0f3460;
   --color-surface-hover: #1a4a7a;
   --color-accent: #e94560;
@@ -92,11 +95,33 @@ button {
   --color-tag-other: #2980b9;
 }
 
-/* Resources page uses a distinct background */
+/* Resources page uses a distinct background, one variant per theme so it
+   doesn't end up as dark-purple-on-light-theme (unreadable) */
 body.page-resources {
   --color-bg: #1e1a2e;
   --color-bg-alt: #2a1f3d;
   --color-surface: #3d2b5e;
+}
+
+/* --- Daylight theme --- */
+:root[data-theme="light"] {
+  --color-bg: #f5f2fa;
+  --color-bg-alt: #ffffff;
+  --color-bg-alt-rgb: 255, 255, 255;
+  --color-surface: #ece5f7;
+  --color-surface-hover: #ddd2f0;
+  --color-accent: #d6336c;
+  --color-accent-soft: #c2255c;
+  --color-text: #241f33;
+  --color-text-muted: #6b6280;
+  --color-border: #ddd4ee;
+  --color-tag: #e4d8f7;
+}
+
+:root[data-theme="light"] body.page-resources {
+  --color-bg: #faf3ff;
+  --color-bg-alt: #ffffff;
+  --color-surface: #f0e0fb;
 }
 
 /* --- Base Layout --- */
@@ -125,7 +150,7 @@ body {
 
 .site-header.is-scrolled {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
-  background: rgba(22, 33, 62, 0.96);
+  background: rgba(var(--color-bg-alt-rgb), 0.96);
   backdrop-filter: blur(8px);
 }
 
@@ -205,6 +230,17 @@ body {
   color: var(--color-accent);
 }
 
+.theme-switcher {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.6rem;
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
 /* --- Footer --- */
 .site-footer {
   margin-top: 4rem;
@@ -231,7 +267,7 @@ body {
 }
 
 /* ==========================================================================
-   Jam Timer (index.html, powered by js/timer.js)
+   Jam Timer (index.html)
    ========================================================================== */
 .jam-timer {
   background: var(--color-surface);
@@ -487,7 +523,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Pagination (main.js) --- */
+/* --- Pagination --- */
 .pagination {
   display: flex;
   align-items: center;
@@ -656,6 +692,28 @@ body {
   overflow: hidden;
 }
 
+/* --- Upcoming / In Development strip (index.html) --- */
+.upcoming-section {
+  margin-top: 3rem;
+}
+
+.upcoming-scroll {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1.5rem;
+}
+
+.upcoming-scroll .card {
+  flex: 0 0 260px;
+}
+
+.upcoming-scroll .skeleton-card {
+  flex: 0 0 260px;
+}
+
 /* ==========================================================================
    Games Page Layout: grid + filter panel
    ========================================================================== */
@@ -776,6 +834,10 @@ body {
   cursor: pointer;
   user-select: none;
   position: relative;
+}
+
+.nsfw-toggle + .nsfw-toggle {
+  margin-top: 0.6rem;
 }
 
 .nsfw-toggle input {
@@ -1165,7 +1227,7 @@ body {
 }
 
 /* ==========================================================================
-   Detail Panel (games.html & resources.html, main.js)
+   Detail Panel (games.html & resources.html)
    ========================================================================== */
 .detail-panel {
   display: none;
@@ -1426,8 +1488,7 @@ body {
   background: var(--color-accent-soft);
 }
 
-/* Mirror buttons (Telegram / backup server, etc.) — same build hosted
-   elsewhere, so they're visually secondary next to the main download. */
+/* mirror buttons are secondary next to the main download */
 .download-row__btn--mirror {
   background: var(--color-surface-hover);
   padding: 0.4rem 0.85rem;

@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- set the theme before first paint, avoids a flash of the wrong theme -->
+  <script>
+    try {
+      var pgTheme = localStorage.getItem("pg-theme");
+      if (pgTheme) document.documentElement.dataset.theme = pgTheme;
+    } catch (e) {}
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="About Pony Games: contacts, credits, and community info." />
   <title>About | Pony Games</title>
@@ -20,6 +27,10 @@
         <a href="games.html">Games</a>
         <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
+        <select id="theme-switcher" class="theme-switcher" aria-label="Site theme">
+          <option value="midnight">🌙 Midnight</option>
+          <option value="light">☀️ Daylight</option>
+        </select>
       </nav>
     </div>
   </header>
@@ -30,7 +41,7 @@
 
     <div class="about-content">
 
-      <!-- ===================== MASCOT IMAGE (click to enlarge, js/main.js) ===================== -->
+      <!-- ===================== MASCOT (click to enlarge) ===================== -->
       <img class="about-mascot" src="assets/mascot.png" alt="Pony Games mascot" tabindex="0" role="button" aria-label="Enlarge mascot image" />
 
       <!-- ===================== ABOUT TEXT ===================== -->
@@ -71,7 +82,7 @@
         </ul>
       </section>
 
-      <!-- ===================== JAM HISTORY (data/jams.json via main.js) ===================== -->
+      <!-- ===================== JAM HISTORY ===================== -->
       <section class="about-section jam-history-section">
         <h2>Jam History</h2>
         <p>
@@ -91,7 +102,7 @@
     </div>
   </footer>
 
-  <!-- ===================== MASCOT LIGHTBOX (js/main.js) ===================== -->
+  <!-- ===================== MASCOT LIGHTBOX ===================== -->
   <div id="mascot-lightbox" class="mascot-lightbox" hidden>
     <button class="mascot-lightbox__close" type="button" aria-label="Close">&times;</button>
     <img class="mascot-lightbox__img" src="assets/mascot.png" alt="Pony Games mascot, enlarged" />

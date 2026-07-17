@@ -1,18 +1,9 @@
-/**
- * Jam Timer - js/timer.js
- *
- * Primary config source: data/jam-config.json
- * Fallback config below keeps the timer working if JSON fails to load.
- */
+/* Jam countdown. Config comes from data/jam-config.json; if that fails to
+   load, fall back to the plain "no jam" state instead of counting down to
+   a made-up date. */
 
 const JAM_CONFIG_FALLBACK = {
-  state: "upcoming",
-  lastJamUrl: "https://example.com/last-jam",
-  lastJamLabel: "Spring Pony Jam 2025",
-  startDate: "2026-06-15T00:00:00",
-  endDate: "2026-06-22T23:59:59",
-  currentJamUrl: "https://example.com/current-jam",
-  currentJamLabel: "Summer Pony Jam 2026",
+  state: "none",
   messages: {
     none: "No jam running right now. Check back soon!",
     upcoming: "Next jam starts in",
@@ -46,7 +37,7 @@ async function loadJamConfig() {
       },
     };
   } catch (err) {
-    console.warn("timer.js: using fallback config because jam-config.json failed to load.");
+    console.warn("jam-config.json failed to load, using fallback");
     return JAM_CONFIG_FALLBACK;
   }
 }
@@ -164,9 +155,13 @@ function initJamTimer(config) {
     countdownEl.classList.remove("jam-timer__countdown--finished");
     statusEl.textContent = "No Jam";
     messageEl.textContent = config.messages.none;
-    linkEl.hidden = false;
-    linkEl.href = config.lastJamUrl;
-    linkEl.textContent = `View ${config.lastJamLabel}`;
+    if (config.lastJamUrl) {
+      linkEl.hidden = false;
+      linkEl.href = config.lastJamUrl;
+      linkEl.textContent = `View ${config.lastJamLabel || "last jam"}`;
+    } else {
+      linkEl.hidden = true;
+    }
     linkEl.classList.remove("jam-timer__link--pulse");
   }
 

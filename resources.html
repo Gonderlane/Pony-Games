@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- set the theme before first paint, avoids a flash of the wrong theme -->
+  <script>
+    try {
+      var pgTheme = localStorage.getItem("pg-theme");
+      if (pgTheme) document.documentElement.dataset.theme = pgTheme;
+    } catch (e) {}
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Free assets and resources for pony game developers: sprites, tilesets, music, and more." />
   <title>Resources | Pony Games</title>
@@ -20,6 +27,10 @@
         <a href="games.html">Games</a>
         <a href="resources.html">Resources</a>
         <a href="about.html">About</a>
+        <select id="theme-switcher" class="theme-switcher" aria-label="Site theme">
+          <option value="midnight">🌙 Midnight</option>
+          <option value="light">☀️ Daylight</option>
+        </select>
       </nav>
     </div>
   </header>
@@ -33,7 +44,7 @@
 
     <div class="resources-layout">
       <div>
-        <!-- ===================== CARD GRID (data/resources.json via main.js) ===================== -->
+        <!-- ===================== CARD GRID ===================== -->
         <div id="card-grid" class="card-grid" data-type="resources"></div>
       </div>
 
@@ -75,7 +86,7 @@
 
   </main>
 
-  <!-- ===================== DETAIL PANEL (main.js populates on card click) ===================== -->
+  <!-- ===================== DETAIL PANEL ===================== -->
   <div id="detail-panel" class="detail-panel" role="dialog" aria-modal="true" aria-label="Resource details">
     <div class="detail-panel__content">
       <button class="detail-panel__close" type="button" aria-label="Close details">&times;</button>
