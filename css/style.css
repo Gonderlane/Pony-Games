@@ -523,6 +523,15 @@ body {
   line-height: 1.6;
 }
 
+.news-post__excerpt a {
+  color: var(--color-accent-soft);
+}
+
+.news-post__excerpt ul {
+  list-style: unset;
+  padding-left: revert;
+}
+
 /* --- Pagination --- */
 .pagination {
   display: flex;
