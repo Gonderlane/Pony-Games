@@ -1,0 +1,3 @@
+[submodule "s"]
+	path = s
+	url = https://github.com/styrbo/MLPGPPScreenshots.git
