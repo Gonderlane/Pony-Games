@@ -40,5 +40,5 @@ won't work because the pages fetch their content from data/*.json.
 
 ## Deploying
 
-Hosting is a plain web server (pone.rs), uploaded manually. There's no CI:
+Hosting is a plain web server, uploaded manually. There's no CI:
 zip the repo contents (minus .git) and hand it to whoever has server access.
