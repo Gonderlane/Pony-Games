@@ -408,7 +408,7 @@ async function initNewsBlog() {
           </button>
           <div class="news-post__body" hidden>
             ${post.image ? `<img class="news-post__image" src="${post.image}" alt="${post.title}" loading="lazy" />` : ""}
-            <p class="news-post__excerpt">${post.excerpt}</p>
+            <md class="news-post__excerpt">${post.excerpt}</md>
           </div>
         </article>
       `
@@ -435,6 +435,7 @@ async function initNewsBlog() {
   if (nextBtn) nextBtn.addEventListener("click", () => renderPage(currentPage + 1));
 
   renderPage(1);
+  renderMarkdown();
 }
 
 /* ==========================================================================
