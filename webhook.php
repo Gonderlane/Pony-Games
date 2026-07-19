@@ -81,7 +81,7 @@ if (!is_dir($repoPath)) {
 }
 
 $git = 'git';
-$command = "cd " . escapeshellarg($repoPath) . " && $git pull origin " . escapeshellarg($branch) . " 2>&1";
+$command = "cd " . escapeshellarg($repoPath) . " && $git -c safe.directory=" . escapeshellarg($repoPath) . " pull origin " . escapeshellarg($branch) . " 2>&1";
 
 exec($command, $output, $returnCode);
 $outputStr = implode("\n", $output);
