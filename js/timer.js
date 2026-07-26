@@ -23,12 +23,20 @@ const UNIT_CONFIG = [
 const RING_RADIUS = 36;
 const RING_CIRCUMFERENCE = 2 * Math.PI * RING_RADIUS;
 
+function toUTCTimestamp(dateStr) {
+  if (!dateStr) return null;
+  const normalized = /[+-]\d{2}:\d{2}$/.test(dateStr) || /Z$/.test(dateStr)
+    ? dateStr
+    : dateStr + 'Z';
+  return new Date(normalized).getTime();
+}
+
 async function loadJamConfig() {
   try {
     const response = await fetch("data/jam-config.json");
     if (!response.ok) throw new Error("bad response");
     const data = await response.json();
-    return {
+    const processed = {
       ...JAM_CONFIG_FALLBACK,
       ...data,
       messages: {
@@ -36,6 +44,9 @@ async function loadJamConfig() {
         ...(data?.messages || {}),
       },
     };
+    if (data.startDate) processed.startDate = toUTCTimestamp(data.startDate);
+    if (data.endDate) processed.endDate = toUTCTimestamp(data.endDate);
+    return processed;
   } catch (err) {
     console.warn("jam-config.json failed to load, using fallback");
     return JAM_CONFIG_FALLBACK;
@@ -52,7 +63,7 @@ function initJamTimer(config) {
   const linkEl = container.querySelector(".jam-timer__link");
 
   let intervalId = null;
-  let initialDiff = null;
+  let totalDuration = null;
   let previousValues = {};
 
   function pad(n) {
@@ -119,13 +130,11 @@ function initJamTimer(config) {
     digitEl.textContent = display;
   }
 
-  function updateArc(diff) {
+  function updateArc(progress) {
     const fill = countdownEl.querySelector(".jam-timer__arc-fill");
     const icon = countdownEl.querySelector(".jam-timer__arc-icon");
-    if (!fill || initialDiff === null) return;
-
-    const progress = Math.min(1, Math.max(0, 1 - diff / initialDiff));
-    fill.style.strokeDashoffset = String(1 - progress);
+    if (!fill) return;
+    fill.style.strokeDashoffset = String(1 - Math.min(1, Math.max(0, progress)));
 
     if (icon) {
       icon.textContent = progress > 0.5 ? "☀" : "☾";
@@ -165,13 +174,13 @@ function initJamTimer(config) {
     linkEl.classList.remove("jam-timer__link--pulse");
   }
 
-  function renderCountdown(targetDate, statusLabel, messageText, linkConfig, completeState) {
+  function renderCountdown(targetTimestamp, statusLabel, messageText, linkConfig, completeState, startTimestamp, showArc) {
     container.classList.remove("jam-timer--complete");
     countdownEl.hidden = false;
     countdownEl.classList.remove("jam-timer__countdown--finished");
     statusEl.textContent = statusLabel;
     messageEl.textContent = messageText;
-    initialDiff = null;
+    totalDuration = null;
     previousValues = {};
 
     if (linkConfig) {
@@ -185,12 +194,24 @@ function initJamTimer(config) {
     }
 
     buildCountdownShell();
+
+    const arcWrap = countdownEl.querySelector(".jam-timer__arc-wrap");
+    if (arcWrap) arcWrap.style.display = showArc ? "" : "none";
+
+    const end = targetTimestamp;
+    const start = startTimestamp;
     let daysMax = 30;
+
+    if (showArc && start !== null && start < end) {
+      totalDuration = end - start;
+      daysMax = Math.floor(totalDuration / (1000 * 60 * 60 * 24)) || 1;
+    } else {
+      totalDuration = null;
+    }
 
     function tick() {
       const now = Date.now();
-      const target = new Date(targetDate).getTime();
-      const diff = target - now;
+      const diff = end - now;
 
       if (diff <= 0) {
         clearInterval(intervalId);
@@ -198,11 +219,9 @@ function initJamTimer(config) {
         return;
       }
 
-      if (initialDiff === null) {
-        initialDiff = diff;
-        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        daysMax = Math.max(days, 1);
-      }
+      const effectiveDaysMax = totalDuration
+        ? daysMax
+        : Math.max(Math.floor(diff / (1000 * 60 * 60 * 24)), 1);
 
       const days = Math.floor(diff / (1000 * 60 * 60 * 24));
       const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
@@ -213,12 +232,16 @@ function initJamTimer(config) {
       UNIT_CONFIG.forEach((u) => {
         const unitEl = countdownEl.querySelector(`[data-unit="${u.key}"]`);
         if (!unitEl) return;
-        const max = u.key === "days" ? daysMax : u.max;
+        const max = u.key === "days" ? effectiveDaysMax : u.max;
         updateRing(unitEl, values[u.key], max);
         updateFlipDigit(unitEl, u.key, values[u.key], u.key !== "days");
       });
 
-      updateArc(diff);
+      if (showArc && totalDuration) {
+        const elapsed = now - start;
+        const progress = Math.min(1, Math.max(0, elapsed / totalDuration));
+        updateArc(progress);
+      }
     }
 
     if (intervalId) clearInterval(intervalId);
@@ -236,7 +259,9 @@ function initJamTimer(config) {
         "Upcoming Jam",
         config.messages.upcoming,
         null,
-        "upcoming"
+        "upcoming",
+        null,
+        false
       );
       break;
     case "active":
@@ -245,7 +270,9 @@ function initJamTimer(config) {
         "Jam Active",
         config.messages.active,
         { url: config.currentJamUrl, label: `Go to ${config.currentJamLabel}` },
-        "active"
+        "active",
+        config.startDate,
+        true
       );
       break;
     default:
