@@ -1,9 +1,9 @@
 {
   "state": "upcoming",
-  "lastJamUrl": "https://example.com/last-jam",
-  "lastJamLabel": "Spring Pony Jam 2025",
-  "startDate": "2026-06-09T20:30:00",
-  "endDate": "2026-06-22T23:59:59",
+  "lastJamUrl": "https://itch.io/jam/mlpcon-game-jam-no-movment",
+  "lastJamLabel": "/mlp/con Game Jam: No movment",
+  "startDate": "2026-07-26T16:50",
+  "endDate": "2026-07-26T16:52",
   "currentJamUrl": "https://example.com/current-jam",
   "currentJamLabel": "Summer Pony Jam 2026",
   "messages": {
