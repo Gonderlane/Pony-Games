@@ -88,10 +88,23 @@ $outputStr = implode("\n", $output);
 
 $logEntry = date('Y-m-d H:i:s') . " - Return code: $returnCode\n";
 $logEntry .= "Output:\n$outputStr\n";
-$logEntry .= "---\n";
-file_put_contents($logFile, $logEntry, FILE_APPEND);
 
 if ($returnCode === 0) {
+    // Выполняем chown для установки правильных прав
+    $chownCmd = "chown -R arkain123:www-data " . escapeshellarg($repoPath) . " 2>&1";
+    exec($chownCmd, $chownOutput, $chownReturn);
+    $chownOutputStr = implode("\n", $chownOutput);
+    $logEntry .= "Chown return code: $chownReturn\n";
+    $logEntry .= "Chown output:\n$chownOutputStr\n";
+
+    // Если chown завершился с ошибкой, можно залогировать, но не прерывать успешный ответ
+    if ($chownReturn !== 0) {
+        $logEntry .= "WARNING: chown command failed with code $chownReturn\n";
+        // Можно также записать в отдельный лог или отправить уведомление, но здесь просто логируем
+    }
+
+    $logEntry .= "---\n";
+    file_put_contents($logFile, $logEntry, FILE_APPEND);
     http_response_code(200);
     echo "Pull successful\n$outputStr";
 } else {
