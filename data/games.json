@@ -1992,7 +1992,7 @@
           "buttonText": "Download",
           "mirrors": [
             {
-              "url": "https://mlpgames.mariusdavid.fr/933",
+              "url": "https://mlpgames.mariusdavid.fr/932",
               "label": "Scrogne"
             },
             {
@@ -2008,7 +2008,7 @@
           "buttonText": "Download",
           "mirrors": [
             {
-              "url": "https://mlpgames.mariusdavid.fr/934",
+              "url": "https://mlpgames.mariusdavid.fr/933",
               "label": "Scrogne"
             },
             {
@@ -6843,7 +6843,7 @@
     },
     {
       "id": 103,
-      "title": "Slaughter Horse(Pinkamena)",
+      "title": "Slaughter Horse|Pinkamena",
       "author": [
         "CatfoodMcFly"
       ],
@@ -7025,8 +7025,8 @@
         "ismartman?"
       ],
       "thumbnail": "/s/47/0.png",
-      "shortDescription": " ",
-      "fullDescription": " ",
+      "shortDescription": "Simply a very crude prototype initially made for t...",
+      "fullDescription": "Simply a very crude prototype initially made for testing some Unity rendering features, that got pastel horses slapped onto it for a jiggle. Then I kept adding stuff because why not...",
       "tags": [
         {
           "label": "jRPG",
@@ -7054,12 +7054,75 @@
       ]
     },
     {
+      "id": 124,
+      "title": "Oat Quest",
+      "author": [
+        "someunnameddev"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "3D",
+          "type": "Other"
+        },
+        {
+          "label": "First Person",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Tower Defence",
+          "type": "Genre"
+        },
+        {
+          "label": "Shooter",
+          "type": "Genre"
+        },
+        {
+          "label": "Humor",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "Background"
+      ],
+      "playtime": "5m-30m",
+      "status": "In Development",
+      "engine": "Unity",
+      "platforms": [
+        "Windows"
+      ],
+      "url": "https://someunnameddev.itch.io/oat-quest",
+      "releaseDate": "2023-07-22",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/1070",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2746",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    {
       "id": 125,
       "title": "Between Dusk and Dawn",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7160,7 +7223,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7355,7 +7418,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7845,7 +7908,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7877,7 +7940,7 @@
       "author": [
         "MChuckGames"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -7932,7 +7995,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -8899,7 +8962,7 @@
       "author": [
         "JFK Studios\u00AE \u0026 Tween Animations"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "?",
       "fullDescription": "?",
       "tags": [
@@ -9056,7 +9119,7 @@
       "author": [
         "Pokegamer2011"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Once the player decides to play the game at night,...",
       "fullDescription": "Once the player decides to play the game at night, Rainbow Dash appears in a large field of grass, although it is dark and foggy. Soon, the title of the game appears. A small blast of static later, and Rainbow Dash appears in another \u0022otherworld\u0022 setting, but unlike the first game, this one is a deep maroon color. Proceed to the right, and Pinkie Pie appears there. She warns Rainbow Dash that she \u0022better leave\u0022, (Although it is impossible to do so) and Rainbow Dash simply ignores her and climbs up the pathway behind her. She pleads with Rainbow Dash to stop, but again, Rainbow Dash ignores her. Once the player climbs the small path and starts walking again, she says \u0022Don\u0027t say that I didn\u0027t warn you...\u0022. Rainbow Dash then falls down through the floor. Once she lands at the bottom of a shaft, small, bloody pieces of flesh fall down the shaft. Soon, Twilight Sparkle\u0027s dismembered arms, and then head falls down. Rainbow Dash will now look sad. It then cuts to a screen where it says \u0022WELL...\u0022, and then it says the name of your Windows folder. (I.e- C:\\WINDOWS)? and closes again. After a few seconds, the game re-opens. A picture of Pinkie appears along with static, and then Rainbow Dash appears in a small hallway. At the end of the hallway, a sprite of Pinkie Pie with evil eyes vanishes right as it gets into sight, and her laughter echoes as you keep moving forward. Rainbow Dash then hops across some platforms, (she can\u0027t actually fall, so the player can have Rainbow Dash pretty much walk forward.) and once she reaches the other side of a gap, an even-bloodier Pinkie Pie sprite appears but the static shows up quickly, so the player can\u0027t get a good look at it (if the player is lucky enough to get an error message, he/she can clearly look at it). Another message saying \u0022WELL DONEEEEEEEEEEEE-\u0022 appears, along with random keys and numbers. Then the game closes, but the sound of a heartbeat can soon be heard, along with Pinkie Pie\u0027s laughter. But nothing else pops up after the heartbeat fades away, and this is the end of the game.",
       "tags": [
@@ -9123,7 +9186,7 @@
       "author": [
         "Pokegamer2011"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "Once the player plays this at night/change setting...",
       "fullDescription": "Once the player plays this at night/change settings to night, Rainbow Dash appears in a small field, along with some of her friends. The player can have Rainbow Dash speak to them, but otherwise, it\u0027s more or less a waiting game. Soon, a creepy picture of Pinkie Pie appear on the screen for several seconds, (it turns full screen if the window isn\u0027t maximized). And then Rainbow Dash appears in a completely black shaft. Every few seconds, the same picture of Pinkie Pie appears on the screen. It\u0027s interesting to note that this is actually animated- The picture noticably shakes. It\u0027s also interesting to note that after this picture, Rainbow Dash\u0027s eyes lower, as if she\u0027s scared. Soon, a sprite of Pinkie Pie appears running at the player, and the same picture appears on the screen. However, when it vanishes, a picture of Twilight appears on the screen (which is taken from Lesson Zero). Unlike the Pinkie Pie picture, this one gets closer to the screen, and is accompanied by heartbeats. Once it vanishes, the player appears in the familiar otherworld area. However, this area is fairly small. When the player has Rainbow Dash go down, the player loses the ability to make her jump. Once Rainbow Dash reaches the far-wall, the same sprite of Pinkie Pie runs at Rainbow Dash, and the Twilight picture appears again, along with a creepy noise. Then Rainbow Dash appears in a black room along with, interestingly enough, Princess Luna. She turns away from Rainbow Dash, and then a bloody sprite of Pinkie Pie appears behind Rainbow Dash, (again, the player can\u0027t get a good look at it) and the game closes with \u0022END\u0022. A few seconds later, a creepily written \u0022NO!\u0022 shows up, also making the word \u0022END\u0022 creepily crossed out. And then there will be a very creepy sound, and the game closes. For some reason, the player will be unable to control his/her mouse for a few seconds. Then a Notepad file with the title: \u0022She is coming, (username)\u0022 pops onscreen. When the player opens the file up, it says: [She WILL find you...] [She is coming...] [Your end is near...] If the player does not copy anything after playing the game but pastes anywhere, it will say: She will get you... Soon...If the player re-opens the game, it shows the ending again, and it does the same thing.",
       "tags": [
@@ -9191,7 +9254,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9242,7 +9305,7 @@
       "author": [
         "Pokegamer2011"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9496,7 +9559,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9528,7 +9591,7 @@
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "One of the earliest fan games ",
       "fullDescription": "One of the earliest fan games ",
       "tags": [
@@ -9583,7 +9646,7 @@
       "author": [
         "Pony in a Box"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Hidden Signal is Pony in a Box\u0027s first game. It is...",
       "fullDescription": "Hidden Signal is Pony in a Box\u0027s first game. It is a text adventure set in the Doctor Whooves universe. You play as The Doctor who has been detecting strange broadcasts throughout Equestria. You must think like The Doctor to solve the mystery of the Hidden Signal.",
       "tags": [
@@ -9714,7 +9777,7 @@
       "author": [
         "Rakan Haddad Software"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "?",
       "fullDescription": "?",
       "tags": [
@@ -9821,7 +9884,7 @@
         "mittsies",
         "StaSyaN"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -9946,7 +10009,7 @@
       "author": [
         "anonymous"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Romance of the Three Kingdoms inspired strategy ga...",
       "fullDescription": "Romance of the Three Kingdoms inspired strategy game. Was posted on the /mlp/ by anon",
       "tags": [
@@ -10069,7 +10132,7 @@
       "author": [
         "Naner Bag?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10141,7 +10204,7 @@
       "author": [
         "Raztudio"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10177,7 +10240,7 @@
       "author": [
         "Ben Saint"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10213,7 +10276,7 @@
       "author": [
         "Robin Daydream"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10245,7 +10308,7 @@
       "author": [
         "Tvio"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10440,6 +10503,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/750",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2177",
               "label": "telegram"
             }
@@ -10490,7 +10557,7 @@
       "author": [
         "DVIGATEL"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10526,7 +10593,7 @@
       "author": [
         "TheCrimsonDM Vanillia"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10558,7 +10625,7 @@
       "author": [
         "Eights"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10594,7 +10661,7 @@
       "author": [
         "RetiredBrony"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "ROM hack of Mega Man 3",
       "fullDescription": "ROM hack of Mega Man 3",
       "tags": [
@@ -10646,7 +10713,7 @@
       "author": [
         "TwistedScarlett60"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10683,7 +10750,7 @@
         "Aleksey Stav",
         "Exotica Games"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10735,7 +10802,7 @@
       "author": [
         "anonymous"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "Was posted anonymously on 4chan",
       "fullDescription": "Was posted anonymously on 4chan",
       "tags": [
@@ -10795,7 +10862,7 @@
       "author": [
         "Pix3M"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "In Robin Steele the Waifu Thief you journey as a y...",
       "fullDescription": "In Robin Steele the Waifu Thief you journey as a young alicorn in search for the heart of a princess. It is a small game created in 48 hours for the Crystal Games Challenge.",
       "tags": [
@@ -10859,7 +10926,7 @@
       "author": [
         "Pix3M"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -10974,13 +11041,13 @@
     },
     {
       "id": 221,
-      "title": "Ponyville",
+      "title": "PONYVILLE \uD83E\uDD84",
       "author": [
         "Halo12"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
-      "shortDescription": "",
-      "fullDescription": "",
+      "thumbnail": "/s/495/0.jpg",
+      "shortDescription": "A short point-and-click horror game from fanmade M...",
+      "fullDescription": "A short point-and-click horror game from fanmade MLP universe, Twilight\u2019s Eden AU. You play as Fluttershy, spending a quiet day walking through Ponyville. Everything feels normal. This game is part of the Twilight\u2019s Eden AU video series.",
       "tags": [
         {
           "label": "Point \u0026 Click",
@@ -10996,17 +11063,35 @@
         }
       ],
       "characters": [
-        "Unknown"
+        "M6"
       ],
-      "playtime": "Unknown",
+      "playtime": "30m-2h",
       "status": "Released",
       "engine": "RPGMaker",
-      "platforms": [],
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://scaredcr0w.itch.io/ponyville",
       "releaseDate": "2025-05-26",
-      "dateAdded": "2026-04-12",
-      "downloads": null,
-      "screenshots": []
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "release",
+          "url": "https://games.mare.by/1073",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2758",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        "/s/495/1.jpg",
+        "/s/495/2.jpg"
+      ]
     },
     {
       "id": 222,
@@ -12467,12 +12552,66 @@
       "screenshots": []
     },
     {
+      "id": 266,
+      "title": "Attack of the Snuggly Bunnies",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "Old game I made found on my computer. I hope you a...",
+      "fullDescription": "Old game I made found on my computer. I hope you all love it. ~~Backstory~~ Fluttershy\u0027s bunny Angel got caught In Toxic Waste what Discord produced. (It\u0027s mayonnaise for him) and Angel accidently jumped in it than it spreads over Equestria and Angel died and the copies of him turned evil and they want to overrule Equestria so they go to the power of friendship. Also known as Twilight Sparkles.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Gore",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.newgrounds.com/portal/view/651475",
+      "releaseDate": "",
+      "dateAdded": "2026-04-23",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1059",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2711",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1059",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
       "id": 270,
       "title": "Battle Royale: Forward to the Past",
       "author": [
         "Xinef"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -12500,7 +12639,7 @@
       "author": [
         "Hasbro"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -12528,26 +12667,56 @@
       "author": [
         "BlitzProg"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic3.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
         {
-          "label": "NSFW",
-          "type": "warning"
+          "label": "Puzzle",
+          "type": "Genre"
+        },
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
         }
       ],
       "characters": [
-        "Unknown"
+        "M6"
       ],
-      "playtime": "Unknown",
+      "playtime": "5m-30m",
       "status": "Released",
-      "engine": "Unknown",
-      "platforms": [],
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
       "url": "https://mlp-gaming.fandom.com/wiki/Brony_Cards",
       "releaseDate": "2014-03-22",
-      "dateAdded": "2026-04-23",
-      "downloads": null,
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "1.2",
+          "url": "https://games.mare.by/1055",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2707",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.2",
+          "url": "https://flash.mare.by/g?id=1055",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
       "screenshots": []
     },
     {
@@ -12611,12 +12780,128 @@
       ]
     },
     {
+      "id": 283,
+      "title": "Canterlot Siege 2",
+      "author": [
+        "futzi01"
+      ],
+      "thumbnail": "/s/502/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Tower Defence",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast",
+        "Background"
+      ],
+      "playtime": "30m-2h",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://mlp-gaming.fandom.com/wiki/Canterlot_Siege_2",
+      "releaseDate": "2012-08-16",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1079",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2777",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1079",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/502/1.jpg"
+      ]
+    },
+    {
+      "id": 284,
+      "title": "Canterlot Siege 3: Inversion",
+      "author": [
+        "futzi01"
+      ],
+      "thumbnail": "/s/485/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Tower Defence",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "30m-2h",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://mlp-gaming.fandom.com/wiki/Canterlot_Siege_3:_Inversion",
+      "releaseDate": "",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1062",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2723",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1062",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/485/1.jpg",
+        "/s/485/2.jpg"
+      ]
+    },
+    {
       "id": 299,
       "title": "Conquest of Equestria",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic3.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -12694,12 +12979,78 @@
       ]
     },
     {
+      "id": 312,
+      "title": "Daring Do",
+      "author": [
+        "?"
+      ],
+      "thumbnail": "/s/484/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        },
+        {
+          "label": "Side Scroller",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "30m-2h",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "?",
+          "url": "https://games.mare.by/1061",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2719",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "?",
+          "url": "https://flash.mare.by/g?id=1061",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/484/1.jpg",
+        "/s/484/2.jpg",
+        "/s/484/3.jpg"
+      ]
+    },
+    {
       "id": 315,
       "title": "Dash Off",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic1.jpg",
+      "thumbnail": "/assets/gamarenopic2.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -12722,12 +13073,71 @@
       "screenshots": []
     },
     {
+      "id": 316,
+      "title": "Dayside\u0027s Birthday Quest",
+      "author": [
+        "hafunui"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "This here\u0027s my first finished project! Motivated b...",
+      "fullDescription": "This here\u0027s my first finished project! Motivated by my good friend\u0027s birthday, I managed this in about three months. I wanted to have more action in it, which is why there\u0027s a few enemies in there. But I had to settle for a more birthday card feel. He loved it so I count it as a success :P",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "OC",
+        "Background"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.newgrounds.com/portal/view/641477",
+      "releaseDate": "2014-06-22",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1057",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2709",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1057",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
       "id": 320,
       "title": "Derp Till Dawn",
       "author": [
         "?"
       ],
-      "thumbnail": "/assets/gamarenopic2.jpg",
+      "thumbnail": "/assets/gamarenopic1.jpg",
       "shortDescription": "",
       "fullDescription": "",
       "tags": [
@@ -12816,6 +13226,60 @@
       ]
     },
     {
+      "id": 370,
+      "title": "Friendship Can\u0027t Be Cloned",
+      "author": [
+        "aparisius"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "Equestria is full of monsters and Fluttershy will ...",
+      "fullDescription": "Equestria is full of monsters and Fluttershy will have to beat them. Choose your actions wisely, since your choices will change the story.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Arcade",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.newgrounds.com/portal/view/650218",
+      "releaseDate": "2014-12-14",
+      "dateAdded": "2026-04-23",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1058",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2710",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1058",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
       "id": 372,
       "title": "Gem Hunt",
       "author": [
@@ -12877,6 +13341,63 @@
         "/s/91/1.jpg",
         "/s/91/2.jpg",
         "/s/91/3.jpg"
+      ]
+    },
+    {
+      "id": 392,
+      "title": "Last Dash",
+      "author": [
+        "futzi01"
+      ],
+      "thumbnail": "/s/494/0.jpg",
+      "shortDescription": "Help Rainbow Dash do her last dash in the Crystal ...",
+      "fullDescription": "Help Rainbow Dash do her last dash in the Crystal Empire! There\u0027s a secret in this game. If you put the Konami code in the game, Dashie will become drunk (as she\u0027s been drinking cider the whole time!) and she defiantly will be unable to fly correctly and the score will have \u0022(Cheated)\u0022 written next to it.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Racing",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://mlp-gaming.fandom.com/wiki/Last_Dash",
+      "releaseDate": "2015-11-05",
+      "dateAdded": "2026-04-23",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1072",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2754",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1072",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/494/1.jpg",
+        "/s/494/2.jpg"
       ]
     },
     {
@@ -13085,6 +13606,243 @@
       "dateAdded": "2026-04-23",
       "downloads": null,
       "screenshots": []
+    },
+    {
+      "id": 478,
+      "title": "Pinkie\u0027s Senses",
+      "author": [
+        "SonicFFVII"
+      ],
+      "thumbnail": "/s/492/0.jpg",
+      "shortDescription": "Are you guys ready for a challenge? dodging obstac...",
+      "fullDescription": "Are you guys ready for a challenge? dodging obstacles and navigating your way to get the best score and conquer the leaderboard? this is the game for you. test your skills and plan your moves to make sure you can survive 5 levels of falling obstacles. each more difficult then the last and adding together making one hecktic addictive game.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Arcade",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.deviantart.com/sonicffvii/art/Pinkie-s-Senses-360801961",
+      "releaseDate": "2013-03-22",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1071",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2749",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1071",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1071",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2749",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1071",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/492/1.jpg"
+      ]
+    },
+    {
+      "id": 484,
+      "title": "Pinkie Pie\u0027s Perilous Platforms!",
+      "author": [
+        "Sylverstone14"
+      ],
+      "thumbnail": "/s/503/0.jpg",
+      "shortDescription": "Trot, run, wall jump and stomp your way through th...",
+      "fullDescription": "Trot, run, wall jump and stomp your way through these four special demo levels as you get a peek into how levels will be designed in the future.  Collect all the bits to move on within the prescribed time limit!",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "In Development",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://sylverstonekhandr.itch.io/pinkie-pies-perilous-platforms-2012-demo",
+      "releaseDate": "2012-08-13",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "2012 beta",
+          "url": "https://games.mare.by/1080",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2782",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "2012 beta",
+          "url": "https://flash.mare.by/g?id=1080",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "2014 Demo",
+          "url": "https://games.mare.by/1082",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2784",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "2014 Demo",
+          "url": "https://flash.mare.by/g?id=1082",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "2012 Final Version",
+          "url": "https://games.mare.by/1081",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2783",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "2012 Final Version",
+          "url": "https://flash.mare.by/g?id=1081",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/503/1.jpg"
+      ]
+    },
+    {
+      "id": 487,
+      "title": "Pinkie Pie Adventure",
+      "author": [
+        "SonicFFVII"
+      ],
+      "thumbnail": "/s/488/0.jpg",
+      "shortDescription": "well it took a whole day to make but i got this ga...",
+      "fullDescription": "well it took a whole day to make but i got this game done",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Side Scroller",
+          "type": "Genre"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.deviantart.com/sonicffvii/art/my-little-pony-fan-game-Pinkie-pie-adventure-V-1-6-278454896",
+      "releaseDate": "2012-01-09",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "1.6",
+          "url": "https://games.mare.by/1065",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2732",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.6",
+          "url": "https://flash.mare.by/g?id=1065",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/488/1.jpg"
+      ]
     },
     {
       "id": 490,
@@ -13733,6 +14491,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/712",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2087",
               "label": "telegram"
             }
@@ -13783,6 +14545,10 @@
           "url": "https://games.mare.by/713",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/713",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2090",
               "label": "telegram"
@@ -13835,6 +14601,10 @@
           "url": "https://games.mare.by/714",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/714",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2093",
               "label": "telegram"
@@ -13896,6 +14666,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/715",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2098",
               "label": "telegram"
             }
@@ -13949,6 +14723,10 @@
           "url": "https://games.mare.by/716",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/716",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2106",
               "label": "telegram"
@@ -14269,6 +15047,62 @@
       "screenshots": [
         "/s/101/1.jpg",
         "/s/101/2.jpg"
+      ]
+    },
+    {
+      "id": 630,
+      "title": "Twilight Wing",
+      "author": [
+        "futzi01"
+      ],
+      "thumbnail": "/s/483/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Side Scroller",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "30m-2h",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://futzi01.deviantart.com/art/Twilight-Wing-388160856",
+      "releaseDate": "2013-07-25",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "1.5",
+          "url": "https://games.mare.by/1060",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2712",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "1.5",
+          "url": "https://flash.mare.by/g?id=1060",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/483/1.jpg"
       ]
     },
     {
@@ -24694,18 +25528,6 @@
         },
         {
           "label": "Windows",
-          "version": "719",
-          "url": "https://games.mare.by/455",
-          "buttonText": "Download",
-          "mirrors": [
-            {
-              "url": "https://mlpgames.mariusdavid.fr/455",
-              "label": "Scrogne"
-            }
-          ]
-        },
-        {
-          "label": "Windows",
           "version": "9Beta_823EX",
           "url": "https://games.mare.by/515",
           "buttonText": "Download",
@@ -30238,14 +31060,29 @@
       "characters": [
         "Unknown"
       ],
-      "playtime": "Unknown",
+      "playtime": "\u003C5 min",
       "status": "In Development",
       "engine": "GDevelop",
-      "platforms": [],
+      "platforms": [
+        "Windows"
+      ],
       "url": "https://pony-uteuk.itch.io/mareadmirer",
       "releaseDate": "2025-11-02",
-      "dateAdded": "",
-      "downloads": null,
+      "dateAdded": "2026-07-27",
+      "downloads": [
+        {
+          "label": "Windows",
+          "version": "",
+          "url": "https://games.mare.by/1001",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2653",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
       "screenshots": []
     },
     {
@@ -32419,6 +33256,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/698",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2065",
               "label": "telegram"
             }
@@ -32430,6 +33271,10 @@
           "url": "https://games.mare.by/699",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/699",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2064",
               "label": "telegram"
@@ -32443,6 +33288,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/700",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2062",
               "label": "telegram"
             }
@@ -32455,6 +33304,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/701",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2063",
               "label": "telegram"
             }
@@ -32466,6 +33319,10 @@
           "url": "https://games.mare.by/702",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/702",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2061",
               "label": "telegram"
@@ -33430,6 +34287,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/785",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2292",
               "label": "telegram"
             }
@@ -33441,6 +34302,10 @@
           "url": "https://games.mare.by/786",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/786",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2290",
               "label": "telegram"
@@ -33454,6 +34319,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/787",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2289",
               "label": "telegram"
             }
@@ -33466,6 +34335,10 @@
           "buttonText": "Download",
           "mirrors": [
             {
+              "url": "https://mlpgames.mariusdavid.fr/788",
+              "label": "Scrogne"
+            },
+            {
               "url": "https://t.me/ponygamesarchive/2287",
               "label": "telegram"
             }
@@ -33477,6 +34350,10 @@
           "url": "https://games.mare.by/789",
           "buttonText": "Download",
           "mirrors": [
+            {
+              "url": "https://mlpgames.mariusdavid.fr/789",
+              "label": "Scrogne"
+            },
             {
               "url": "https://t.me/ponygamesarchive/2288",
               "label": "telegram"
@@ -36981,7 +37858,69 @@
       "screenshots": []
     },
     {
-      "id": 1143,
+      "id": 1140,
+      "title": "another sparklepeep season 3 minigame GAMES PONIES DON\u0027T PLAY SUPER THREE GAMES IN ONE MEGACART",
+      "author": [
+        "sparklepeep"
+      ],
+      "thumbnail": "/s/487/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Humor",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.equestriagaming.net/2013/02/the-sparklepeep-season-3-minigame.html",
+      "releaseDate": "2013-04-16",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1064",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2731",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1064",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/487/1.jpg",
+        "/s/487/2.jpg"
+      ]
+    },
+    {
+      "id": 1142,
       "title": "cheer",
       "author": [
         "?"
@@ -37036,7 +37975,7 @@
       "screenshots": []
     },
     {
-      "id": 1144,
+      "id": 1143,
       "title": "deepthroat cockslut",
       "author": [
         "kajio"
@@ -37094,7 +38033,7 @@
       "screenshots": []
     },
     {
-      "id": 1145,
+      "id": 1144,
       "title": "mlp trib time",
       "author": [
         "Tentacle Muffins"
@@ -37153,7 +38092,7 @@
       "screenshots": []
     },
     {
-      "id": 1146,
+      "id": 1145,
       "title": "rainbowdash hentai simulator",
       "author": [
         "pochikou"
@@ -37212,7 +38151,7 @@
       "screenshots": []
     },
     {
-      "id": 1147,
+      "id": 1146,
       "title": "something about rainbow sex",
       "author": [
         "Smacked Apple"
@@ -37274,7 +38213,7 @@
       "screenshots": []
     },
     {
-      "id": 1148,
+      "id": 1147,
       "title": "hard to swallow",
       "author": [
         "Smacked Apple"
@@ -37334,7 +38273,7 @@
       ]
     },
     {
-      "id": 1149,
+      "id": 1148,
       "title": "throat bang mlp",
       "author": [
         "Tentacle Muffins"
@@ -37394,7 +38333,7 @@
       "screenshots": []
     },
     {
-      "id": 1150,
+      "id": 1149,
       "title": "hot braeburn on big mac action",
       "author": [
         "swfpony"
@@ -37455,7 +38394,7 @@
       ]
     },
     {
-      "id": 1151,
+      "id": 1150,
       "title": "pony tentacle fun times",
       "author": [
         "Tentacle Muffins"
@@ -37514,7 +38453,7 @@
       "screenshots": []
     },
     {
-      "id": 1152,
+      "id": 1151,
       "title": "twilight sparking dress up",
       "author": [
         "PK Studios"
@@ -37580,7 +38519,7 @@
       "screenshots": []
     },
     {
-      "id": 1153,
+      "id": 1152,
       "title": "applejack xray game",
       "author": [
         "The Vincenator"
@@ -37642,7 +38581,7 @@
       "screenshots": []
     },
     {
-      "id": 1154,
+      "id": 1153,
       "title": "twilight sparkle flash minigame",
       "author": [
         "Negasy \u006011"
@@ -37700,7 +38639,7 @@
       "screenshots": []
     },
     {
-      "id": 1155,
+      "id": 1154,
       "title": "dont eat pinkiepies special cupcakes",
       "author": [
         "LucidPariah"
@@ -37763,7 +38702,7 @@
       "screenshots": []
     },
     {
-      "id": 1156,
+      "id": 1155,
       "title": "little red riding mare",
       "author": [
         "foxfoxplz"
@@ -37817,7 +38756,7 @@
       "screenshots": []
     },
     {
-      "id": 1157,
+      "id": 1156,
       "title": "luna x celestia",
       "author": [
         "swfpony"
@@ -37871,7 +38810,7 @@
       "screenshots": []
     },
     {
-      "id": 1158,
+      "id": 1157,
       "title": "applejack anal adventures",
       "author": [
         "SB-AF"
@@ -37925,7 +38864,7 @@
       "screenshots": []
     },
     {
-      "id": 1159,
+      "id": 1158,
       "title": "meet and clop amethyst star",
       "author": [
         "Pickilow"
@@ -37979,7 +38918,7 @@
       "screenshots": []
     },
     {
-      "id": 1160,
+      "id": 1159,
       "title": "unzipping fluttershys skirt game",
       "author": [
         "Liggliluff"
@@ -38033,7 +38972,7 @@
       "screenshots": []
     },
     {
-      "id": 1161,
+      "id": 1160,
       "title": "royal exposure",
       "author": [
         "Satch"
@@ -38088,7 +39027,7 @@
       "screenshots": []
     },
     {
-      "id": 1162,
+      "id": 1161,
       "title": "install mlp m",
       "author": [
         "Gorepete"
@@ -38150,7 +39089,7 @@
       "screenshots": []
     },
     {
-      "id": 1163,
+      "id": 1162,
       "title": "pony toy",
       "author": [
         "Tentacle Muffins"
@@ -38208,7 +39147,7 @@
       "screenshots": []
     },
     {
-      "id": 1164,
+      "id": 1163,
       "title": "pony",
       "author": [
         "Tentacle Muffins"
@@ -38265,7 +39204,7 @@
       "screenshots": []
     },
     {
-      "id": 1165,
+      "id": 1164,
       "title": "twilight bondage dressup",
       "author": [
         "UWfan-Tomson"
@@ -38319,7 +39258,7 @@
       "screenshots": []
     },
     {
-      "id": 1166,
+      "id": 1165,
       "title": "sweet silver",
       "author": [
         "FearingFun"
@@ -38373,7 +39312,7 @@
       "screenshots": []
     },
     {
-      "id": 1167,
+      "id": 1166,
       "title": "quarry",
       "author": [
         "sirachanotsauce"
@@ -38474,7 +39413,7 @@
       "screenshots": []
     },
     {
-      "id": 1168,
+      "id": 1167,
       "title": "twilights glory",
       "author": [
         "Tentacle Muffins",
@@ -38530,7 +39469,7 @@
       "screenshots": []
     },
     {
-      "id": 1169,
+      "id": 1168,
       "title": "mlp rarity hentai",
       "author": [
         "kajio"
@@ -38584,7 +39523,7 @@
       "screenshots": []
     },
     {
-      "id": 1170,
+      "id": 1169,
       "title": "happy ending at the spa",
       "author": [
         "dewflower"
@@ -38638,7 +39577,7 @@
       "screenshots": []
     },
     {
-      "id": 1171,
+      "id": 1170,
       "title": "commision to rainbow2dash",
       "author": [
         "Pokehidden"
@@ -38696,7 +39635,7 @@
       "screenshots": []
     },
     {
-      "id": 1172,
+      "id": 1171,
       "title": "commision to da_krager",
       "author": [
         "Pokehidden"
@@ -38754,7 +39693,7 @@
       "screenshots": []
     },
     {
-      "id": 1173,
+      "id": 1172,
       "title": "id1173",
       "author": [
         "Pokehidden"
@@ -38812,7 +39751,7 @@
       "screenshots": []
     },
     {
-      "id": 1174,
+      "id": 1173,
       "title": "id1174",
       "author": [
         "Pokehidden"
@@ -38870,7 +39809,7 @@
       "screenshots": []
     },
     {
-      "id": 1175,
+      "id": 1174,
       "title": "4k followers yay~",
       "author": [
         "Pokehidden"
@@ -38928,7 +39867,7 @@
       "screenshots": []
     },
     {
-      "id": 1176,
+      "id": 1175,
       "title": "rd_bj",
       "author": [
         "Pokehidden"
@@ -38986,7 +39925,7 @@
       "screenshots": []
     },
     {
-      "id": 1177,
+      "id": 1176,
       "title": "id1177",
       "author": [
         "Pokehidden"
@@ -39042,6 +39981,3483 @@
         }
       ],
       "screenshots": []
+    },
+    {
+      "id": 1177,
+      "title": "Applejack POV Hentai",
+      "author": [
+        "kajio"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1002",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2654",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1002",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "rarity",
+          "url": "https://games.mare.by/1004",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2656",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "rarity",
+          "url": "https://flash.mare.by/g?id=1004",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1178,
+      "title": "Applejack Oral Hentai",
+      "author": [
+        "kajio"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1003",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2655",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1003",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1179,
+      "title": "chyrssinoms",
+      "author": [
+        "Tentacle Muffins"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1005",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2657",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1005",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1180,
+      "title": "rarity apple trouble",
+      "author": [
+        "GN3ZDO"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "http://www.furaffinity.net/user/gn3zdo/",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1006",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2658",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1006",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1181,
+      "title": "sonapuff plus",
+      "author": [
+        "MoMoIrO kun"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1007",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2659",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1007",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1182,
+      "title": "the sersys clop compilation",
+      "author": [
+        "Sersys"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1008",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2660",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1008",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1183,
+      "title": "classroom buttfuck",
+      "author": [
+        "MoMoIrO kun"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1009",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2661",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1009",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1184,
+      "title": "twilight\u0060s tentacles",
+      "author": [
+        "Sleufoot"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1010",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2662",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1010",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1185,
+      "title": "mlp twilight hentai",
+      "author": [
+        "kajio"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1011",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2663",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1011",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1186,
+      "title": "spike \u0026 rarity",
+      "author": [
+        "Tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1012",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2664",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1012",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1187,
+      "title": "horse bj",
+      "author": [
+        "General Mittler"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1013",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2665",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1013",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1188,
+      "title": "dazzle loops",
+      "author": [
+        "tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1014",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2666",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1014",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1189,
+      "title": "rainbow dash futanary x pinkie pie",
+      "author": [
+        "PeachyPop34"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.patreon.com/peachypop34",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1015",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2667",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1015",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1190,
+      "title": "Trixie or Treat!",
+      "author": [
+        "Mittsies",
+        "BCS"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast",
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "2012",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1016",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2668",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1016",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1191,
+      "title": "Ponyvania",
+      "author": [
+        "Mittsies",
+        "atrpl"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "2014",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1017",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2669",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1017",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1192,
+      "title": "twilight sparkle x milkmare",
+      "author": [
+        "tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1018",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2670",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1018",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1193,
+      "title": "fluttershy\u0060s care",
+      "author": [
+        "kajio"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1019",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2671",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1019",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1194,
+      "title": "my little pony cadence",
+      "author": [
+        "tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1020",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2672",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1020",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1195,
+      "title": "Milkmare of Trottingham: Milky Way",
+      "author": [
+        "kajio"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1021",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2673",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1021",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1196,
+      "title": "princess cadences sexy hearths warming surprise",
+      "author": [
+        "kajio"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1022",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2674",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1022",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1197,
+      "title": "lyrabon \u0022interactive\u0022",
+      "author": [
+        "MoMoIrO kun"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Background"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1023",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2675",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1023",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1198,
+      "title": "fluttershy blowjob",
+      "author": [
+        "Mittsies"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "2013",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1024",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2676",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1024",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1199,
+      "title": "pinkamena",
+      "author": [
+        "SmackedApple"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1025",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2677",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1025",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1200,
+      "title": "pinkie pie x ad",
+      "author": [
+        "PurpleMantis"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Human",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1026",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2678",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1026",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1201,
+      "title": "appleblooms visit",
+      "author": [
+        "LITTLEFisky"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "CMC",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1027",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2679",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1027",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1202,
+      "title": "party in pinkie",
+      "author": [
+        "tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1028",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2680",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1028",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1203,
+      "title": "ticket to your heart",
+      "author": [
+        "Sersys"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1029",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2681",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1029",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1204,
+      "title": "FOUL SORCERY",
+      "author": [
+        "Mittsies",
+        "EmmaPresents",
+        "Hoihoi"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1030",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2682",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1030",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1205,
+      "title": "The Royal Threatment",
+      "author": [
+        "SmackedApple"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1031",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2683",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1031",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1206,
+      "title": "fun with raydraw",
+      "author": [
+        "MoMoIrO kun"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1032",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2684",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1032",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1207,
+      "title": "twilight sparkles friendship spell",
+      "author": [
+        "vanillacreamkris"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1033",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2685",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1033",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1208,
+      "title": "LUCENT DREAMS",
+      "author": [
+        "Mittsies",
+        "Atryl"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1034",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2686",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1034",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1209,
+      "title": "button mashs milf quest",
+      "author": [
+        "tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1035",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2687",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1035",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1210,
+      "title": "lucky dazzle",
+      "author": [
+        "MoMoIrO kun"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Human",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "2017",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1036",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2688",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1036",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1211,
+      "title": "AppleQuest",
+      "author": [
+        "tiarawhy",
+        "Mittsies"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1037",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2689",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1037",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1212,
+      "title": "flutterbun hotdog",
+      "author": [
+        "htpot"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1038",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2690",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1038",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1213,
+      "title": "Applejack Plays Poker",
+      "author": [
+        "Mittsies"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "2013",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1039",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2691",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1039",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1214,
+      "title": "Ponka Anal Rodeo",
+      "author": [
+        "Mittsies",
+        "Spindle"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "2015",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1040",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2692",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1040",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1215,
+      "title": "scarletsound animated tentacles",
+      "author": [
+        "LiowaKo"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1041",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2693",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1041",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1216,
+      "title": "twilight dash",
+      "author": [
+        "htpot"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1042",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2694",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1042",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1217,
+      "title": "fluttershy pov bj",
+      "author": [
+        "htpot",
+        "Evehly"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6",
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1043",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2695",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1043",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1218,
+      "title": "camp everfree xray game",
+      "author": [
+        "The Vincenator"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Anthro",
+          "type": "Black Tags"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1044",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2696",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1044",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1219,
+      "title": "vinyl pov",
+      "author": [
+        "HtPot"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1045",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2697",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1045",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1220,
+      "title": "ponk licking",
+      "author": [
+        "HtPot"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1046",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2698",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1046",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1221,
+      "title": "rainbow thicc dash",
+      "author": [
+        "HtPot"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1047",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2699",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1047",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1222,
+      "title": "applejack ride",
+      "author": [
+        "HtPot"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-01",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1048",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2700",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1048",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1223,
+      "title": "kiva",
+      "author": [
+        "Htpot"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-02",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1049",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2701",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1049",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1224,
+      "title": "rarity ride",
+      "author": [
+        "Htpot"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-02",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1050",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2702",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1050",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1225,
+      "title": "rainbow dash ride",
+      "author": [
+        "Htpot"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-02",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1051",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2703",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1051",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1226,
+      "title": "flutters ride",
+      "author": [
+        "Htpot"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-02",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1052",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2704",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1052",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1227,
+      "title": "batpone pov",
+      "author": [
+        "Htpot",
+        "FearingFun"
+      ],
+      "thumbnail": "/assets/gamarenopic1.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-02",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1053",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2705",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1053",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1228,
+      "title": "them\u0060s fappin herds",
+      "author": [
+        "tiarawhy"
+      ],
+      "thumbnail": "/assets/gamarenopic2.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "NSFW",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "OC"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-02",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1054",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2706",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1054",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1229,
+      "title": "My Little Pony: Friendship is PAIN",
+      "author": [
+        "signl",
+        "blah569",
+        "Kevin",
+        "Techno"
+      ],
+      "thumbnail": "/assets/gamarenopic3.jpg",
+      "shortDescription": "Bringing back a classic genre of games on Newgroun...",
+      "fullDescription": "Bringing back a classic genre of games on Newgrounds - Assassin! I decided to make this game after viewing several threads on the BBS containing whining about \u0027bronies\u0027 and \u0027bronies\u0027 whining about people not liking My Little Pony. So here it is, A My Little Pony assassin game. There are 3 medals you can unlock for maximum enjoyment. **Fixed not being able to punch the pony! Sorry about that.**",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Gore",
+          "type": "warning"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.newgrounds.com/portal/view/576694",
+      "releaseDate": "2011-08-11",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1056",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2708",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1056",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": []
+    },
+    {
+      "id": 1230,
+      "title": "Canterlot Siege 4",
+      "author": [
+        "futzi01"
+      ],
+      "thumbnail": "/s/486/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Tower Defence",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6",
+        "Secondary Cast"
+      ],
+      "playtime": "30m-2h",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "you kept asking edition",
+          "url": "https://games.mare.by/1063",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2727",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "you kept asking edition",
+          "url": "https://flash.mare.by/g?id=1063",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/486/1.jpg",
+        "/s/486/2.jpg"
+      ]
+    },
+    {
+      "id": 1231,
+      "title": "Project Friend",
+      "author": [
+        "SonicFFVII"
+      ],
+      "thumbnail": "/s/489/0.jpg",
+      "shortDescription": "Hello i have been secretly working on a my little ...",
+      "fullDescription": "Hello i have been secretly working on a my little pony friendship is magic video game I have plans and everything now i need someone who is good at making flash games and i mean really good this isn\u0027t gonna be a cheap little game and i need artists and musicians i have plans for art I\u0027ll update if it doesn\u0027t work out well. I need someone who is good with music that can sound close to the music on the show",
+      "tags": [],
+      "characters": [
+        "Unknown"
+      ],
+      "playtime": "Unknown",
+      "status": "In Development",
+      "engine": "Unknown",
+      "platforms": [],
+      "url": "https://www.deviantart.com/sonicffvii/art/read-description-271886924",
+      "releaseDate": "2011-12-02",
+      "dateAdded": "2026-08-04",
+      "downloads": null,
+      "screenshots": []
+    },
+    {
+      "id": 1232,
+      "title": "My Little Pony Project Story | MLP: quest of memories | My Little Pony: quest of memories",
+      "author": [
+        "SonicFFVII"
+      ],
+      "thumbnail": "/s/490/0.jpg",
+      "shortDescription": "This is an early alpha of my upcoming game/interac...",
+      "fullDescription": "This is an early alpha of my upcoming game/interactive story. If you need help to get through the cutscenes, it is all using the mouse. Click the NEXT button to go on through the cutscene. I know some things look wierd and out of place i am working on fixing everything to look great for the final.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Visual Novel",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "\u003C5 min",
+      "status": "In Development",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.deviantart.com/sonicffvii/art/Project-Story-early-alpha-cutscene-291691197",
+      "releaseDate": "2012-03-22",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "project story",
+          "url": "https://games.mare.by/1066",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2738",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "project story",
+          "url": "https://flash.mare.by/g?id=1066",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "project story gameplay demo",
+          "url": "https://games.mare.by/1067",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2739",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "project story gameplay demo",
+          "url": "https://flash.mare.by/g?id=1067",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "quest of memories cutsene demo",
+          "url": "https://games.mare.by/1068",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2741",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "quest of memories cutsene demo",
+          "url": "https://flash.mare.by/g?id=1068",
+          "buttonText": "Play",
+          "mirrors": []
+        },
+        {
+          "label": "Flash",
+          "version": "quest of memories cutsene demo",
+          "url": "https://games.mare.by/1068",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2741",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "quest of memories cutsene demo",
+          "url": "https://flash.mare.by/g?id=1068",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/490/1.jpg"
+      ]
+    },
+    {
+      "id": 1233,
+      "title": "My Little Pony Adventure",
+      "author": [
+        "SonicFFVII"
+      ],
+      "thumbnail": "/s/491/0.jpg",
+      "shortDescription": "The sequel of pinkie pie\u0027s adventure is here in de...",
+      "fullDescription": "The sequel of pinkie pie\u0027s adventure is here in demo form for testing. First level of all characters are available to play. Each pony race has their own abilities and secrets.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Platformer",
+          "type": "Genre"
+        },
+        {
+          "label": "Adventure",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.newgrounds.com/portal/view/603746",
+      "releaseDate": "2012-09-30",
+      "dateAdded": "2026-08-04",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1069",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2745",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1069",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/491/1.jpg",
+        "/s/491/2.jpg"
+      ]
+    },
+    {
+      "id": 1235,
+      "title": "My Little Pony Explore Ponyville",
+      "author": [
+        "Drud14"
+      ],
+      "thumbnail": "/s/496/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1074",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2763",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1074",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/496/1.jpg",
+        "/s/496/2.jpg",
+        "/s/496/3.jpg"
+      ]
+    },
+    {
+      "id": 1236,
+      "title": "Five Nights at Apple Fazjack\u0027s",
+      "author": [
+        "polygonicat"
+      ],
+      "thumbnail": "/s/497/0.jpg",
+      "shortDescription": "",
+      "fullDescription": "",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Survival",
+          "type": "Genre"
+        },
+        {
+          "label": "Horror",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "In Development",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://games.mare.by/notfound",
+      "releaseDate": "",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "wave 3.0",
+          "url": "https://games.mare.by/1075",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2764",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "wave 3.0",
+          "url": "https://flash.mare.by/g?id=1075",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/497/1.jpg"
+      ]
+    },
+    {
+      "id": 1237,
+      "title": "My Little Pony Twilight Sparkle vs Trixie",
+      "author": [
+        "MDV Games"
+      ],
+      "thumbnail": "/s/498/0.jpg",
+      "shortDescription": "The point of the game is to use various magic spel...",
+      "fullDescription": "The point of the game is to use various magic spells to win the opponent. Each hit scores a certain amount of points, which varies based on the magic. The purpose of the game is to destroy your opponent. If your pony health drops to zero, you lose the game.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "Fighting",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "Flash",
+      "platforms": [
+        "Flash"
+      ],
+      "url": "https://www.deviantart.com/mdvgames/art/My-Little-Pony-Twilight-Sparkle-vs-Trixie-404682435",
+      "releaseDate": "2013-10-02",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://games.mare.by/1076",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2769",
+              "label": "telegram"
+            }
+          ]
+        },
+        {
+          "label": "Flash",
+          "version": "",
+          "url": "https://flash.mare.by/g?id=1076",
+          "buttonText": "Play",
+          "mirrors": []
+        }
+      ],
+      "screenshots": [
+        "/s/498/1.jpg"
+      ]
+    },
+    {
+      "id": 1238,
+      "title": "MLP - Elements of Harmony",
+      "author": [
+        "MDV Games"
+      ],
+      "thumbnail": "/s/499/0.jpg",
+      "shortDescription": "MLP Elements of Harmony is a simple and fun puzzle...",
+      "fullDescription": "MLP Elements of Harmony is a simple and fun puzzle game.Select three identical elements to make an energy chain for destroying them. On its way the energy chain will also destroy all the elements that have a common point. The elements that you must destroy are always shown at the bottom of the screen. When some elements are destroyed, new elements will be created.Time is against you though you must hurry and destroy the necessary elements as quickly as possible in order to advance to the next level. Once the time is run out, the game is over. The more elements you destroy, the more points you can get.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Puzzle",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "HTML5",
+      "platforms": [
+        "Web"
+      ],
+      "url": "https://www.deviantart.com/mdvgames/art/MLP-Elements-of-Harmony-735336034",
+      "releaseDate": "2018-03-13",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/1077",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2772",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        "/s/499/1.jpg"
+      ]
+    },
+    {
+      "id": 1239,
+      "title": "MLP - Fluttershy Fly",
+      "author": [
+        "MDV Games"
+      ],
+      "thumbnail": "/s/500/0.jpg",
+      "shortDescription": "Fly the Fluttershy as far as you can without hitti...",
+      "fullDescription": "Fly the Fluttershy as far as you can without hitting any of the obstacles and enemies. You have 3 health. Collect coins and health to keep you going.",
+      "tags": [
+        {
+          "label": "2D",
+          "type": "Other"
+        },
+        {
+          "label": "G4",
+          "type": "Other"
+        },
+        {
+          "label": "Side Scroller",
+          "type": "Genre"
+        }
+      ],
+      "characters": [
+        "M6"
+      ],
+      "playtime": "5m-30m",
+      "status": "Released",
+      "engine": "HTML5",
+      "platforms": [
+        "Web"
+      ],
+      "url": "https://www.deviantart.com/mdvgames/art/MLP-Fluttershy-Fly-842262835",
+      "releaseDate": "2020-05-18",
+      "dateAdded": "2026-08-05",
+      "downloads": [
+        {
+          "label": "Web",
+          "version": "",
+          "url": "https://games.mare.by/1078",
+          "buttonText": "Download",
+          "mirrors": [
+            {
+              "url": "https://t.me/ponygamesarchive/2775",
+              "label": "telegram"
+            }
+          ]
+        }
+      ],
+      "screenshots": [
+        "/s/500/1.jpg"
+      ]
     }
   ]
 }
