@@ -287,7 +287,7 @@ function initAuthorSearch() {
     if (!btn) return;
     e.stopPropagation();
     const author = btn.dataset.author;
-    const searchInput = document.getElementById("filter-search");
+    const searchInput = document.getElementById("filter-search") || document.getElementById("resources-search");
     if (searchInput) {
       // We're already on the games page
       searchInput.value = author;
@@ -793,6 +793,7 @@ function renderResourceCard(item) {
       </div>
       <div class="card__body">
         <h3 class="card__title">${item.name}</h3>
+        <p class="card__author">${renderAuthorLinks(item, "card__author--link")}</p>
         <p class="card__short-desc">${item.description}</p>
         <div class="card__extra">
           <div class="card__tags-preview">${tagsPreview}</div>
