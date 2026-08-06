@@ -439,9 +439,59 @@ async function initNewsBlog() {
 }
 
 /* ==========================================================================
-   Detail Panel
+   Detail Panels
    ========================================================================== */
-function initDetailPanel(options = {}) {
+function initCarousel(carousel, track, dotsEl, prevBtn, nextBtn, allImages, isNsfw, skipNsfwBlur, title) {
+  const hasMultiple = allImages.length > 1;
+  carousel.hidden = false;
+  let current = 0;
+
+  track.innerHTML = allImages.map((src, i) => `
+  <img class="carousel__img${i === 0 ? " carousel__img--active" : ""}" src="${src}" alt="${title}${i === 0 ? "" : ` screenshot ${i}`}" loading="lazy" />
+  `).join("");
+
+  if (prevBtn) prevBtn.hidden = !hasMultiple;
+  if (nextBtn) nextBtn.hidden = !hasMultiple;
+
+  dotsEl.innerHTML = hasMultiple ? allImages.map((_, i) => `
+  <button type="button" class="carousel__dot${i === 0 ? " carousel__dot--active" : ""}" data-index="${i}" aria-label="${i === 0 ? "Cover" : `Screenshot ${i}`}"></button>
+  `).join("") : "";
+
+  function goTo(n) {
+    const imgs = track.querySelectorAll(".carousel__img");
+    const dots = dotsEl.querySelectorAll(".carousel__dot");
+    imgs[current].classList.remove("carousel__img--active");
+    if (dots[current]) dots[current].classList.remove("carousel__dot--active");
+    current = (n + allImages.length) % allImages.length;
+    imgs[current].classList.add("carousel__img--active");
+    if (dots[current]) dots[current].classList.add("carousel__dot--active");
+  }
+
+  if (prevBtn) prevBtn.onclick = () => goTo(current - 1);
+  if (nextBtn) nextBtn.onclick = () => goTo(current + 1);
+  dotsEl.querySelectorAll(".carousel__dot").forEach((dot) => {
+    dot.onclick = () => goTo(Number(dot.dataset.index));
+  });
+
+  // the panel is reused between opens, clear any leftover NSFW overlay
+  const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
+  if (oldOverlay) oldOverlay.remove();
+  carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
+  if (isNsfw && !skipNsfwBlur) {
+    carousel.classList.add("detail-panel__carousel--nsfw-blurred");
+    const overlayBtn = document.createElement("button");
+    overlayBtn.type = "button";
+    overlayBtn.className = "detail-panel__nsfw-overlay";
+    overlayBtn.textContent = "🔞 NSFW, click to reveal";
+    overlayBtn.addEventListener("click", () => {
+      carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
+      overlayBtn.remove();
+    });
+    carousel.appendChild(overlayBtn);
+  }
+}
+
+function initGameDetailPanel(options = {}) {
   const panel = document.getElementById("detail-panel");
   if (!panel) return null;
 
@@ -478,55 +528,9 @@ function initDetailPanel(options = {}) {
 
     // thumbnail is the first slide, screenshots follow
     const allImages = [item.thumbnail, ...(item.screenshots || [])];
-    const hasMultiple = allImages.length > 1;
 
     if (carousel) {
-      carousel.hidden = false;
-      let current = 0;
-
-      track.innerHTML = allImages.map((src, i) => `
-        <img class="carousel__img${i === 0 ? " carousel__img--active" : ""}" src="${src}" alt="${item.title}${i === 0 ? "" : ` screenshot ${i}`}" loading="lazy" />
-      `).join("");
-
-      if (prevBtn) prevBtn.hidden = !hasMultiple;
-      if (nextBtn) nextBtn.hidden = !hasMultiple;
-
-      dotsEl.innerHTML = hasMultiple ? allImages.map((_, i) => `
-        <button type="button" class="carousel__dot${i === 0 ? " carousel__dot--active" : ""}" data-index="${i}" aria-label="${i === 0 ? "Cover" : `Screenshot ${i}`}"></button>
-      `).join("") : "";
-
-      function goTo(n) {
-        const imgs = track.querySelectorAll(".carousel__img");
-        const dots = dotsEl.querySelectorAll(".carousel__dot");
-        imgs[current].classList.remove("carousel__img--active");
-        if (dots[current]) dots[current].classList.remove("carousel__dot--active");
-        current = (n + allImages.length) % allImages.length;
-        imgs[current].classList.add("carousel__img--active");
-        if (dots[current]) dots[current].classList.add("carousel__dot--active");
-      }
-
-      if (prevBtn) prevBtn.onclick = () => goTo(current - 1);
-      if (nextBtn) nextBtn.onclick = () => goTo(current + 1);
-      dotsEl.querySelectorAll(".carousel__dot").forEach((dot) => {
-        dot.onclick = () => goTo(Number(dot.dataset.index));
-      });
-
-      // the panel is reused between opens, clear any leftover NSFW overlay
-      const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
-      if (oldOverlay) oldOverlay.remove();
-      carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-      if (isNsfwItem(item) && !skipNsfwBlur(item)) {
-        carousel.classList.add("detail-panel__carousel--nsfw-blurred");
-        const overlayBtn = document.createElement("button");
-        overlayBtn.type = "button";
-        overlayBtn.className = "detail-panel__nsfw-overlay";
-        overlayBtn.textContent = "🔞 NSFW, click to reveal";
-        overlayBtn.addEventListener("click", () => {
-          carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-          overlayBtn.remove();
-        });
-        carousel.appendChild(overlayBtn);
-      }
+      initCarousel(carousel, track, dotsEl, prevBtn, nextBtn, allImages, isNsfwItem(item), skipNsfwBlur(item), item.title)
     }
 
     panel.querySelector(".detail-panel__thumb").hidden = true;
@@ -672,7 +676,7 @@ async function initGameSidebar() {
   const upcomingContainer = document.getElementById("upcoming-grid");
   if (!recentContainer || !randomContainer) return;
 
-  const detail = initDetailPanel({ isGame: true });
+  const detail = initGameDetailPanel({ isGame: true });
   if (!detail) return;
 
   recentContainer.innerHTML = renderSkeletonSidebar(3);
@@ -877,7 +881,7 @@ async function initGamesPage() {
 
   // nsfwToggle/goreToggle are declared further down, but this callback only
   // runs later (on card click), by which point they're assigned — closures.
-  const detail = initDetailPanel({
+  const detail = initGameDetailPanel({
     isGame: true,
     skipNsfwBlur: (item) => warningsSatisfied(item, !!nsfwToggle?.checked, !!goreToggle?.checked),
   });
