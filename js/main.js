@@ -787,15 +787,14 @@ function renderResourceCard(item) {
     .join("");
 
   return `
-    <article class="card" data-id="${item.id}" tabindex="0" role="button" aria-label="View details for ${item.title}">
+    <article class="card" data-id="${item.id}" tabindex="0" role="button" aria-label="View details for ${item.name}">
       <div class="card__thumb-wrap">
-        <img class="card__thumb" src="${item.thumbnail}" alt="${item.title} thumbnail" loading="lazy" />
+        <img class="card__thumb" src="${item.thumbnail}" alt="${item.name} thumbnail" loading="lazy" />
       </div>
       <div class="card__body">
-        <h3 class="card__title">${item.title}</h3>
-        <p class="card__short-desc">${item.shortDescription}</p>
+        <h3 class="card__title">${item.name}</h3>
+        <p class="card__short-desc">${item.description}</p>
         <div class="card__extra">
-          <p class="card__playtime">${item.playtime}</p>
           <div class="card__tags-preview">${tagsPreview}</div>
         </div>
       </div>
@@ -1110,14 +1109,18 @@ async function initCardGrid(jsonPath) {
 
   grid.innerHTML = renderSkeletonCards(6);
 
-  let items = [];
+  let resourcesJSON = null;
   try {
-    items = normalizeListData(await fetchJSON(jsonPath), "resources");
+    resourcesJSON = await fetchJSON(jsonPath);
   } catch (err) {
     grid.innerHTML = `<p>Unable to load content.</p>`;
     console.error(err);
     return;
   }
+  const items = normalizeListData(resourcesJSON, "assets");
+  const allTags = new Set(resourcesJSON["allTags"]);
+  const allAuthors = new Set(resourcesJSON["allAuthors"]);
+  const allAssetPacks = new Set(resourcesJSON["allAssetPacks"]);
 
   const itemMap = new Map(items.map((item) => [String(item.id), item]));
 
@@ -1129,28 +1132,23 @@ async function initCardGrid(jsonPath) {
   const activeTags = new Set();
   const activeTypes = new Set();
   const activeLicenses = new Set();
+  const activeAssetPacks = new Set();
+  const activeAuthors = new Set();
 
-  const allTags = new Set();
-  const allTypes = new Set();
-  const allLicenses = new Set();
-  items.forEach((item) => {
-    (item.tags || []).forEach((t) => allTags.add(t));
-    if (item.type) allTypes.add(item.type);
-    if (item.license) allLicenses.add(item.license);
-  });
+
 
   function sortItems(list) {
     const sort = sortSelect ? sortSelect.value : "az";
     const sorted = [...list];
     switch (sort) {
-      case "az":   return sorted.sort((a, b) => a.title.localeCompare(b.title));
-      case "za":   return sorted.sort((a, b) => b.title.localeCompare(a.title));
+      case "az":   return sorted.sort((a, b) => a.name.localeCompare(b.name));
+      case "za":   return sorted.sort((a, b) => b.name.localeCompare(a.name));
       default:     return sorted;
     }
   }
 
   function hasActive() {
-    return (searchInput?.value.trim()) || activeTags.size || activeTypes.size || activeLicenses.size;
+    return (searchInput?.value.trim()) || activeTags.size || activeTypes.size || activeLicenses.size || activeAssetPacks.size || activeAuthors.size;
   }
 
   function applyFilters(animate = false) {
@@ -1159,15 +1157,16 @@ async function initCardGrid(jsonPath) {
       if (q) {
         const terms = q.split(/[\s,]+/).filter(Boolean);
         const matchesTerm = (term) =>
-          item.title.toLowerCase().includes(term) ||
-          (item.shortDescription || "").toLowerCase().includes(term) ||
+          item.name.toLowerCase().includes(term) ||
+          (item.description || "").toLowerCase().includes(term) ||
           (item.tags || []).some((t) => t.toLowerCase().includes(term)) ||
-          (item.type || "").toLowerCase().includes(term);
+          (item.assetPacks || []).some((t) => t.toLowerCase().includes(term)) ||
+          (item.author || []).some((t) => t.toLowerCase().includes(term));
         if (!terms.every(matchesTerm)) return false;
       }
       if (activeTags.size && !(item.tags || []).some((t) => activeTags.has(t))) return false;
-      if (activeTypes.size && !activeTypes.has(item.type)) return false;
-      if (activeLicenses.size && !activeLicenses.has(item.license)) return false;
+      if (activeAssetPacks.size && !(item.assetPacks || []).some((t) => activeAssetPacks.has(t))) return false;
+      if (activeAuthors.size && !(item.author || []).some((t) => activeAuthors.has(t))) return false;
       return true;
     }));
 
@@ -1190,9 +1189,9 @@ async function initCardGrid(jsonPath) {
     if (clearBtn) clearBtn.hidden = !hasActive();
   }
 
-  buildTagFilterChips("filter-resource-type-chips", allTypes, activeTypes, () => applyFilters(false));
   buildTagFilterChips("filter-resource-tag-chips", allTags, activeTags, () => applyFilters(false));
-  buildTagFilterChips("filter-resource-license-chips", allLicenses, activeLicenses, () => applyFilters(false));
+  buildTagFilterChips("filter-resource-asset-pack-chips", allAssetPacks, activeAssetPacks, () => applyFilters(false));
+  buildTagFilterChips("filter-resource-author-chips", allAuthors, activeAuthors, () => applyFilters(false));
 
   if (searchInput) searchInput.addEventListener("input", () => applyFilters(false));
   if (sortSelect) sortSelect.addEventListener("change", () => applyFilters(false));
@@ -1200,11 +1199,11 @@ async function initCardGrid(jsonPath) {
     clearBtn.addEventListener("click", () => {
       if (searchInput) searchInput.value = "";
       activeTags.clear();
-      activeTypes.clear();
-      activeLicenses.clear();
-      buildTagFilterChips("filter-resource-type-chips", allTypes, activeTypes, () => applyFilters(false));
+      activeAssetPacks.clear();
+      activeAuthors.clear()
       buildTagFilterChips("filter-resource-tag-chips", allTags, activeTags, () => applyFilters(false));
-      buildTagFilterChips("filter-resource-license-chips", allLicenses, activeLicenses, () => applyFilters(false));
+      buildTagFilterChips("filter-resource-asset-pack-chips", allAssetPacks, activeAssetPacks, () => applyFilters(false));
+      buildTagFilterChips("filter-resource-author-chips", allAuthors, activeAuthors, () => applyFilters(false));
       applyFilters(false);
     });
   }
