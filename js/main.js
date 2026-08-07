@@ -654,6 +654,11 @@ function initResourceDetailPanel() {
     const authorArray = getAuthors(item);
     const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
 
+    const assetPacksEl = panel.querySelector(".detail-panel__asset-packs");
+    if (assetPacksEl && item.assetPacks.length) {
+      assetPacksEl.innerHTML = `<p>${item.assetPacks.join(", ")}</p>`;
+    }
+
     const downloadsEl = panel.querySelector(".download-row__btns");
     if (downloadsEl) {
       downloadsEl.innerHTML = item.downloads.map((downloadURL) => {
