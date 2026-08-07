@@ -654,6 +654,20 @@ function initResourceDetailPanel() {
     const authorArray = getAuthors(item);
     const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
 
+    const downloadsEl = panel.querySelector(".download-row__btns");
+    if (downloadsEl) {
+      downloadsEl.innerHTML = item.downloads.map((downloadURL) => {
+        let buttonText = "Download";
+        try {
+          const urlObj = new URL(downloadURL);
+          buttonText = urlObj.hostname;
+        } catch (err) {
+          console.error(err);
+        }
+        return `<a class="download-row__btn" href="${downloadURL}" target="_blank" rel="noopener noreferrer">${buttonText}</a>`;
+      }).join("")
+    }
+
     common.openPanel(allImages, false, false, item.name, item.tags, item.description, authors);
   }
 
