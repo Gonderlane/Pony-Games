@@ -441,63 +441,118 @@ async function initNewsBlog() {
 /* ==========================================================================
    Detail Panels
    ========================================================================== */
-function initCarousel(carousel, track, dotsEl, prevBtn, nextBtn, allImages, isNsfw, skipNsfwBlur, title) {
-  const hasMultiple = allImages.length > 1;
-  carousel.hidden = false;
-  let current = 0;
+function initDetailPanelCommon(panel) {
 
-  track.innerHTML = allImages.map((src, i) => `
-  <img class="carousel__img${i === 0 ? " carousel__img--active" : ""}" src="${src}" alt="${title}${i === 0 ? "" : ` screenshot ${i}`}" loading="lazy" />
-  `).join("");
+  const carousel = panel.querySelector(".detail-panel__carousel");
+  const track = panel.querySelector(".carousel__track");
+  const dotsEl = panel.querySelector(".carousel__dots");
+  const prevBtn = panel.querySelector(".carousel__btn--prev");
+  const nextBtn = panel.querySelector(".carousel__btn--next");
+  const closeBtn = panel.querySelector(".detail-panel__close");
+  const content = panel.querySelector(".detail-panel__content");
 
-  if (prevBtn) prevBtn.hidden = !hasMultiple;
-  if (nextBtn) nextBtn.hidden = !hasMultiple;
-
-  dotsEl.innerHTML = hasMultiple ? allImages.map((_, i) => `
-  <button type="button" class="carousel__dot${i === 0 ? " carousel__dot--active" : ""}" data-index="${i}" aria-label="${i === 0 ? "Cover" : `Screenshot ${i}`}"></button>
-  `).join("") : "";
-
-  function goTo(n) {
-    const imgs = track.querySelectorAll(".carousel__img");
-    const dots = dotsEl.querySelectorAll(".carousel__dot");
-    imgs[current].classList.remove("carousel__img--active");
-    if (dots[current]) dots[current].classList.remove("carousel__dot--active");
-    current = (n + allImages.length) % allImages.length;
-    imgs[current].classList.add("carousel__img--active");
-    if (dots[current]) dots[current].classList.add("carousel__dot--active");
+  function closePanel() {
+    panel.classList.remove("is-open");
+    content.classList.remove("detail-panel__content--visible");
+    document.body.style.overflow = "";
+    const url = new URL(window.location);
+    url.searchParams.delete("game");
+    history.replaceState(null, "", url);
   }
 
-  if (prevBtn) prevBtn.onclick = () => goTo(current - 1);
-  if (nextBtn) nextBtn.onclick = () => goTo(current + 1);
-  dotsEl.querySelectorAll(".carousel__dot").forEach((dot) => {
-    dot.onclick = () => goTo(Number(dot.dataset.index));
+  function openPanel(allImages, isNsfw, skipNsfwBlur, title, tags, description, authors) {
+    if (carousel) {
+      const hasMultiple = allImages.length > 1;
+      carousel.hidden = false;
+      let current = 0;
+
+      track.innerHTML = allImages.map((src, i) => `
+      <img class="carousel__img${i === 0 ? " carousel__img--active" : ""}" src="${src}" alt="${title}${i === 0 ? "" : ` screenshot ${i}`}" loading="lazy" />
+      `).join("");
+
+      if (prevBtn) prevBtn.hidden = !hasMultiple;
+      if (nextBtn) nextBtn.hidden = !hasMultiple;
+
+      dotsEl.innerHTML = hasMultiple ? allImages.map((_, i) => `
+      <button type="button" class="carousel__dot${i === 0 ? " carousel__dot--active" : ""}" data-index="${i}" aria-label="${i === 0 ? "Cover" : `Screenshot ${i}`}"></button>
+      `).join("") : "";
+
+      function goTo(n) {
+        const imgs = track.querySelectorAll(".carousel__img");
+        const dots = dotsEl.querySelectorAll(".carousel__dot");
+        imgs[current].classList.remove("carousel__img--active");
+        if (dots[current]) dots[current].classList.remove("carousel__dot--active");
+        current = (n + allImages.length) % allImages.length;
+        imgs[current].classList.add("carousel__img--active");
+        if (dots[current]) dots[current].classList.add("carousel__dot--active");
+      }
+
+      if (prevBtn) prevBtn.onclick = () => goTo(current - 1);
+      if (nextBtn) nextBtn.onclick = () => goTo(current + 1);
+      dotsEl.querySelectorAll(".carousel__dot").forEach((dot) => {
+        dot.onclick = () => goTo(Number(dot.dataset.index));
+      });
+
+      // the panel is reused between opens, clear any leftover NSFW overlay
+      const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
+      if (oldOverlay) oldOverlay.remove();
+      carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
+      if (isNsfw && !skipNsfwBlur) {
+        carousel.classList.add("detail-panel__carousel--nsfw-blurred");
+        const overlayBtn = document.createElement("button");
+        overlayBtn.type = "button";
+        overlayBtn.className = "detail-panel__nsfw-overlay";
+        overlayBtn.textContent = "🔞 NSFW, click to reveal";
+        overlayBtn.addEventListener("click", () => {
+          carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
+          overlayBtn.remove();
+        });
+        carousel.appendChild(overlayBtn);
+      }
+    }
+
+    panel.querySelector(".detail-panel__title").textContent = title;
+    panel.querySelector(".detail-panel__tags").innerHTML = createTagElements(tags);
+    panel.querySelector(".detail-panel__description").textContent = description;
+
+    const authorEl = panel.querySelector(".detail-panel__author");
+
+    if (authorEl) {
+      if (authors) {
+        authorEl.innerHTML = `By ${authors}`;
+        authorEl.hidden = false;
+      } else {
+        authorEl.hidden = true;
+      }
+    }
+
+    panel.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    requestAnimationFrame(() => {
+      content.classList.add("detail-panel__content--visible");
+      closeBtn.focus();
+    });
+
+  }
+
+  panel.querySelector(".detail-panel__close").addEventListener("click", closePanel);
+  panel.addEventListener("click", (e) => {
+    if (e.target === panel) closePanel();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel.classList.contains("is-open")) closePanel();
   });
 
-  // the panel is reused between opens, clear any leftover NSFW overlay
-  const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
-  if (oldOverlay) oldOverlay.remove();
-  carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-  if (isNsfw && !skipNsfwBlur) {
-    carousel.classList.add("detail-panel__carousel--nsfw-blurred");
-    const overlayBtn = document.createElement("button");
-    overlayBtn.type = "button";
-    overlayBtn.className = "detail-panel__nsfw-overlay";
-    overlayBtn.textContent = "🔞 NSFW, click to reveal";
-    overlayBtn.addEventListener("click", () => {
-      carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-      overlayBtn.remove();
-    });
-    carousel.appendChild(overlayBtn);
-  }
+
+  return { openPanel, closePanel };
 }
 
 function initGameDetailPanel(options = {}) {
   const panel = document.getElementById("detail-panel");
   if (!panel) return null;
 
-  const closeBtn = panel.querySelector(".detail-panel__close");
-  const content = panel.querySelector(".detail-panel__content");
-  const isGame = options.isGame ?? false;
+  const common = initDetailPanelCommon(panel);
+
   // On pages with a page-wide "Show NSFW" toggle, that toggle is already
   // explicit consent, so re-blurring and demanding another click per game
   // is redundant. Pages without a toggle (e.g. the homepage sidebar, where
@@ -506,68 +561,51 @@ function initGameDetailPanel(options = {}) {
   // skipNsfwBlur receives the item so it can check per-item warning labels
   // against whichever content toggles the page has (not just one flag)
 
-  function closePanel() {
-    panel.classList.remove("is-open");
-    content.classList.remove("detail-panel__content--visible");
-    document.body.style.overflow = "";
-    if (isGame) {
-      const url = new URL(window.location);
-      url.searchParams.delete("game");
-      history.replaceState(null, "", url);
-    }
-  }
 
   function openPanel(item) {
     // Carousel
-    const carousel = panel.querySelector(".detail-panel__carousel");
-    const track = panel.querySelector(".carousel__track");
-    const dotsEl = panel.querySelector(".carousel__dots");
-    const prevBtn = panel.querySelector(".carousel__btn--prev");
-    const nextBtn = panel.querySelector(".carousel__btn--next");
     const screenshots = item.screenshots && item.screenshots.length ? item.screenshots : [];
 
     // thumbnail is the first slide, screenshots follow
     const allImages = [item.thumbnail, ...(item.screenshots || [])];
 
-    if (carousel) {
-      initCarousel(carousel, track, dotsEl, prevBtn, nextBtn, allImages, isNsfwItem(item), skipNsfwBlur(item), item.title)
-    }
-
     panel.querySelector(".detail-panel__thumb").hidden = true;
     panel.querySelector(".detail-panel__thumb").src = item.thumbnail;
     panel.querySelector(".detail-panel__thumb").alt = item.title;
-    panel.querySelector(".detail-panel__title").textContent = item.title;
-    panel.querySelector(".detail-panel__tags").innerHTML = createTagElements(item.tags);
-    panel.querySelector(".detail-panel__description").textContent = item.fullDescription;
+
+    const authorArray = getAuthors(item);
+    const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
+
     const downloadsEl = panel.querySelector(".detail-panel__downloads");
     if (downloadsEl) {
       // item.url is the author/source page, item.downloads are the build
       // files. Both show when both exist, source first.
       const sourceEntry = item.url
-        ? [{ label: item.platform || "Source", version: item.version, url: item.url, type: "source" }]
-        : [];
+      ? [{ label: item.platform || "Source", version: item.version, url: item.url, type: "source" }]
+      : [];
       const buildEntries = (item.downloads || []).filter((d) => d.url !== item.url);
       const rawEntries = [...sourceEntry, ...buildEntries];
       // explicit d.type wins, otherwise guess from the label/url
       const entries = rawEntries
-        .map((d) => ({ ...d, _type: classifyDownloadEntry(d) }))
-        .sort((a, b) => (DOWNLOAD_TYPE_ORDER[a._type] ?? 3) - (DOWNLOAD_TYPE_ORDER[b._type] ?? 3));
+      .map((d) => ({ ...d, _type: classifyDownloadEntry(d) }))
+      .sort((a, b) => (DOWNLOAD_TYPE_ORDER[a._type] ?? 3) - (DOWNLOAD_TYPE_ORDER[b._type] ?? 3));
       // mirrors = same build hosted elsewhere (telegram, backup server)
       downloadsEl.innerHTML = entries.map(d => `
-        <div class="download-row">
-          <div class="download-row__btns">
-            <a class="download-row__btn" href="${d.url}" target="_blank" rel="noopener noreferrer">${d.buttonText || DOWNLOAD_BUTTON_TEXT[d._type] || "Download"}</a>
-            ${(d.mirrors || []).map((m) => `
-              <a class="download-row__btn download-row__btn--mirror" href="${m.url}" target="_blank" rel="noopener noreferrer" title="${m.label}">${m.label}</a>
-            `).join("")}
-          </div>
-          <span class="download-row__info">
-            <span class="download-row__label">${d.label}</span>
-            ${d.version ? `<span class="download-row__version">${d.version}</span>` : ""}
-          </span>
+      <div class="download-row">
+      <div class="download-row__btns">
+      <a class="download-row__btn" href="${d.url}" target="_blank" rel="noopener noreferrer">${d.buttonText || DOWNLOAD_BUTTON_TEXT[d._type] || "Download"}</a>
+      ${(d.mirrors || []).map((m) => `
+        <a class="download-row__btn download-row__btn--mirror" href="${m.url}" target="_blank" rel="noopener noreferrer" title="${m.label}">${m.label}</a>
+        `).join("")}
         </div>
-      `).join("");
+        <span class="download-row__info">
+        <span class="download-row__label">${d.label}</span>
+        ${d.version ? `<span class="download-row__version">${d.version}</span>` : ""}
+        </span>
+        </div>
+        `).join("");
     }
+
 
     const playtimeEl = panel.querySelector(".detail-panel__playtime");
     const playtimeWrap = panel.querySelector(".detail-panel__playtime-wrap");
@@ -577,18 +615,6 @@ function initGameDetailPanel(options = {}) {
         playtimeWrap.hidden = false;
       } else {
         playtimeWrap.hidden = true;
-      }
-    }
-
-    const authorEl = panel.querySelector(".detail-panel__author");
-
-    if (authorEl) {
-      const authors = getAuthors(item);
-      if (authors.length) {
-        authorEl.innerHTML = `By ${renderAuthorLinks(item, "author-link")}`;
-        authorEl.hidden = false;
-      } else {
-        authorEl.hidden = true;
       }
     }
 
@@ -603,28 +629,36 @@ function initGameDetailPanel(options = {}) {
       }
     }
 
-    if (isGame && item.id) {
+    if (item.id) {
       const url = new URL(window.location);
       url.searchParams.set("game", item.id);
       history.replaceState(null, "", url);
     }
-    panel.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-    requestAnimationFrame(() => {
-      content.classList.add("detail-panel__content--visible");
-      closeBtn.focus();
-    });
+
+    common.openPanel(allImages, isNsfwItem(item), skipNsfwBlur(item), item.title, item.tags, item.fullDescription, authors);
+
   }
 
-  closeBtn.addEventListener("click", closePanel);
-  panel.addEventListener("click", (e) => {
-    if (e.target === panel) closePanel();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && panel.classList.contains("is-open")) closePanel();
-  });
+  return { openPanel, closePanel : common.closePanel };
+}
 
-  return { openPanel, closePanel, isGame };
+function initResourceDetailPanel() {
+  const panel = document.getElementById("detail-panel");
+  if (!panel) return null;
+
+  const common = initDetailPanelCommon(panel);
+
+  function openPanel(item) {
+    const allImages = item.previews.length ? item.previews : [item.thumbnail];
+
+    const authorArray = getAuthors(item);
+    const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
+
+    common.openPanel(allImages, false, false, item.name, item.tags, item.description, authors);
+  }
+
+  return { openPanel, closePanel : common.closePanel };
+
 }
 
 function bindCardInteractions(grid, itemMap, detail) {
@@ -676,7 +710,7 @@ async function initGameSidebar() {
   const upcomingContainer = document.getElementById("upcoming-grid");
   if (!recentContainer || !randomContainer) return;
 
-  const detail = initGameDetailPanel({ isGame: true });
+  const detail = initGameDetailPanel();
   if (!detail) return;
 
   recentContainer.innerHTML = renderSkeletonSidebar(3);
@@ -799,8 +833,8 @@ function renderResourceCard(item) {
         <h3 class="card__title">${item.name}</h3>
         <p class="card__author">${renderAuthorLinks(item, "card__author--link")}</p>
         <p class="card__short-desc">${item.description}</p>
+        <div class="card__tags-preview">${tagsPreview}</div>
         <div class="card__extra">
-          <div class="card__tags-preview">${tagsPreview}</div>
         </div>
       </div>
     </article>
@@ -882,7 +916,6 @@ async function initGamesPage() {
   // nsfwToggle/goreToggle are declared further down, but this callback only
   // runs later (on card click), by which point they're assigned — closures.
   const detail = initGameDetailPanel({
-    isGame: true,
     skipNsfwBlur: (item) => warningsSatisfied(item, !!nsfwToggle?.checked, !!goreToggle?.checked),
   });
   if (!detail) return;
@@ -1109,7 +1142,7 @@ async function initCardGrid(jsonPath) {
   const grid = document.getElementById("card-grid");
   if (!grid) return;
 
-  const detail = initDetailPanel();
+  const detail = initResourceDetailPanel();
   if (!detail) return;
 
   grid.innerHTML = renderSkeletonCards(6);
