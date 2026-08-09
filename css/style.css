@@ -150,7 +150,8 @@ body {
 
 .site-header.is-scrolled {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
-  background: rgba(var(--color-bg-alt-rgb), 0.96);
+/*  background: rgba(var(--color-bg-alt-rgb), 0.96);*/
+  background: var(--color-bg-alt);
   backdrop-filter: blur(8px);
 }
 
