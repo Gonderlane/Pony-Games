@@ -1,3 +1,6 @@
 [submodule "s"]
 	path = s
 	url = https://github.com/styrbo/MLPGPPScreenshots.git
+[submodule "asset_previews"]
+	path = asset_previews
+	url = git@github.com:itallreturnstonothing/asset_previews.git
