@@ -1881,3 +1881,38 @@ body {
   white-space: nowrap;
   border: 0;
 }
+
+/* --- /mlp/ Web Ring --- */
+#mlpring,
+#mlpring * {
+  background: var(--color-bg-alt) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+#mlpring table,
+#mlpring tbody,
+#mlpring tr,
+#mlpring td {
+  background: var(--color-bg-alt) !important;
+  color: var(--color-text) !important;
+}
+
+#mlpring a {
+  color: var(--color-accent-soft) !important;
+  text-shadow: none !important;
+}
+
+#mlpring a:hover {
+  color: var(--color-accent) !important;
+}
+
+#mlpring .ring-links a,
+#mlpring .ring-title,
+#mlpring .ring-member {
+  color: var(--color-text) !important;
+}
+
+#mlpring .ring-links a:hover {
+  color: var(--color-accent) !important;
+}
