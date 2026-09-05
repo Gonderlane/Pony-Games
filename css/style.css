@@ -2034,34 +2034,57 @@ body {
 }
 
 /* --- /mlp/ Web Ring --- */
-#mlpring,
+#mlpring {
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0.5rem 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+
 #mlpring * {
-  background: var(--color-bg-alt) !important;
-  color: var(--color-text) !important;
-  border-color: var(--color-border) !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 #mlpring table,
 #mlpring tbody,
 #mlpring tr,
 #mlpring td {
-  background: var(--color-bg-alt) !important;
-  color: var(--color-text) !important;
+  display: inline !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--color-text-muted) !important;
+}
+
+#mlpring td {
+  font-size: 0.85rem;
+  color: var(--color-text-muted) !important;
 }
 
 #mlpring a {
   color: var(--color-accent-soft) !important;
   text-shadow: none !important;
+  text-decoration: none;
+  transition: color var(--transition);
 }
 
 #mlpring a:hover {
   color: var(--color-accent) !important;
+  text-decoration: underline;
 }
 
 #mlpring .ring-links a,
 #mlpring .ring-title,
 #mlpring .ring-member {
-  color: var(--color-text) !important;
+  color: var(--color-text-muted) !important;
 }
 
 #mlpring .ring-links a:hover {
