@@ -90,6 +90,12 @@ $logEntry = date('Y-m-d H:i:s') . " - Return code: $returnCode\n";
 $logEntry .= "Output:\n$outputStr\n";
 
 if ($returnCode === 0) {
+    $subCmd = "cd " . escapeshellarg($repoPath) . " && git submodule update --remote --recursive 2>&1";
+    exec($subCmd, $subOutput, $subReturn);
+    $subOutputStr = implode("\n", $subOutput);
+    $logEntry .= "Submodule update return code: $subReturn\n";
+    $logEntry .= "Submodule output:\n$subOutputStr\n";
+
     // Выполняем chown для установки правильных прав
     $chownCmd = "chown -R arkain123:www-data " . escapeshellarg($repoPath) . " 2>&1";
     exec($chownCmd, $chownOutput, $chownReturn);

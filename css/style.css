@@ -124,6 +124,157 @@ body.page-resources {
   --color-surface: #f0e0fb;
 }
 
+/* --- Trixie Lulamoon Theme --- */
+:root[data-theme="trixie"] {
+  --color-bg: #1a1a3a;
+  --color-bg-alt: #2a2a5a;
+  --color-bg-alt-rgb: 42, 42, 90;
+  --color-surface: #3a3a7a;
+  --color-surface-hover: #4a4a9a;
+  --color-accent: #4fc3f7;
+  --color-accent-soft: #81d4fa;
+  --color-text: #e0e0ff;
+  --color-text-muted: #a0a0cc;
+  --color-border: #4a4a7a;
+  --color-tag: #5c6bc0;
+}
+
+/* --- Twilight Sparkle Theme --- */
+:root[data-theme="twilight"] {
+  --color-bg: #2a1a3a;
+  --color-bg-alt: #3a2a5a;
+  --color-bg-alt-rgb: 58, 42, 90;
+  --color-surface: #4a3a6a;
+  --color-surface-hover: #5a4a8a;
+  --color-accent: #ffd54f;
+  --color-accent-soft: #ffe082;
+  --color-text: #f0e6ff;
+  --color-text-muted: #b0a0cc;
+  --color-border: #4a3a6a;
+  --color-tag: #7e57c2;
+}
+
+/* --- AppleJack Theme --- */
+:root[data-theme="applejack"] {
+  --color-bg: #3a2a1a;
+  --color-bg-alt: #4a3a2a;
+  --color-bg-alt-rgb: 74, 58, 42;
+  --color-surface: #5a4a3a;
+  --color-surface-hover: #6a5a4a;
+  --color-accent: #ffb74d;
+  --color-accent-soft: #ffcc80;
+  --color-text: #f5e6d3;
+  --color-text-muted: #b0a090;
+  --color-border: #5a4a3a;
+  --color-tag: #8d6e63;
+}
+
+/* --- Pinkie Pie Theme --- */
+:root[data-theme="pinkie"] {
+  --color-bg: #f8e0e0;
+  --color-bg-alt: #ffffff;
+  --color-bg-alt-rgb: 255, 255, 255;
+  --color-surface: #ffd0d0;
+  --color-surface-hover: #ffb0b0;
+  --color-accent: #e91e63;
+  --color-accent-soft: #f06292;
+  --color-text: #4a2a2a;
+  --color-text-muted: #8a6a6a;
+  --color-border: #ffc0c0;
+  --color-tag: #ec407a;
+}
+
+/* --- Rarity Theme --- */
+:root[data-theme="rarity"] {
+  --color-bg: #f5f0f0;
+  --color-bg-alt: #ffffff;
+  --color-bg-alt-rgb: 255, 255, 255;
+  --color-surface: #e8e0e8;
+  --color-surface-hover: #d8d0d8;
+  --color-accent: #7e57c2;
+  --color-accent-soft: #b39ddb;
+  --color-text: #2a2a3a;
+  --color-text-muted: #6a6a7a;
+  --color-border: #d0c8d0;
+  --color-tag: #9575cd;
+}
+
+/* --- Rainbow Dash Theme --- */
+:root[data-theme="rainbow"] {
+  --color-bg: #1a2a4a;
+  --color-bg-alt: #2a3a5a;
+  --color-bg-alt-rgb: 42, 58, 90;
+  --color-surface: #3a4a7a;
+  --color-surface-hover: #4a5a9a;
+  --color-accent: #ffeb3b;
+  --color-accent-soft: #fff176;
+  --color-text: #e0f0ff;
+  --color-text-muted: #90a0c0;
+  --color-border: #3a4a6a;
+  --color-tag: #42a5f5;
+}
+
+/* --- Fluttershy Theme --- */
+:root[data-theme="fluttershy"] {
+  --color-bg: #fef9e0;
+  --color-bg-alt: #ffffff;
+  --color-bg-alt-rgb: 255, 255, 255;
+  --color-surface: #fdf0d0;
+  --color-surface-hover: #fce0b0;
+  --color-accent: #f48fb1;
+  --color-accent-soft: #f8bbd0;
+  --color-text: #3a3a2a;
+  --color-text-muted: #8a8a6a;
+  --color-border: #f0e0c0;
+  --color-tag: #aed581;
+}
+
+/* overriding color cause resources page using yellowish tone 
+P.S. If there's a more simpler and effective solution, would 
+be great to optimize this
+*/
+:root[data-theme="trixie"] body.page-resources {
+  --color-bg: #1a1a4a;
+  --color-bg-alt: #2a2a6a;
+  --color-surface: #3a3a8a;
+}
+
+:root[data-theme="twilight"] body.page-resources {
+  --color-bg: #2a1a4a;
+  --color-bg-alt: #3a2a6a;
+  --color-surface: #4a3a7a;
+}
+
+:root[data-theme="applejack"] body.page-resources {
+  --color-bg: #3a2a1a;
+  --color-bg-alt: #4a3a2a;
+  --color-surface: #5a4a3a;
+}
+
+:root[data-theme="pinkie"] body.page-resources {
+  --color-bg: #fce4ec;
+  --color-bg-alt: #ffffff;
+  --color-surface: #f8bbd0;
+}
+
+:root[data-theme="rarity"] body.page-resources {
+  --color-bg: #f5f0f5;
+  --color-bg-alt: #ffffff;
+  --color-surface: #e8e0e8;
+}
+
+:root[data-theme="rainbow"] body.page-resources {
+  --color-bg: #1a2a5a;
+  --color-bg-alt: #2a3a6a;
+  --color-surface: #3a4a8a;
+}
+
+:root[data-theme="fluttershy"] body.page-resources {
+  --color-bg: #fef9e8;
+  --color-bg-alt: #ffffff;
+  --color-surface: #fdf0d8;
+}
+
 /* --- Base Layout --- */
 body {
   font-family: var(--font-sans);
@@ -150,7 +301,8 @@ body {
 
 .site-header.is-scrolled {
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
-  background: rgba(var(--color-bg-alt-rgb), 0.96);
+/*  background: rgba(var(--color-bg-alt-rgb), 0.96);*/
+  background: var(--color-bg-alt);
   backdrop-filter: blur(8px);
 }
 
@@ -864,12 +1016,15 @@ body {
 
 .nsfw-toggle__track {
   position: relative;
+  display: inline-block;
   width: 2.2rem;
   height: 1.2rem;
-  background: #444;
+  background: var(--color-bg);
+  border: 1px solid var(--oolor-border);
   border-radius: 999px;
   flex-shrink: 0;
-  transition: background var(--transition);
+  transition: background var(--transition), border-color var(--transition);
+  box-sizing: border-box;
 }
 
 .nsfw-toggle__track::after {
@@ -879,13 +1034,14 @@ body {
   left: 3px;
   width: calc(1.2rem - 6px);
   height: calc(1.2rem - 6px);
-  background: #555;
+  background: var(--color-text-muted);
   border-radius: 50%;
   transition: transform var(--transition), background var(--transition);
 }
 
 .nsfw-toggle input:checked ~ .nsfw-toggle__track {
   background: var(--color-tag-warning);
+  border-color: var(--color-tag-warning);
 }
 
 .nsfw-toggle input:checked ~ .nsfw-toggle__track::after {
@@ -896,6 +1052,9 @@ body {
 .nsfw-toggle__label {
   font-size: 0.8rem;
   color: var(--color-text-muted);
+  line-height: 1.2rem;
+  position: relative;
+  top: -5.6px;
 }
 
 .nsfw-toggle input:checked ~ .nsfw-toggle__label {
@@ -1879,4 +2038,62 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* --- /mlp/ Web Ring --- */
+#mlpring {
+  margin: 1.5rem 0 0.5rem 0;
+  padding: 0.5rem 0;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+
+#mlpring * {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#mlpring table,
+#mlpring tbody,
+#mlpring tr,
+#mlpring td {
+  display: inline !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: var(--color-text-muted) !important;
+}
+
+#mlpring td {
+  font-size: 0.85rem;
+  color: var(--color-text-muted) !important;
+}
+
+#mlpring a {
+  color: var(--color-accent-soft) !important;
+  text-shadow: none !important;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+#mlpring a:hover {
+  color: var(--color-accent) !important;
+  text-decoration: underline;
+}
+
+#mlpring .ring-links a,
+#mlpring .ring-title,
+#mlpring .ring-member {
+  color: var(--color-text-muted) !important;
+}
+
+#mlpring .ring-links a:hover {
+  color: var(--color-accent) !important;
 }
