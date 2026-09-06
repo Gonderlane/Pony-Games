@@ -287,7 +287,7 @@ function initAuthorSearch() {
     if (!btn) return;
     e.stopPropagation();
     const author = btn.dataset.author;
-    const searchInput = document.getElementById("filter-search");
+    const searchInput = document.getElementById("filter-search") || document.getElementById("resources-search");
     if (searchInput) {
       // We're already on the games page
       searchInput.value = author;
@@ -439,60 +439,42 @@ async function initNewsBlog() {
 }
 
 /* ==========================================================================
-   Detail Panel
+   Detail Panels
    ========================================================================== */
-function initDetailPanel(options = {}) {
-  const panel = document.getElementById("detail-panel");
-  if (!panel) return null;
+function initDetailPanelCommon(panel) {
 
+  const carousel = panel.querySelector(".detail-panel__carousel");
+  const track = panel.querySelector(".carousel__track");
+  const dotsEl = panel.querySelector(".carousel__dots");
+  const prevBtn = panel.querySelector(".carousel__btn--prev");
+  const nextBtn = panel.querySelector(".carousel__btn--next");
   const closeBtn = panel.querySelector(".detail-panel__close");
   const content = panel.querySelector(".detail-panel__content");
-  const isGame = options.isGame ?? false;
-  // On pages with a page-wide "Show NSFW" toggle, that toggle is already
-  // explicit consent, so re-blurring and demanding another click per game
-  // is redundant. Pages without a toggle (e.g. the homepage sidebar, where
-  // NSFW games can surface unannounced in "Random") keep the per-item gate.
-  const skipNsfwBlur = typeof options.skipNsfwBlur === "function" ? options.skipNsfwBlur : () => false;
-  // skipNsfwBlur receives the item so it can check per-item warning labels
-  // against whichever content toggles the page has (not just one flag)
 
   function closePanel() {
     panel.classList.remove("is-open");
     content.classList.remove("detail-panel__content--visible");
     document.body.style.overflow = "";
-    if (isGame) {
-      const url = new URL(window.location);
-      url.searchParams.delete("game");
-      history.replaceState(null, "", url);
-    }
+    const url = new URL(window.location);
+    url.searchParams.delete("game");
+    history.replaceState(null, "", url);
   }
 
-  function openPanel(item) {
-    // Carousel
-    const carousel = panel.querySelector(".detail-panel__carousel");
-    const track = panel.querySelector(".carousel__track");
-    const dotsEl = panel.querySelector(".carousel__dots");
-    const prevBtn = panel.querySelector(".carousel__btn--prev");
-    const nextBtn = panel.querySelector(".carousel__btn--next");
-    const screenshots = item.screenshots && item.screenshots.length ? item.screenshots : [];
-
-    // thumbnail is the first slide, screenshots follow
-    const allImages = [item.thumbnail, ...(item.screenshots || [])];
-    const hasMultiple = allImages.length > 1;
-
+  function openPanel(allImages, isNsfw, skipNsfwBlur, title, tags, description, authors) {
     if (carousel) {
+      const hasMultiple = allImages.length > 1;
       carousel.hidden = false;
       let current = 0;
 
       track.innerHTML = allImages.map((src, i) => `
-        <img class="carousel__img${i === 0 ? " carousel__img--active" : ""}" src="${src}" alt="${item.title}${i === 0 ? "" : ` screenshot ${i}`}" loading="lazy" />
+      <img class="carousel__img${i === 0 ? " carousel__img--active" : ""}" src="${src}" alt="${title}${i === 0 ? "" : ` screenshot ${i}`}" loading="lazy" />
       `).join("");
 
       if (prevBtn) prevBtn.hidden = !hasMultiple;
       if (nextBtn) nextBtn.hidden = !hasMultiple;
 
       dotsEl.innerHTML = hasMultiple ? allImages.map((_, i) => `
-        <button type="button" class="carousel__dot${i === 0 ? " carousel__dot--active" : ""}" data-index="${i}" aria-label="${i === 0 ? "Cover" : `Screenshot ${i}`}"></button>
+      <button type="button" class="carousel__dot${i === 0 ? " carousel__dot--active" : ""}" data-index="${i}" aria-label="${i === 0 ? "Cover" : `Screenshot ${i}`}"></button>
       `).join("") : "";
 
       function goTo(n) {
@@ -515,7 +497,7 @@ function initDetailPanel(options = {}) {
       const oldOverlay = carousel.querySelector(".detail-panel__nsfw-overlay");
       if (oldOverlay) oldOverlay.remove();
       carousel.classList.remove("detail-panel__carousel--nsfw-blurred");
-      if (isNsfwItem(item) && !skipNsfwBlur(item)) {
+      if (isNsfw && !skipNsfwBlur) {
         carousel.classList.add("detail-panel__carousel--nsfw-blurred");
         const overlayBtn = document.createElement("button");
         overlayBtn.type = "button";
@@ -529,41 +511,101 @@ function initDetailPanel(options = {}) {
       }
     }
 
+    panel.querySelector(".detail-panel__title").textContent = title;
+    panel.querySelector(".detail-panel__tags").innerHTML = createTagElements(tags);
+    panel.querySelector(".detail-panel__description").textContent = description;
+
+    const authorEl = panel.querySelector(".detail-panel__author");
+
+    if (authorEl) {
+      if (authors) {
+        authorEl.innerHTML = `By ${authors}`;
+        authorEl.hidden = false;
+      } else {
+        authorEl.hidden = true;
+      }
+    }
+
+    panel.classList.add("is-open");
+    document.body.style.overflow = "hidden";
+    requestAnimationFrame(() => {
+      content.classList.add("detail-panel__content--visible");
+      closeBtn.focus();
+    });
+
+  }
+
+  panel.querySelector(".detail-panel__close").addEventListener("click", closePanel);
+  panel.addEventListener("click", (e) => {
+    if (e.target === panel) closePanel();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel.classList.contains("is-open")) closePanel();
+  });
+
+
+  return { openPanel, closePanel };
+}
+
+function initGameDetailPanel(options = {}) {
+  const panel = document.getElementById("detail-panel");
+  if (!panel) return null;
+
+  const common = initDetailPanelCommon(panel);
+
+  // On pages with a page-wide "Show NSFW" toggle, that toggle is already
+  // explicit consent, so re-blurring and demanding another click per game
+  // is redundant. Pages without a toggle (e.g. the homepage sidebar, where
+  // NSFW games can surface unannounced in "Random") keep the per-item gate.
+  const skipNsfwBlur = typeof options.skipNsfwBlur === "function" ? options.skipNsfwBlur : () => false;
+  // skipNsfwBlur receives the item so it can check per-item warning labels
+  // against whichever content toggles the page has (not just one flag)
+
+
+  function openPanel(item) {
+    // Carousel
+    const screenshots = item.screenshots && item.screenshots.length ? item.screenshots : [];
+
+    // thumbnail is the first slide, screenshots follow
+    const allImages = [item.thumbnail, ...(item.screenshots || [])];
+
     panel.querySelector(".detail-panel__thumb").hidden = true;
     panel.querySelector(".detail-panel__thumb").src = item.thumbnail;
     panel.querySelector(".detail-panel__thumb").alt = item.title;
-    panel.querySelector(".detail-panel__title").textContent = item.title;
-    panel.querySelector(".detail-panel__tags").innerHTML = createTagElements(item.tags);
-    panel.querySelector(".detail-panel__description").textContent = item.fullDescription;
+
+    const authorArray = getAuthors(item);
+    const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
+
     const downloadsEl = panel.querySelector(".detail-panel__downloads");
     if (downloadsEl) {
       // item.url is the author/source page, item.downloads are the build
       // files. Both show when both exist, source first.
       const sourceEntry = item.url
-        ? [{ label: item.platform || "Source", version: item.version, url: item.url, type: "source" }]
-        : [];
+      ? [{ label: item.platform || "Source", version: item.version, url: item.url, type: "source" }]
+      : [];
       const buildEntries = (item.downloads || []).filter((d) => d.url !== item.url);
       const rawEntries = [...sourceEntry, ...buildEntries];
       // explicit d.type wins, otherwise guess from the label/url
       const entries = rawEntries
-        .map((d) => ({ ...d, _type: classifyDownloadEntry(d) }))
-        .sort((a, b) => (DOWNLOAD_TYPE_ORDER[a._type] ?? 3) - (DOWNLOAD_TYPE_ORDER[b._type] ?? 3));
+      .map((d) => ({ ...d, _type: classifyDownloadEntry(d) }))
+      .sort((a, b) => (DOWNLOAD_TYPE_ORDER[a._type] ?? 3) - (DOWNLOAD_TYPE_ORDER[b._type] ?? 3));
       // mirrors = same build hosted elsewhere (telegram, backup server)
       downloadsEl.innerHTML = entries.map(d => `
-        <div class="download-row">
-          <div class="download-row__btns">
-            <a class="download-row__btn" href="${d.url}" target="_blank" rel="noopener noreferrer">${d.buttonText || DOWNLOAD_BUTTON_TEXT[d._type] || "Download"}</a>
-            ${(d.mirrors || []).map((m) => `
-              <a class="download-row__btn download-row__btn--mirror" href="${m.url}" target="_blank" rel="noopener noreferrer" title="${m.label}">${m.label}</a>
-            `).join("")}
-          </div>
-          <span class="download-row__info">
-            <span class="download-row__label">${d.label}</span>
-            ${d.version ? `<span class="download-row__version">${d.version}</span>` : ""}
-          </span>
+      <div class="download-row">
+      <div class="download-row__btns">
+      <a class="download-row__btn" href="${d.url}" target="_blank" rel="noopener noreferrer">${d.buttonText || DOWNLOAD_BUTTON_TEXT[d._type] || "Download"}</a>
+      ${(d.mirrors || []).map((m) => `
+        <a class="download-row__btn download-row__btn--mirror" href="${m.url}" target="_blank" rel="noopener noreferrer" title="${m.label}">${m.label}</a>
+        `).join("")}
         </div>
-      `).join("");
+        <span class="download-row__info">
+        <span class="download-row__label">${d.label}</span>
+        ${d.version ? `<span class="download-row__version">${d.version}</span>` : ""}
+        </span>
+        </div>
+        `).join("");
     }
+
 
     const playtimeEl = panel.querySelector(".detail-panel__playtime");
     const playtimeWrap = panel.querySelector(".detail-panel__playtime-wrap");
@@ -573,18 +615,6 @@ function initDetailPanel(options = {}) {
         playtimeWrap.hidden = false;
       } else {
         playtimeWrap.hidden = true;
-      }
-    }
-
-    const authorEl = panel.querySelector(".detail-panel__author");
-
-    if (authorEl) {
-      const authors = getAuthors(item);
-      if (authors.length) {
-        authorEl.innerHTML = `By ${renderAuthorLinks(item, "author-link")}`;
-        authorEl.hidden = false;
-      } else {
-        authorEl.hidden = true;
       }
     }
 
@@ -599,28 +629,55 @@ function initDetailPanel(options = {}) {
       }
     }
 
-    if (isGame && item.id) {
+    if (item.id) {
       const url = new URL(window.location);
       url.searchParams.set("game", item.id);
       history.replaceState(null, "", url);
     }
-    panel.classList.add("is-open");
-    document.body.style.overflow = "hidden";
-    requestAnimationFrame(() => {
-      content.classList.add("detail-panel__content--visible");
-      closeBtn.focus();
-    });
+
+    common.openPanel(allImages, isNsfwItem(item), skipNsfwBlur(item), item.title, item.tags, item.fullDescription, authors);
+
   }
 
-  closeBtn.addEventListener("click", closePanel);
-  panel.addEventListener("click", (e) => {
-    if (e.target === panel) closePanel();
-  });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && panel.classList.contains("is-open")) closePanel();
-  });
+  return { openPanel, closePanel : common.closePanel };
+}
 
-  return { openPanel, closePanel, isGame };
+function initResourceDetailPanel() {
+  const panel = document.getElementById("detail-panel");
+  if (!panel) return null;
+
+  const common = initDetailPanelCommon(panel);
+
+  function openPanel(item) {
+    const allImages = item.previews.length ? item.previews : [item.thumbnail];
+
+    const authorArray = getAuthors(item);
+    const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
+
+    const assetPacksEl = panel.querySelector(".detail-panel__asset-packs");
+    if (assetPacksEl && item.assetPacks.length) {
+      assetPacksEl.innerHTML = `<p>${item.assetPacks.join(", ")}</p>`;
+    }
+
+    const downloadsEl = panel.querySelector(".download-row__btns");
+    if (downloadsEl) {
+      downloadsEl.innerHTML = item.downloads.map((downloadURL) => {
+        let buttonText = "Download";
+        try {
+          const urlObj = new URL(downloadURL);
+          buttonText = urlObj.hostname;
+        } catch (err) {
+          console.error(err);
+        }
+        return `<a class="download-row__btn" href="${downloadURL}" target="_blank" rel="noopener noreferrer">${buttonText}</a>`;
+      }).join("")
+    }
+
+    common.openPanel(allImages, false, false, item.name, item.tags, item.description, authors);
+  }
+
+  return { openPanel, closePanel : common.closePanel };
+
 }
 
 function bindCardInteractions(grid, itemMap, detail) {
@@ -672,7 +729,7 @@ async function initGameSidebar() {
   const upcomingContainer = document.getElementById("upcoming-grid");
   if (!recentContainer || !randomContainer) return;
 
-  const detail = initDetailPanel({ isGame: true });
+  const detail = initGameDetailPanel();
   if (!detail) return;
 
   recentContainer.innerHTML = renderSkeletonSidebar(3);
@@ -787,16 +844,16 @@ function renderResourceCard(item) {
     .join("");
 
   return `
-    <article class="card" data-id="${item.id}" tabindex="0" role="button" aria-label="View details for ${item.title}">
+    <article class="card" data-id="${item.id}" tabindex="0" role="button" aria-label="View details for ${item.name}">
       <div class="card__thumb-wrap">
-        <img class="card__thumb" src="${item.thumbnail}" alt="${item.title} thumbnail" loading="lazy" />
+        <img class="card__thumb" src="${item.thumbnail}" alt="${item.name} thumbnail" loading="lazy" />
       </div>
       <div class="card__body">
-        <h3 class="card__title">${item.title}</h3>
-        <p class="card__short-desc">${item.shortDescription}</p>
+        <h3 class="card__title">${item.name}</h3>
+        <p class="card__author">${renderAuthorLinks(item, "card__author--link")}</p>
+        <p class="card__short-desc">${item.description}</p>
+        <div class="card__tags-preview">${tagsPreview}</div>
         <div class="card__extra">
-          <p class="card__playtime">${item.playtime}</p>
-          <div class="card__tags-preview">${tagsPreview}</div>
         </div>
       </div>
     </article>
@@ -877,8 +934,7 @@ async function initGamesPage() {
 
   // nsfwToggle/goreToggle are declared further down, but this callback only
   // runs later (on card click), by which point they're assigned — closures.
-  const detail = initDetailPanel({
-    isGame: true,
+  const detail = initGameDetailPanel({
     skipNsfwBlur: (item) => warningsSatisfied(item, !!nsfwToggle?.checked, !!goreToggle?.checked),
   });
   if (!detail) return;
@@ -1105,19 +1161,23 @@ async function initCardGrid(jsonPath) {
   const grid = document.getElementById("card-grid");
   if (!grid) return;
 
-  const detail = initDetailPanel();
+  const detail = initResourceDetailPanel();
   if (!detail) return;
 
   grid.innerHTML = renderSkeletonCards(6);
 
-  let items = [];
+  let resourcesJSON = null;
   try {
-    items = normalizeListData(await fetchJSON(jsonPath), "resources");
+    resourcesJSON = await fetchJSON(jsonPath);
   } catch (err) {
     grid.innerHTML = `<p>Unable to load content.</p>`;
     console.error(err);
     return;
   }
+  const items = normalizeListData(resourcesJSON, "assets");
+  const allTags = new Set(resourcesJSON["allTags"]);
+  const allAuthors = new Set(resourcesJSON["allAuthors"]);
+  const allAssetPacks = new Set(resourcesJSON["allAssetPacks"]);
 
   const itemMap = new Map(items.map((item) => [String(item.id), item]));
 
@@ -1129,28 +1189,23 @@ async function initCardGrid(jsonPath) {
   const activeTags = new Set();
   const activeTypes = new Set();
   const activeLicenses = new Set();
+  const activeAssetPacks = new Set();
+  const activeAuthors = new Set();
 
-  const allTags = new Set();
-  const allTypes = new Set();
-  const allLicenses = new Set();
-  items.forEach((item) => {
-    (item.tags || []).forEach((t) => allTags.add(t));
-    if (item.type) allTypes.add(item.type);
-    if (item.license) allLicenses.add(item.license);
-  });
+
 
   function sortItems(list) {
     const sort = sortSelect ? sortSelect.value : "az";
     const sorted = [...list];
     switch (sort) {
-      case "az":   return sorted.sort((a, b) => a.title.localeCompare(b.title));
-      case "za":   return sorted.sort((a, b) => b.title.localeCompare(a.title));
+      case "az":   return sorted.sort((a, b) => a.name.localeCompare(b.name));
+      case "za":   return sorted.sort((a, b) => b.name.localeCompare(a.name));
       default:     return sorted;
     }
   }
 
   function hasActive() {
-    return (searchInput?.value.trim()) || activeTags.size || activeTypes.size || activeLicenses.size;
+    return (searchInput?.value.trim()) || activeTags.size || activeTypes.size || activeLicenses.size || activeAssetPacks.size || activeAuthors.size;
   }
 
   function applyFilters(animate = false) {
@@ -1159,15 +1214,16 @@ async function initCardGrid(jsonPath) {
       if (q) {
         const terms = q.split(/[\s,]+/).filter(Boolean);
         const matchesTerm = (term) =>
-          item.title.toLowerCase().includes(term) ||
-          (item.shortDescription || "").toLowerCase().includes(term) ||
+          item.name.toLowerCase().includes(term) ||
+          (item.description || "").toLowerCase().includes(term) ||
           (item.tags || []).some((t) => t.toLowerCase().includes(term)) ||
-          (item.type || "").toLowerCase().includes(term);
+          (item.assetPacks || []).some((t) => t.toLowerCase().includes(term)) ||
+          (item.author || []).some((t) => t.toLowerCase().includes(term));
         if (!terms.every(matchesTerm)) return false;
       }
       if (activeTags.size && !(item.tags || []).some((t) => activeTags.has(t))) return false;
-      if (activeTypes.size && !activeTypes.has(item.type)) return false;
-      if (activeLicenses.size && !activeLicenses.has(item.license)) return false;
+      if (activeAssetPacks.size && !(item.assetPacks || []).some((t) => activeAssetPacks.has(t))) return false;
+      if (activeAuthors.size && !(item.author || []).some((t) => activeAuthors.has(t))) return false;
       return true;
     }));
 
@@ -1190,9 +1246,9 @@ async function initCardGrid(jsonPath) {
     if (clearBtn) clearBtn.hidden = !hasActive();
   }
 
-  buildTagFilterChips("filter-resource-type-chips", allTypes, activeTypes, () => applyFilters(false));
   buildTagFilterChips("filter-resource-tag-chips", allTags, activeTags, () => applyFilters(false));
-  buildTagFilterChips("filter-resource-license-chips", allLicenses, activeLicenses, () => applyFilters(false));
+  buildTagFilterChips("filter-resource-asset-pack-chips", allAssetPacks, activeAssetPacks, () => applyFilters(false));
+  buildTagFilterChips("filter-resource-author-chips", allAuthors, activeAuthors, () => applyFilters(false));
 
   if (searchInput) searchInput.addEventListener("input", () => applyFilters(false));
   if (sortSelect) sortSelect.addEventListener("change", () => applyFilters(false));
@@ -1200,11 +1256,11 @@ async function initCardGrid(jsonPath) {
     clearBtn.addEventListener("click", () => {
       if (searchInput) searchInput.value = "";
       activeTags.clear();
-      activeTypes.clear();
-      activeLicenses.clear();
-      buildTagFilterChips("filter-resource-type-chips", allTypes, activeTypes, () => applyFilters(false));
+      activeAssetPacks.clear();
+      activeAuthors.clear()
       buildTagFilterChips("filter-resource-tag-chips", allTags, activeTags, () => applyFilters(false));
-      buildTagFilterChips("filter-resource-license-chips", allLicenses, activeLicenses, () => applyFilters(false));
+      buildTagFilterChips("filter-resource-asset-pack-chips", allAssetPacks, activeAssetPacks, () => applyFilters(false));
+      buildTagFilterChips("filter-resource-author-chips", allAuthors, activeAuthors, () => applyFilters(false));
       applyFilters(false);
     });
   }
