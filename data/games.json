@@ -34,8 +34,7 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Windows",
-        "Flash"
+        "Windows"
       ],
       "url": "https://foe-remains.gitlab.io/main_en.html",
       "releaseDate": "2025-07-05",
@@ -82,7 +81,7 @@
           ]
         },
         {
-          "label": "Flash",
+          "label": "Windows",
           "version": "Hotfix #8",
           "url": "https://games.mare.by/210",
           "buttonText": "Download",
@@ -100,13 +99,6 @@
               "label": "Autumn"
             }
           ]
-        },
-        {
-          "label": "Flash",
-          "version": "Hotfix #8",
-          "url": "https://flash.mare.by/g?id=210",
-          "buttonText": "Play",
-          "mirrors": []
         },
         {
           "label": "Windows",
@@ -15657,14 +15649,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Flash"
+        "Windows"
       ],
       "url": "https://mlp-gaming.fandom.com/wiki/Minty_Fresh_Adventure",
       "releaseDate": "2012-04-02",
       "dateAdded": "2026-05-10",
       "downloads": [
         {
-          "label": "Flash",
+          "label": "Windows",
           "version": "",
           "url": "https://games.mare.by/199",
           "buttonText": "Download",
@@ -15682,13 +15674,6 @@
               "label": "Autumn"
             }
           ]
-        },
-        {
-          "label": "Flash",
-          "version": "",
-          "url": "https://flash.mare.by/g?id=199",
-          "buttonText": "Play",
-          "mirrors": []
         }
       ],
       "screenshots": [
@@ -15715,14 +15700,14 @@
       "status": "Released",
       "engine": "Flash",
       "platforms": [
-        "Flash"
+        "Windows"
       ],
       "url": "https://www.dragon-mango.com/ponygame/tardy/",
       "releaseDate": "",
       "dateAdded": "2026-09-03",
       "downloads": [
         {
-          "label": "Flash",
+          "label": "Windows",
           "version": "",
           "url": "https://games.mare.by/1456",
           "buttonText": "Download",
@@ -15740,13 +15725,6 @@
               "label": "Autumn"
             }
           ]
-        },
-        {
-          "label": "Flash",
-          "version": "",
-          "url": "https://flash.mare.by/g?id=1456",
-          "buttonText": "Play",
-          "mirrors": []
         }
       ],
       "screenshots": []
