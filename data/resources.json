@@ -14,7 +14,8 @@
         "Anonymous",
         "NAWA",
         "pylony",
-        "LittleTinyBit"
+        "LittleTinyBit",
+        "Zan"
     ],
     "allAssetPacks": [
         "MARECON ASSET JAM",
@@ -664,7 +665,7 @@
             "name": "Pony, expressions, bit and scroll",
             "description": "",
             "author": [
-                "Anonymous"
+                "Zan"
             ],
             "tags": [
                 "2D",
