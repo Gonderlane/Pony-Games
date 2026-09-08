@@ -2097,3 +2097,7 @@ body {
 #mlpring .ring-links a:hover {
   color: var(--color-accent) !important;
 }
+
+#mlpring .webring-info br {
+  display: none;
+}
