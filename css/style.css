@@ -1308,6 +1308,21 @@ body {
   text-decoration: underline;
 }
 
+.license-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--color-accent-soft);
+  cursor: pointer;
+  font-size: inherit;
+  transition: color var(--transition);
+}
+
+.license-link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
 .card__short-desc {
   font-size: 0.875rem;
   color: var(--color-text-muted);
@@ -1600,6 +1615,22 @@ body {
 
 .detail-panel__playtime-bar {
   display: none;
+}
+
+.detail-panel__license-wrap {
+  margin-bottom: 1rem;
+}
+
+.detail-panel__license-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.detail-panel__license {
+  font-size: 0.8rem;
+  color: var(--color-accent-soft);
 }
 
 .detail-panel__meta {

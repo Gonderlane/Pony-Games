@@ -166,6 +166,17 @@ function renderAuthorLinks(item, className) {
     .join(", ");
 }
 
+function getLicenses(item) {
+  if (Array.isArray(item.license)) return item.license.filter(Boolean);
+  return [];
+}
+
+function renderLicenseLinks(item, className) {
+  return getLicenses(item)
+    .map((l) => `<a class="${className}" href="${l.url}">${l.name}</a>`)
+    .join(", ");
+}
+
 function isNsfwItem(item) {
   return (item.tags || []).some(
     (t) => t && typeof t === "object" && normalizeTagType(t.type) === "warning"
@@ -653,6 +664,21 @@ function initResourceDetailPanel() {
 
     const authorArray = getAuthors(item);
     const authors = authorArray.length ? renderAuthorLinks(item, "author-link") : null;
+
+    const licenseArray = getLicenses(item);
+    licenseWrap = panel.querySelector(".detail-panel__license-wrap");
+    licenseLabel = panel.querySelector(".detail-panel__license-label");
+    licenseRow = panel.querySelector(".detail-panel__license");
+    if (licenseWrap) {
+      if (licenseArray.length) {
+        licenseWrap.hidden = false;
+        licenseLabel.textContent = licenseArray.length > 1 ? "Licenses" : "License";
+        licenseRow.innerHTML = renderLicenseLinks(item, "license-link");
+      } else {
+        licenseWrap.hidden = true;
+      }
+    }
+
 
     const assetPacksEl = panel.querySelector(".detail-panel__asset-packs");
     if (assetPacksEl && item.assetPacks.length) {
@@ -1176,6 +1202,7 @@ async function initCardGrid(jsonPath) {
   }
   const items = normalizeListData(resourcesJSON, "assets");
   const allTags = new Set(resourcesJSON["allTags"]);
+  const allLicenses = new Set(resourcesJSON["allLicenses"]);
   const allAuthors = new Set(resourcesJSON["allAuthors"]);
   const allAssetPacks = new Set(resourcesJSON["allAssetPacks"]);
 
@@ -1222,6 +1249,7 @@ async function initCardGrid(jsonPath) {
         if (!terms.every(matchesTerm)) return false;
       }
       if (activeTags.size && !(item.tags || []).some((t) => activeTags.has(t))) return false;
+      if (activeLicenses.size && !(item.license.map(l => l.name) || []).some((t) => activeLicenses.has(t))) return false;
       if (activeAssetPacks.size && !(item.assetPacks || []).some((t) => activeAssetPacks.has(t))) return false;
       if (activeAuthors.size && !(item.author || []).some((t) => activeAuthors.has(t))) return false;
       return true;
@@ -1247,6 +1275,7 @@ async function initCardGrid(jsonPath) {
   }
 
   buildTagFilterChips("filter-resource-tag-chips", allTags, activeTags, () => applyFilters(false));
+  buildTagFilterChips("filter-resource-license-chips", allLicenses, activeLicenses, () => applyFilters(false));
   buildTagFilterChips("filter-resource-asset-pack-chips", allAssetPacks, activeAssetPacks, () => applyFilters(false));
   buildTagFilterChips("filter-resource-author-chips", allAuthors, activeAuthors, () => applyFilters(false));
 
@@ -1256,9 +1285,11 @@ async function initCardGrid(jsonPath) {
     clearBtn.addEventListener("click", () => {
       if (searchInput) searchInput.value = "";
       activeTags.clear();
+      activeLicenses.clear();
       activeAssetPacks.clear();
       activeAuthors.clear()
       buildTagFilterChips("filter-resource-tag-chips", allTags, activeTags, () => applyFilters(false));
+      buildTagFilterChips("filter-resource-license-chips", allLicenses, activeLicenses, () => applyFilters(false));
       buildTagFilterChips("filter-resource-asset-pack-chips", allAssetPacks, activeAssetPacks, () => applyFilters(false));
       buildTagFilterChips("filter-resource-author-chips", allAuthors, activeAuthors, () => applyFilters(false));
       applyFilters(false);
